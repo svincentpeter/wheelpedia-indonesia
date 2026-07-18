@@ -1,0 +1,66 @@
+﻿generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+
+model Vehicle {
+  id String @id @default(cuid())
+  brand String
+  model String
+  generation String
+  yearStart Int
+  yearEnd Int?
+  bodyType String
+  engine String
+  pcd String
+  boltCount Int
+  centerBore Float
+  stockOffset Int
+  nutSize String
+  oemTire String
+  oemWheel String
+  tirePressure String
+  description String?
+  upgradeNotes String?
+  compatibleTires String @default("[]")
+  compatibleWheels String @default("[]")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Brand {
+  id String @id @default(cuid())
+  name String @unique
+  country String
+  category String
+  founded Int
+  description String
+  strengths String @default("[]")
+  weaknesses String @default("[]")
+  popularItems String @default("[]")
+  priceRange String
+  type String
+}
+
+model GlossaryTerm {
+  id String @id @default(cuid())
+  term String @unique
+  category String
+  definition String
+  example String?
+  relatedTerms String @default("[]")
+}
+
+model ChatSession {
+  id String @id @default(cuid())
+  title String?
+  createdAt DateTime @default(now())
+  messages ChatMessage[]
+}
+
+model ChatMessage {
+  id String @id @default(cuid())
+  sessionId String
+  role String
+  content String
+  createdAt DateTime @default(now())
+  session ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
