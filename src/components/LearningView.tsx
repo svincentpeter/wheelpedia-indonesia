@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Sparkles, Clock, HelpCircle, Check, AlertTriangle, ArrowRight, Table, GraduationCap } from "lucide-react";
-import { QUIZ_QUESTIONS } from "../data";
+import { QUIZ_DATA as QUIZ_QUESTIONS } from "../data";
 
 interface LearningViewProps {
   onNavigateToAssistant: (initialPrompt?: string) => void;

@@ -1,280 +1,112 @@
-import { Vehicle, ChatHistory, QuizQuestion } from "./types";
+﻿// Complete Vehicle Database for Wheelpedia Indonesia
+export interface Vehicle {
+  id: string;
+  brand: string;
+  name: string;
+  type: string;
+  years: string;
+  pcd: string;
+  cb: string;
+  nutSize: string;
+  engine: string;
+  tireSizes: { trim: string; size: string }[];
+  image: string;
+  description: string;
+  aiInsight: string;
+}
 
 export const VEHICLES: Vehicle[] = [
-  {
-    id: "innova-zenix",
-    brand: "Toyota",
-    name: "Innova Zenix",
-    type: "MPV",
-    years: "2022 - Present",
-    pcd: "5x114.3",
-    cb: "60.1",
-    nutSize: "M12x1.5",
-    engine: "2.0L M20A-FKS (Petrol) / M20A-FXS (Hybrid)",
-    tireSizes: [
-      { trim: "G / V Grade", size: "215/60 R17" },
-      { trim: "Q Grade (Hybrid)", size: "225/50 R18" }
-    ],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjUziHItosr-LCP3Ngiojl5sO_WXliN5mko1xi50Zam2rj0FpXRgv0qK8mirx2mnDrvta7mnQ2oxpcT8dlpMp2toUF_9_mGfYC-QfKYQtqhBFm9S8TFCBEDOcoh4pr5btcD9VwFTTtQQAfXyW_YixI7I8d1IGYjFPKRqRJbtVQjUr8X67q6mFp4u24PLTKpNaCVAFlkFCjQ3zAOEFSNiMESEnCP8c55d2gtyQJ-WxDqbS_2zQTIc5rG1n_vmMJAafDt6fKZ2O4CUU",
-    description: "The latest evolution of Indonesia's iconic MPV, featuring a transition to a monocoque chassis (TNGA-C) and advanced hybrid powertrain options.",
-    aiInsight: "The transition to the TNGA-C platform has completely changed the Zenix's fitment characteristics compared to previous Reborn models. It now favors higher offsets (ET40-45) similar to modern crossovers rather than the lower offsets of older RWD chassis."
-  },
-  {
-    id: "pajero-sport",
-    brand: "Mitsubishi",
-    name: "Pajero Sport",
-    type: "SUV",
-    years: "2016 - Present",
-    pcd: "6x139.7",
-    cb: "67.1",
-    nutSize: "M12x1.5",
-    engine: "2.4L 4N15 MIVEC Clean Diesel Turbo",
-    tireSizes: [
-      { trim: "GLX / Exceed Grade", size: "265/65 R17" },
-      { trim: "Dakar / Ultimate Grade", size: "265/60 R18" }
-    ],
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
-    description: "One of Indonesia's favorite ladder-frame luxury SUVs, offering formidable off-road capabilities coupled with premium on-road presence and torque.",
-    aiInsight: "Pajero Sport operates on a rugged 6x139.7 PCD. Upgrading to 20-inch wheels is extremely popular in Indonesia, typically using 265/50 R20 tires. A conservative offset of ET20 to ET25 ensures a aggressive, flush look without fender rubbing."
-  },
-  {
-    id: "avanza",
-    brand: "Toyota",
-    name: "Avanza / Veloz",
-    type: "MPV",
-    years: "2021 - Present",
-    pcd: "5x100",
-    cb: "54.1",
-    nutSize: "M12x1.5",
-    engine: "1.3L 1NR-VE / 1.5L 2NR-VE Dual VVT-i",
-    tireSizes: [
-      { trim: "1.3 E / G Grade", size: "185/65 R15" },
-      { trim: "1.5 G Grade", size: "195/60 R16" },
-      { trim: "Veloz Q Grade", size: "205/50 R17" }
-    ],
-    image: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&q=80&w=800",
-    description: "Indonesia's legendary 'Sejuta Umat' family MPV. The third generation introduces a revolutionary front-wheel-drive platform (DNGA) and 5x100 bolt patterns.",
-    aiInsight: "With the shift to the DNGA platform and 5x100 PCD, Avanza/Veloz owners can now fit wheels from other DNGA/TNGA vehicles (like Toyota Sienta or Subaru). High offset wheels (ET40-ET45) are ideal. Upgrading to 17-inch wheels with 205/50 R17 is the perfect daily setup."
-  },
-  {
-    id: "hr-v",
-    brand: "Honda",
-    name: "HR-V",
-    type: "SUV",
-    years: "2022 - Present",
-    pcd: "5x114.3",
-    cb: "64.1",
-    nutSize: "M12x1.5",
-    engine: "1.5L i-VTEC (Petrol) / 1.5L VTEC Turbo (RS)",
-    tireSizes: [
-      { trim: "S / E / SE Grade", size: "215/60 R17" },
-      { trim: "RS Turbo Grade", size: "225/45 R18" }
-    ],
-    image: "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&q=80&w=800",
-    description: "A stylish compact crossover SUV that dominates the premium Indonesian subcompact segment with its sleek coupe-like silhouette and Honda SENSING.",
-    aiInsight: "Honda HR-V features a standard 5x114.3 PCD with a 64.1mm hub. It has a generous wheel well, allowing aggressive fitments of up to 19 inches. Popular Indonesian stance builds feature 19x8.5 wheels with ET40 and 225/40 R19 tires."
-  },
-  {
-    id: "fortuner",
-    brand: "Toyota",
-    name: "Fortuner",
-    type: "SUV",
-    years: "2016 - Present",
-    pcd: "6x139.7",
-    cb: "106.1",
-    nutSize: "M12x1.5",
-    engine: "2.4L 2GD-FTV / 2.8L 1GD-FTV Diesel Turbo / 2.7L Petrol",
-    tireSizes: [
-      { trim: "G Grade", size: "265/65 R17" },
-      { trim: "VRZ / GR Sport Grade", size: "265/60 R18" }
-    ],
-    image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800",
-    description: "The premier ladder-frame luxury SUV from Toyota, known for its heavy-duty performance, high resale value, and authoritative presence on Indonesian toll roads.",
-    aiInsight: "Toyota Fortuner shares the same 6x139.7 PCD as Pajero Sport, but has a larger Center Bore of 106.1mm. If fitting aftermarket wheels, ensuring the wheel hub bore is at least 106.1mm (or using hub-centric rings) is absolutely crucial to prevent steering vibrations at high speeds."
-  }
+  // TOYOTA
+  { id: "avanza-gen1", brand: "Toyota", name: "Avanza Gen 1", type: "MPV", years: "2004 - 2011", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.3L / 1.5L", tireSizes: [{ trim: "1.3 G", size: "175/65 R14" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "MPV legendaris Toyota generasi pertama.", aiInsight: "PCD 4x100, bisa pakai velg aftermarket ukuran 14-16 inch." },
+  { id: "avanza-gen2", brand: "Toyota", name: "Avanza Gen 2", type: "MPV", years: "2012 - 2022", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.3L / 1.5L", tireSizes: [{ trim: "1.5 G", size: "185/65 R15" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "Avanza generasi kedua, lebih modern.", aiInsight: "PCD tetap 4x100. Upgrade ke R16 populer dengan 195/55 R16." },
+  { id: "avanza-gen3", brand: "Toyota", name: "Avanza Gen 3 (All New)", type: "MPV", years: "2022 - Present", pcd: "5x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.5L", tireSizes: [{ trim: "1.5 G", size: "185/60 R15" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "All New Avanza, platform baru DNGA.", aiInsight: "PCD berubah ke 5x100. Velg lama tidak bisa dipasang langsung." },
+  { id: "innova-gen1", brand: "Toyota", name: "Innova Gen 1 (Reborn)", type: "MPV", years: "2004 - 2015", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "2.0L / 2.5L Diesel", tireSizes: [{ trim: "2.5 G", size: "205/65 R15" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "MPV medium legendaris Toyota.", aiInsight: "PCD 5x114.3, bisa saling tukar velg dengan Rush, HR-V, Xpander." },
+  { id: "innova-gen2", brand: "Toyota", name: "Innova Gen 2 (Venturer)", type: "MPV", years: "2015 - 2022", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "2.0L / 2.4L Diesel", tireSizes: [{ trim: "2.4 VRZ", size: "205/65 R16" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "Innova generasi kedua, lebih premium.", aiInsight: "R16 standar. R17 populer untuk upgrade, Venturer sudah R17." },
+  { id: "innova-zenix", brand: "Toyota", name: "Innova Zenix", type: "MPV", years: "2022 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "2.0L Hybrid", tireSizes: [{ trim: "2.0 Hybrid", size: "215/55 R17" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "Innova terbaru, platform TNGA-C monokok.", aiInsight: "R17 standar. PCD sama dengan Innova sebelumnya. R18 bisa tapi hati-hati." },
+  { id: "yaris-xp150", brand: "Toyota", name: "Yaris XP150", type: "Hatchback", years: "2013 - 2020", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.5L", tireSizes: [{ trim: "1.5 S", size: "185/60 R15" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "Hatchback populer Toyota.", aiInsight: "R16 dengan 195/55 R16 populer untuk Yaris." },
+  { id: "yaris-xp210", brand: "Toyota", name: "Yaris XP210", type: "Hatchback", years: "2020 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.5L", tireSizes: [{ trim: "1.5 G", size: "195/55 R16" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "Yaris terbaru, lebih lebar dan stabil.", aiInsight: "R17 dengan 205/45 R17 populer." },
+  { id: "raize", brand: "Toyota", name: "Raize", type: "SUV", years: "2021 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.0L Turbo", tireSizes: [{ trim: "1.0T G", size: "195/60 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Compact SUV Toyota, kembaran Rocky.", aiInsight: "R17 dengan 215/50 R17 aman untuk upgrade." },
+  { id: "rush", brand: "Toyota", name: "Rush", type: "SUV", years: "2018 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 S", size: "215/60 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Low SUV Toyota, kembaran Terios.", aiInsight: "R17 populer. Pastikan diameter luar tidak berubah >3%." },
+  { id: "chr", brand: "Toyota", name: "C-HR", type: "SUV", years: "2017 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "1.8L Hybrid", tireSizes: [{ trim: "1.8 HV", size: "215/60 R17" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Compact crossover coupe Toyota.", aiInsight: "R18 dengan 225/55 R18 populer untuk tampilan sporty." },
+  { id: "fortuner", brand: "Toyota", name: "Fortuner", type: "SUV", years: "2016 - Present", pcd: "6x139.7", cb: "106.1mm", nutSize: "M12x1.5", engine: "2.4L Diesel", tireSizes: [{ trim: "2.4 VRZ", size: "265/65 R17" }], image: "https://images.unsplash.com/photo-1551830820-330a71b99659?w=800", description: "SUV ladder frame Toyota.", aiInsight: "R18 populer. BFGoodrich AT pilihan off-road." },
+  { id: "calya", brand: "Toyota", name: "Calya", type: "MPV", years: "2016 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.2L", tireSizes: [{ trim: "1.2 G", size: "175/65 R14" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "LCGC MPV Toyota, kembaran Sigra.", aiInsight: "R15 populer dengan 185/55 R15." },
+  { id: "agya", brand: "Toyota", name: "Agya", type: "Hatchback", years: "2020 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.2L", tireSizes: [{ trim: "1.2 G", size: "175/65 R14" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "LCGC hatchback Toyota.", aiInsight: "R15 dengan 185/55 R15 populer untuk upgrade." },
+  { id: "camry", brand: "Toyota", name: "Camry Gen 8", type: "Sedan", years: "2019 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "2.5L Hybrid", tireSizes: [{ trim: "2.5 HV", size: "235/45 R18" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "Sedan premium Toyota.", aiInsight: "Sudah R18 standar. Upgrade ke R19 dengan hati-hati." },
+  // HONDA
+  { id: "brio", brand: "Honda", name: "Brio", type: "Hatchback", years: "2018 - Present", pcd: "4x100", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.2L", tireSizes: [{ trim: "1.2 RS", size: "175/65 R14" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "LCGC Honda, populer dan irit.", aiInsight: "CB 64.1mm berbeda dari Toyota. R15 populer dengan 185/55 R15." },
+  { id: "jazz-ge", brand: "Honda", name: "Jazz GE", type: "Hatchback", years: "2008 - 2014", pcd: "4x100", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 RS", size: "175/65 R15" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "Hatchback Honda generasi kedua.", aiInsight: "R16 dengan 185/55 R16 atau 195/50 R16 populer." },
+  { id: "jazz-gk", brand: "Honda", name: "Jazz GK (RS)", type: "Hatchback", years: "2014 - 2020", pcd: "4x100", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 RS", size: "185/55 R16" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "Honda Jazz generasi ketiga.", aiInsight: "R17 dengan 205/45 R17 populer untuk tampilan sporty." },
+  { id: "city-hb", brand: "Honda", name: "City Hatchback", type: "Hatchback", years: "2021 - Present", pcd: "4x100", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 RS", size: "185/55 R16" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "Honda City Hatchback, pengganti Jazz.", aiInsight: "Sama dengan Jazz GK untuk fitment." },
+  { id: "hrv-gen1", brand: "Honda", name: "HR-V Gen 1", type: "SUV", years: "2014 - 2022", pcd: "5x114.3", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L / 1.8L", tireSizes: [{ trim: "1.8 RS", size: "215/55 R17" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "Compact SUV Honda.", aiInsight: "R18 dengan 225/45 R18 populer. Pastikan clearance." },
+  { id: "hrv-gen2", brand: "Honda", name: "HR-V Gen 2 (RS)", type: "SUV", years: "2022 - Present", pcd: "5x114.3", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L Turbo", tireSizes: [{ trim: "1.5T RS", size: "215/55 R17" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "All New HR-V, desain lebih agresif.", aiInsight: "R18 populer. RS sudah sporty dari pabrik." },
+  { id: "crv-gen5", brand: "Honda", name: "CR-V Gen 5", type: "SUV", years: "2017 - Present", pcd: "5x114.3", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L Turbo", tireSizes: [{ trim: "1.5T PRESTIGE", size: "235/60 R18" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "SUV medium Honda.", aiInsight: "Sudah R18 standar. R19 untuk tampilan premium." },
+  { id: "brv-gen2", brand: "Honda", name: "BR-V Gen 2", type: "SUV", years: "2022 - Present", pcd: "5x114.3", cb: "64.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 PRESTIGE", size: "215/55 R17" }], image: "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=800", description: "Low SUV Honda 7-seater.", aiInsight: "R18 dengan 225/45 R18 populer." },
+  // SUZUKI
+  { id: "ertiga-gen1", brand: "Suzuki", name: "Ertiga Gen 1", type: "MPV", years: "2012 - 2018", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.4L", tireSizes: [{ trim: "1.4 GX", size: "185/65 R15" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "MPV compact Suzuki.", aiInsight: "R16 dengan 195/55 R16 populer." },
+  { id: "ertiga-gen2", brand: "Suzuki", name: "Ertiga Gen 2", type: "MPV", years: "2018 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.5L", tireSizes: [{ trim: "1.5 GX", size: "185/65 R15" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "Ertiga generasi kedua.", aiInsight: "PCD 4x100 sama dengan Avanza lama." },
+  { id: "xl7", brand: "Suzuki", name: "XL7", type: "SUV", years: "2020 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 Beta", size: "195/60 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "SUV Suzuki berbasis Ertiga.", aiInsight: "R17 dengan 215/55 R17 populer." },
+  { id: "swift", brand: "Suzuki", name: "Swift Gen 4", type: "Hatchback", years: "2018 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.2L", tireSizes: [{ trim: "1.2 RZ", size: "185/55 R16" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "Hatchback sporty Suzuki.", aiInsight: "Handling sudah bagus dari pabrik." },
+  { id: "jimny", brand: "Suzuki", name: "Jimny Gen 4", type: "Off-Road", years: "2019 - Present", pcd: "5x139.7", cb: "108mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 ALLGRIP", size: "195/80 R15" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Off-road legendaris Suzuki.", aiInsight: "PCD unik 5x139.7. Banyak pilihan off-road tire." },
+  // MITSUBISHI
+  { id: "xpander", brand: "Mitsubishi", name: "Xpander", type: "MPV", years: "2017 - 2022", pcd: "5x114.3", cb: "66.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 Ultimate", size: "205/55 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "MPV terlaris Mitsubishi.", aiInsight: "CB 66.1mm. R17 populer untuk upgrade." },
+  { id: "xpander-cross", brand: "Mitsubishi", name: "Xpander Cross", type: "SUV", years: "2019 - Present", pcd: "5x114.3", cb: "66.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 Ultimate", size: "205/55 R17" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Xpander versi SUV crossover.", aiInsight: "Sudah R17 standar." },
+  { id: "pajero-sport", brand: "Mitsubishi", name: "Pajero Sport", type: "SUV", years: "2016 - Present", pcd: "6x139.7", cb: "112mm", nutSize: "M12x1.5", engine: "2.4L Diesel", tireSizes: [{ trim: "2.4 Dakar Ultimate", size: "265/60 R18" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "SUV ladder frame Mitsubishi.", aiInsight: "PCD 6x139.7 sama dengan Fortuner." },
+  { id: "triton", brand: "Mitsubishi", name: "Triton Gen 5", type: "Pickup", years: "2019 - Present", pcd: "6x139.7", cb: "112mm", nutSize: "M12x1.5", engine: "2.4L Diesel", tireSizes: [{ trim: "2.4 Dakar", size: "245/70 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Pickup truck Mitsubishi.", aiInsight: "AT tires populer untuk off-road." },
+  // DAIHATSU
+  { id: "xenia-gen2", brand: "Daihatsu", name: "Xenia Gen 2", type: "MPV", years: "2012 - 2022", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.0L / 1.3L", tireSizes: [{ trim: "1.3 X", size: "185/65 R15" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "Kembaran Avanza dari Daihatsu.", aiInsight: "Fitment sama dengan Avanza Gen 2." },
+  { id: "ayla", brand: "Daihatsu", name: "Ayla Gen 2", type: "Hatchback", years: "2020 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.2L", tireSizes: [{ trim: "1.2 R", size: "175/65 R14" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "LCGC Daihatsu, kembaran Agya.", aiInsight: "Fitment sama dengan Agya." },
+  { id: "sigra", brand: "Daihatsu", name: "Sigra", type: "MPV", years: "2016 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.0L / 1.2L", tireSizes: [{ trim: "1.2 X", size: "175/65 R14" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "LCGC MPV Daihatsu, kembaran Calya.", aiInsight: "Fitment sama dengan Calya." },
+  { id: "terios", brand: "Daihatsu", name: "Terios Gen 2", type: "SUV", years: "2017 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 X", size: "215/60 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Low SUV Daihatsu, kembaran Rush.", aiInsight: "Fitment sama dengan Rush." },
+  { id: "rocky", brand: "Daihatsu", name: "Rocky", type: "SUV", years: "2021 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.0L Turbo", tireSizes: [{ trim: "1.0T R", size: "195/60 R16" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Compact SUV Daihatsu, kembaran Raize.", aiInsight: "Fitment sama dengan Raize." },
+  // HYUNDAI
+  { id: "creta", brand: "Hyundai", name: "Creta", type: "SUV", years: "2022 - Present", pcd: "5x114.3", cb: "67.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 Prime", size: "215/60 R17" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Compact SUV Hyundai untuk Indonesia.", aiInsight: "CB 67.1mm. R18 populer untuk tampilan premium." },
+  { id: "stargazer", brand: "Hyundai", name: "Stargazer", type: "MPV", years: "2022 - Present", pcd: "5x114.3", cb: "67.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 Prime", size: "195/60 R16" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "MPV Hyundai, pesaing Xpander.", aiInsight: "R17 dengan 215/55 R17 populer." },
+  { id: "tucson", brand: "Hyundai", name: "Tucson NX4", type: "SUV", years: "2021 - Present", pcd: "5x114.3", cb: "67.1mm", nutSize: "M12x1.5", engine: "2.0L", tireSizes: [{ trim: "2.0 Prime", size: "235/55 R18" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "SUV medium Hyundai.", aiInsight: "Sudah R18 standar." },
+  // KIA
+  { id: "seltos", brand: "Kia", name: "Seltos", type: "SUV", years: "2020 - Present", pcd: "5x114.3", cb: "67.1mm", nutSize: "M12x1.5", engine: "1.4L Turbo", tireSizes: [{ trim: "1.4T GT", size: "215/60 R17" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Compact SUV Kia.", aiInsight: "R18 populer untuk tampilan sporty." },
+  // WULING
+  { id: "confero", brand: "Wuling", name: "Confero", type: "MPV", years: "2017 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "1.5L", tireSizes: [{ trim: "1.5 L", size: "195/60 R15" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "MPV Wuling, value for money.", aiInsight: "R16 populer." },
+  { id: "almaz", brand: "Wuling", name: "Almaz", type: "SUV", years: "2019 - Present", pcd: "5x114.3", cb: "60.1mm", nutSize: "M12x1.5", engine: "1.5L Turbo", tireSizes: [{ trim: "1.5T L", size: "215/55 R17" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "SUV Wuling dengan fitur lengkap.", aiInsight: "R18 populer." },
+  { id: "air-ev", brand: "Wuling", name: "Air EV", type: "Hatchback", years: "2022 - Present", pcd: "4x100", cb: "60.1mm", nutSize: "M12x1.25", engine: "Electric", tireSizes: [{ trim: "Standard", size: "165/65 R14" }], image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800", description: "Mobil listrik kompak Wuling.", aiInsight: "Ban eco untuk jarak maksimal." },
+  // MAZDA
+  { id: "mazda3", brand: "Mazda", name: "Mazda 3 BP", type: "Sedan", years: "2019 - Present", pcd: "5x114.3", cb: "67.1mm", nutSize: "M12x1.5", engine: "2.0L", tireSizes: [{ trim: "2.0 R", size: "215/45 R18" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "Sedan premium Mazda.", aiInsight: "Sudah R18 standar." },
+  { id: "cx5", brand: "Mazda", name: "CX-5 KF", type: "SUV", years: "2017 - Present", pcd: "5x114.3", cb: "67.1mm", nutSize: "M12x1.5", engine: "2.0L / 2.5L", tireSizes: [{ trim: "2.5 XD", size: "225/65 R17" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "SUV medium Mazda.", aiInsight: "R18 populer untuk tampilan premium." },
+  // NISSAN
+  { id: "livina-gen2", brand: "Nissan", name: "Livina Gen 2", type: "MPV", years: "2019 - Present", pcd: "5x114.3", cb: "66.1mm", nutSize: "M12x1.5", engine: "1.5L", tireSizes: [{ trim: "1.5 VL", size: "195/60 R16" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "MPV Nissan berbasis Xpander.", aiInsight: "Platform sama dengan Xpander." },
+  { id: "serena", brand: "Nissan", name: "Serena C27", type: "MPV", years: "2018 - Present", pcd: "5x114.3", cb: "66.5mm", nutSize: "M12x1.5", engine: "2.0L", tireSizes: [{ trim: "2.0 X", size: "205/55 R17" }], image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800", description: "MPV premium Nissan.", aiInsight: "CB 66.5mm." },
+  // BMW
+  { id: "bmw-320i", brand: "BMW", name: "320i G20", type: "Sedan", years: "2019 - Present", pcd: "5x112", cb: "66.6mm", nutSize: "M14x1.25", engine: "2.0L Turbo", tireSizes: [{ trim: "M Sport", size: "225/45 R18" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "Sedan sport BMW.", aiInsight: "PCD 5x112 khas Eropa." },
+  { id: "bmw-x1", brand: "BMW", name: "X1 F48", type: "SUV", years: "2016 - Present", pcd: "5x112", cb: "66.6mm", nutSize: "M14x1.25", engine: "2.0L Turbo", tireSizes: [{ trim: "xDrive20i", size: "225/50 R18" }], image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800", description: "Compact SUV BMW.", aiInsight: "R19 populer untuk tampilan sporty." },
+  // MERCEDES
+  { id: "mercedes-c200", brand: "Mercedes-Benz", name: "C 200 W206", type: "Sedan", years: "2022 - Present", pcd: "5x112", cb: "66.6mm", nutSize: "M14x1.5", engine: "1.5L Turbo", tireSizes: [{ trim: "AMG Line", size: "225/45 R18" }], image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800", description: "Sedan premium Mercedes.", aiInsight: "AMG Line sudah sporty." },
 ];
 
-export const QUIZ_QUESTIONS: QuizQuestion[] = [
-  {
-    id: "q1",
-    question: "Apa arti angka 65 pada kode ban 185/65 R15?",
-    options: [
-      "Lebar ban 65mm",
-      "Tinggi dinding samping adalah 65% dari lebar telapak",
-      "Kecepatan maksimal adalah 65 km/jam"
-    ],
-    answerIndex: 1,
-    explanation: "Angka 65 menunjukkan Aspect Ratio (Rasio Aspek), yaitu tinggi dinding samping ban yang diukur sebagai persentase dari lebar telapak ban (65% dari 185mm = 120.25mm)."
-  },
-  {
-    id: "q2",
-    question: "Manakah PCD yang paling umum digunakan pada Toyota Innova Zenix?",
-    options: [
-      "4x100",
-      "5x100",
-      "5x114.3"
-    ],
-    answerIndex: 2,
-    explanation: "Toyota Innova Zenix menggunakan PCD 5x114.3, yang merupakan standar baut roda 5 untuk sebagian besar mobil MPV dan SUV ukuran sedang di Indonesia."
-  },
-  {
-    id: "q3",
-    question: "Apa kepanjangan dari huruf R pada kode ban seperti 185/65 R15?",
-    options: [
-      "Ring / Rim",
-      "Radial (Konstruksi Internal)",
-      "Racing Edition"
-    ],
-    answerIndex: 1,
-    explanation: "Huruf R menandakan konstruksi internal ban yaitu Radial (arah serat kawat karkas melintang tegak lurus dengan arah putaran ban)."
-  }
+export const BRANDS = [
+  { name: "Toyota", country: "Jepang" },
+  { name: "Honda", country: "Jepang" },
+  { name: "Suzuki", country: "Jepang" },
+  { name: "Mitsubishi", country: "Jepang" },
+  { name: "Daihatsu", country: "Jepang" },
+  { name: "Hyundai", country: "Korea" },
+  { name: "Kia", country: "Korea" },
+  { name: "Wuling", country: "China" },
+  { name: "Mazda", country: "Jepang" },
+  { name: "Nissan", country: "Jepang" },
+  { name: "BMW", country: "Jerman" },
+  { name: "Mercedes-Benz", country: "Jerman" },
 ];
 
-export const DEFAULT_CHAT_HISTORIES: ChatHistory[] = [
-  {
-    id: "hist-1",
-    title: "Rekomendasi ban Innova Zenix",
-    category: "Tires",
-    dateLabel: "Today",
-    messages: [
-      {
-        id: "msg-1",
-        role: "user",
-        content: "Rekomendasi ban 18 inci untuk Innova Zenix yang senyap?"
-      },
-      {
-        id: "msg-2",
-        role: "model",
-        content: `Untuk Toyota Kijang Innova Zenix varian Q Hybrid atau V yang menggunakan velg 18 inci (ukuran standar **225/50 R18**), prioritas utama biasanya adalah kenyamanan (comfort) dan kesenyapan kabin (low noise).
+export const QUIZ_DATA = [
+  { id: "q1", question: "Apa arti PCD 5x114.3?", options: ["5 lubang baut, diameter 114.3mm", "Lebar velg 5 inch, offset 114.3", "5 jari-jari, lebar 114.3mm", "Diameter velg 5 inch, PCD 114.3"], answerIndex: 0, explanation: "PCD adalah jumlah lubang baut dikali diameter lingkaran baut." },
+  { id: "q2", question: "Mobil apa yang menggunakan PCD 4x100?", options: ["Toyota Innova", "Honda Jazz", "Toyota Fortuner", "Mitsubishi Pajero Sport"], answerIndex: 1, explanation: "Honda Jazz menggunakan PCD 4x100." },
+  { id: "q3", question: "Apa yang dimaksud dengan offset (ET)?", options: ["Lebar velg dalam mm", "Jarak mounting surface ke centerline velg", "Jumlah baut velg", "Diameter lubang tengah velg"], answerIndex: 1, explanation: "Offset adalah jarak dari mounting surface ke centerline velg." },
+  { id: "q4", question: "Avanza generasi baru (2022+) menggunakan PCD berapa?", options: ["4x100", "4x114.3", "5x100", "5x114.3"], answerIndex: 2, explanation: "Avanza baru menggunakan PCD 5x100." },
+  { id: "q5", question: "Center bore Honda berapa mm?", options: ["60.1mm", "64.1mm", "66.1mm", "67.1mm"], answerIndex: 1, explanation: "Honda menggunakan center bore 64.1mm." },
+];
 
-Berikut adalah dua rekomendasi terbaik di pasar Indonesia saat ini:
-
-### 1. Michelin Primacy 4
-*Pilihan premium untuk kenyamanan maksimal.*
-- **Kelebihan:** Sangat senyap berkat teknologi *Silent Rib*, bantingan sangat empuk, pengereman di jalan basah sangat baik.
-- **Kekurangan:** Harga relatif tinggi, dinding ban (sidewall) terasa sedikit lebih soft saat bermanuver tajam.
-
-### 2. Bridgestone Turanza T005A
-*Keseimbangan antara durabilitas dan kesenyapan.*
-- **Kelebihan:** Kesenyapan sangat baik dengan pitch noise yang direduksi, umur pakai (treadwear) umumnya lebih awet, handling lebih solid dibanding Primacy.
-- **Kekurangan:** Bantingan sedikit lebih firm (keras) dibandingkan Michelin, meski masih dalam kategori sangat nyaman.
-
-**Saran Pemasangan:** Pastikan tekanan angin dijaga di angka **33-35 psi** (sesuai plakat di pilar pintu pengemudi) untuk mendapatkan keseimbangan terbaik antara kenyamanan dan efisiensi BBM hybrid.`,
-        citations: ["Katalog Ban 2024.pdf"]
-      }
-    ]
-  },
-  {
-    id: "hist-2",
-    title: "Offset Pajero Sport",
-    category: "Fitment",
-    dateLabel: "Today",
-    messages: [
-      {
-        id: "paj-1",
-        role: "user",
-        content: "Berapa offset ideal Pajero Sport kalau mau pakai velg 20 inci?"
-      },
-      {
-        id: "paj-2",
-        role: "model",
-        content: `Untuk Mitsubishi Pajero Sport yang ingin upgrade ke velg diameter 20 inci, setup yang paling ideal dan aman untuk harian tanpa mentok spatbor (fender) adalah:
-
-- **Ukuran Velg:** 20x9.0 inci
-- **Offset (ET) Ideal:** **ET +20 hingga +25**
-- **Ukuran Ban Rekomendasi:** **265/50 R20** (seperti Yokohama Geolandar H/T atau Michelin Primacy SUV)
-
-### Analisis Fitment:
-1. **Lebih Kecil dari ET +15:** Roda akan cenderung keluar dari bodi (fender), memberikan kesan brutal-offroad tetapi berisiko mentok bibir fender saat suspensi tertekan penuh atau belok patah.
-2. **Lebih Besar dari ET +30:** Velg akan terlalu masuk ke dalam, berisiko mentok ke area sasis (frame) atau suspensi bagian dalam saat setir diputar habis.
-
-Setup ET +20 s/d +25 dengan ban 265/50 R20 akan menghasilkan tampilan **rata bodi (flush)** yang sangat sporty, elegan, dan tetap nyaman digunakan di jalanan berlubang Indonesia.`
-      }
-    ]
-  },
-  {
-    id: "hist-3",
-    title: "Kalkulator Ban Avanza",
-    category: "Calculator",
-    dateLabel: "Previous 7 Days",
-    messages: [
-      {
-        id: "av-1",
-        role: "user",
-        content: "Bandingkan diameter ban Avanza 185/65 R15 dengan ban 195/60 R16."
-      },
-      {
-        id: "av-2",
-        role: "model",
-        content: `Berikut adalah perbandingan dimensi antara ukuran ban Avanza standar 185/65 R15 dengan Velos/Avanza upsize 195/60 R16:
-
-1. **Ukuran 185/65 R15:**
-   - Lebar tapak: 185 mm
-   - Tinggi dinding samping: 120.3 mm (65% dari 185)
-   - Diameter total: **621.5 mm**
-   - Lingkar ban: 1952.5 mm
-
-2. **Ukuran 195/60 R16:**
-   - Lebar tapak: 195 mm
-   - Tinggi dinding samping: 117.0 mm (60% dari 195)
-   - Diameter total: **640.4 mm**
-   - Lingkar ban: 2011.9 mm
-
-### Perbedaan Teknis:
-- **Kenaikan Diameter:** **+18.9 mm (+3.0%)**
-- **Dampak Speedometer:** Ketika speedometer menunjukkan **100 km/jam**, kecepatan asli kendaraan sebenarnya adalah **103 km/jam** (deviasi +3.0%).
-- **Rekomendasi:** Perubahan 3.0% masih dalam batas aman (maksimal ±3%). Ground clearance mobil akan bertambah sekitar 9.5 mm, membuat mobil sedikit lebih tinggi dan aman melewati polisi tidur.`
-      }
-    ]
-  },
-  {
-    id: "hist-4",
-    title: "Torsi baut velg HR-V",
-    category: "Specs",
-    dateLabel: "Previous 7 Days",
-    messages: [
-      {
-        id: "hrv-1",
-        role: "user",
-        content: "Berapa torsi pengencangan baut roda yang pas untuk Honda HR-V?"
-      },
-      {
-        id: "hrv-2",
-        role: "model",
-        content: `Torsi pengencangan baut roda (lug nut) standar pabrikan untuk Honda HR-V adalah **108 Nm (Newton Meter)** atau sekitar **80 lb-ft (pound-feet)**.
-
-### Tips Pengencangan:
-1. **Gunakan Kunci Momen (Torque Wrench):** Jangan mengencangkan baut roda hanya mengandalkan kunci roda bawaan mobil atau kunci impact pneumatik bengkel tanpa batas torsi, karena bisa menyebabkan baut mulur, ulir rusak, atau piringan rem (rotor) melenting.
-2. **Metode Menyilang (Star Pattern):** Selalu kencangkan baut dengan urutan menyilang (membentuk bintang) untuk memastikan velg duduk dengan rata sempurna pada hub roda.`
-      }
-    ]
-  },
-  {
-    id: "hist-5",
-    title: "Perbedaan PCD 4x100 dan 4x114.3",
-    category: "Technical",
-    dateLabel: "Previous 7 Days",
-    messages: [
-      {
-        id: "diff-1",
-        role: "user",
-        content: "Apa bedanya velg PCD 4x100 dengan PCD 4x114.3?"
-      },
-      {
-        id: "diff-2",
-        role: "model",
-        content: `Perbedaan utama antara PCD 4x100 dan 4x114.3 terletak pada **diameter lingkaran bayangan** yang terbentuk dari titik pusat baut roda:
-
-1. **PCD 4x100:**
-   - Memiliki **4 lubang baut** dengan diameter lingkaran **100 mm**.
-   - Sangat umum digunakan pada mobil Hatchback / City Car berukuran kecil di Indonesia (seperti Honda Brio, Toyota Yaris, Honda Jazz, Toyota Agya, Daihatsu Ayla).
-
-2. **PCD 4x114.3:**
-   - Memiliki **4 lubang baut** dengan diameter lingkaran **114.3 mm** (setara dengan 4.5 inci).
-   - Umum digunakan pada mobil generasi lama atau MPV medium-ringan (seperti Toyota Avanza generasi ke-1 & 2, Nissan Grand Livina, Honda Accord lawas).
-
-**Penting:** Velg dengan PCD 4x100 **tidak bisa dipasang** pada mobil ber-PCD 4x114.3 tanpa menggunakan adaptor tambahan atau merubah hub tromol roda, karena letak lubang baut tidak akan presisi.`
-      }
-    ]
-  }
+export const DEFAULT_CHAT_HISTORIES = [
+  { id: "hist-1", title: "Rekomendasi Ban Avanza", category: "Recommendation", dateLabel: "Today" as const, messages: [
+    { id: "m1", role: "user" as const, content: "Ban apa yang cocok untuk Toyota Avanza 2022?", date: "10 min ago" },
+    { id: "m2", role: "model" as const, content: "Untuk Toyota Avanza 2022:\n\n**Ban Eco:**\n- Bridgestone Ecopia EP150\n- Dunlop Enasave EC300+\n\n**Ban Touring:**\n- Bridgestone Turanza T005A\n- Dunlop SP Sport LM705\n\nUkuran: 185/60 R15", date: "8 min ago" },
+  ] },
 ];
