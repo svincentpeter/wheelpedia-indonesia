@@ -1,36 +1,196 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wheelpedia Indonesia 🚗
 
-## Getting Started
+Platform pembelajaran ban dan velg mobil Indonesia berbasis AI. Database lengkap 40+ mobil Indonesia, katalog ban, velg, dan AI assistant untuk tanya jawab.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/svincentpeter/wheelpedia-indonesia)
+
+## Features
+
+### Database Otomotif
+- **40+ Mobil Indonesia** — Toyota, Honda, Suzuki, Mitsubishi, Daihatsu, Hyundai, Kia, Wuling, Mazda, Nissan, BMW, Mercedes
+- **Data Lengkap per Mobil** — PCD, Center Bore, Offset, Nut Size, Ban OEM, Velg OEM, Tekanan Angin
+- **Rekomendasi Ban & Velg** — Compatible tires & wheels untuk setiap mobil
+- **Tips Upgrade** — Rekomendasi upgrade ban/velg per model
+
+### Database Ban & Velg
+- **14 Ukuran Ban** — Dari 175/65 R14 (LCGC) sampai 265/65 R17 (Fortuner)
+- **20+ Produk Ban** — Bridgestone, Dunlop, GT Radial, Yokohama, Michelin, Falken, dll
+- **Upgrade Path** — Plus 1, Plus 2, Minus 1 sizing
+- **Speed & Load Rating** — Lengkap dengan tabel referensi
+
+### Brand Library
+- **12 Brand Ban** — Profil lengkap: asal, kategori, kelebihan, kekurangan, harga
+- **10 Brand Velg** — Enkei, OZ Racing, Rays, Work, SSR, BBS, Sparco, dll
+
+### Learning Center
+- **7 Modul Pembelajaran** — Dasar Ban, Jenis Ban, PCD, Offset, Material Velg, dll
+- **Quiz Interaktif** — Multiple choice dengan penjelasan
+- **Glossary** — 55+ istilah teknis (Ban, Velg, Fitment, Umum)
+
+### AI Assistant
+- **Streaming Chat** — Jawaban real-time via 9router API
+- **Context-Aware** — AI tahu data katalog saat menjawab
+- **Quick Prompts** — Template pertanyaan siap pakai
+- **BYOK** — Bawa API key sendiri
+
+### Tools
+- **Tire Calculator** — Hitung diameter, speed error, clearance change
+- **Wheel Calculator** — Hitung inner/outer clearance, poke
+- **Perbandingan** — Bandingkan 2 ukuran ban side-by-side
+- **Upload Katalog** — Upload PDF/Excel/Gambar (UI ready)
+
+### UI/UX
+- **Dark Sidebar** — Navigasi lengkap dengan active states
+- **Breadcrumbs** — Navigasi header yang jelas
+- **Responsive** — Mobile + Desktop
+- **Dark Mode** — Toggle dark/light
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Icons | Lucide React |
+| Database | Supabase (PostgreSQL) |
+| ORM | Prisma |
+| AI | OpenAI-compatible API (9router) |
+| Hosting | Vercel |
+
+## Project Structure
+
+```
+src/
+├── app/                          # 19 halaman
+│   ├── dashboard/page.tsx        # Dashboard + stats + progress rings
+│   ├── vehicles/page.tsx         # Database 40+ mobil Indonesia
+│   ├── vehicles/[id]/page.tsx    # Detail mobil + specs
+│   ├── tires/page.tsx            # Database ban
+│   ├── wheels/page.tsx           # Database velg
+│   ├── brands/page.tsx           # Brand library
+│   ├── brands/[slug]/page.tsx    # Detail brand
+│   ├── ai-assistant/page.tsx     # AI Chat streaming
+│   ├── calculators/page.tsx      # Kalkulator ban + velg
+│   ├── learning/page.tsx         # Learning hub
+│   ├── glossary/page.tsx         # 55+ istilah
+│   ├── comparison/page.tsx       # Perbandingan ukuran
+│   ├── catalog/page.tsx          # Upload katalog
+│   ├── admin/page.tsx            # Admin panel
+│   └── settings/page.tsx         # Settings + API key
+├── components/
+│   ├── AppShell.tsx              # Layout wrapper
+│   └── layout/                   # Sidebar + Header
+├── data/                         # 5 file data lengkap
+│   ├── vehicles.ts               # 40+ mobil Indonesia
+│   ├── tires.ts                  # 14 ukuran + 20 produk
+│   ├── brands.ts                 # 22 brand dengan profil
+│   ├── glossary.ts               # 55+ istilah
+│   └── learning.ts               # 7 modul + quiz
+└── lib/
+    ├── ai.ts                     # 9router API config
+    └── calculators.ts            # Rumus ban + velg
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+
+- npm/yarn/pnpm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+```bash
+# Clone repository
+git clone https://github.com/svincentpeter/wheelpedia-indonesia.git
+cd wheelpedia-indonesia
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run development server
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+### With Database (Optional)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Setup Supabase
+# 1. Create project at supabase.com
+# 2. Copy connection string
+# 3. Create .env file:
+echo 'DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@db.YOUR_PROJECT.supabase.co:5432/postgres"' > .env
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Setup Prisma
+npx prisma init --datasource-provider postgresql
+npx prisma db push
+npx prisma db seed
+```
+
+## AI Configuration
+
+Default AI endpoint: `http://localhost:20128/v1` (9router)
+
+To change, edit `src/lib/ai.ts`:
+```typescript
+export const AI_CONFIG = {
+  endpoint: "YOUR_API_ENDPOINT",
+  apiKey: "YOUR_API_KEY",
+  model: "YOUR_MODEL",
+};
+```
+
+Or set in Settings page (localStorage).
+
+## Data Editing
+
+All data lives in `src/data/` files. Edit directly:
+
+- `vehicles.ts` — Add/modify vehicles
+- `tires.ts` — Add/modify tire sizes and products
+- `brands.ts` — Add/modify brand profiles
+- `glossary.ts` — Add/modify glossary terms
+- `learning.ts` — Add/modify learning modules
+
+Hot reload: changes appear immediately in development.
+
+## Deploy to Vercel
+
+### Option 1: GitHub Integration (Recommended)
+1. Push to GitHub
+2. Go to vercel.com → New Project → Import GitHub repo
+3. Click Deploy
+4. Done! Auto-deploys on every push
+
+### Option 2: Vercel CLI
+```bash
+npm i -g vercel
+vercel login
+vercel
+```
+
+## Roadmap
+
+- [ ] Supabase Auth (login/register)
+- [ ] User garage (simpan mobil milik)
+- [ ] Bookmark & notes persistence
+- [ ] OCR for catalog upload
+- [ ] RAG search with pgvector
+- [ ] Quiz scoring & progress tracking
+- [ ] Mobile app (React Native)
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions welcome! Open an issue or submit a PR.
+
+---
+
+Built with ❤️ for Indonesian automotive community
