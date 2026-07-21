@@ -1,0 +1,35 @@
+[
+  {
+    "id": "fixture-1",
+    "brand": "Bridgestone",
+    "productName": "Bs Ecopia",
+    "sizeRaw": "175/65",
+    "rim": 14,
+    "sizeNormalized": "175/65 R14",
+    "sellPrice": 685000,
+    "qty": 2,
+    "sheet": "Bridgestone"
+  },
+  {
+    "id": "fixture-2",
+    "brand": "Dunlop",
+    "productName": "Dunlop SP Touring R1",
+    "sizeRaw": "185/65",
+    "rim": 15,
+    "sizeNormalized": "185/65 R15",
+    "sellPrice": 720000,
+    "qty": 4,
+    "sheet": "Dunlop"
+  },
+  {
+    "id": "fixture-3",
+    "brand": "GT",
+    "productName": "GT Champiro Eco",
+    "sizeRaw": "175/65",
+    "rim": 14,
+    "sizeNormalized": "175/65 R14",
+    "sellPrice": 520000,
+    "qty": 0,
+    "sheet": "GT ( Gajah Tunggal )"
+  }
+]
