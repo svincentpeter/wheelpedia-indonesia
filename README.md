@@ -2,6 +2,20 @@
 
 Platform pembelajaran ban dan velg mobil Indonesia berbasis AI. Database lengkap 40+ mobil Indonesia, katalog ban, velg, dan AI assistant untuk tanya jawab.
 
+## OmahBan Counter Kit
+
+Wheelpedia = **asisten counter + belajar** untuk staf toko OmahBan.  
+**POS / stok live / kasir** = [ProjectOmahBan](https://github.com/svincentpeter/ProjectOmahBan) (Laravel) — jangan digandakan di sini.
+
+| Fitur | Route |
+|-------|--------|
+| Counter (mobil → stok → merk → AI) | `/counter` |
+| Browse snapshot stok | `/stok` |
+| Refresh stok dari Excel | `python scripts/import_shop_stock.py "…STOCK….xlsx"` |
+
+Detail: [`docs/OMAHBAN-INTEGRATION.md`](docs/OMAHBAN-INTEGRATION.md)  
+Spec: `docs/superpowers/specs/2026-07-21-omahban-counter-kit-design.md`
+
 ## Live Demo
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/svincentpeter/wheelpedia-indonesia)
@@ -110,11 +124,35 @@ cd wheelpedia-indonesia
 # Install dependencies
 npm install
 
+# Optional: refresh vehicle images from free sources
+node scripts/list-vehicle-images.mjs
+node scripts/download-vehicle-images.mjs
+
+# AI (server-side) — copy env template
+# cp .env.example .env.local  (PowerShell: Copy-Item .env.example .env.local)
+# Edit AI_API_KEY, AI_ENDPOINT, AI_MODEL
+
 # Run development server
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
+
+### Key routes
+
+| Route | Fitur |
+|-------|--------|
+| `/counter` | **OmahBan counter** — mobil → stok → merk → AI |
+| `/stok` | Browse snapshot stok OmahBan |
+| `/dashboard` | Ringkasan |
+| `/vehicles` | 50 mobil + gambar lokal + strip stok |
+| `/quiz` | Quiz acak 10 soal + skor localStorage |
+| `/ai-assistant` | Chat AI via `/api/chat` (prompt OmahBan) |
+| `/calculators` | Tire / wheel calculator |
+| `/bookmarks` | Mobil tersimpan (browser) |
+| `/history` | Riwayat chat (browser) |
+
+Full implementation plan: `docs/superpowers/plans/2026-07-21-full-product-completion.md`
 
 ### With Database (Optional)
 
@@ -133,18 +171,23 @@ npx prisma db seed
 
 ## AI Configuration
 
-Default AI endpoint: `http://localhost:20128/v1` (9router)
+Chat goes through a **server proxy** at `POST /api/chat` (no API keys in the client bundle).
 
-To change, edit `src/lib/ai.ts`:
-```typescript
-export const AI_CONFIG = {
-  endpoint: "YOUR_API_ENDPOINT",
-  apiKey: "YOUR_API_KEY",
-  model: "YOUR_MODEL",
-};
+1. Copy env template:
+```bash
+cp .env.example .env.local
 ```
 
-Or set in Settings page (localStorage).
+2. Fill server defaults:
+```env
+AI_ENDPOINT=http://127.0.0.1:20128/v1
+AI_API_KEY=your-key-here
+AI_MODEL=XM/mimo-v2.5-pro
+```
+
+3. Optional **BYOK**: Settings page stores endpoint/key/model in browser `localStorage` and sends them only to `/api/chat`.
+
+Default local stack: [9router](https://github.com/) (or any OpenAI-compatible server) on port `20128`.
 
 ## Data Editing
 

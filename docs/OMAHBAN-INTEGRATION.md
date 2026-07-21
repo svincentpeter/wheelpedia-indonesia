@@ -41,12 +41,29 @@ node -e "const j=require('./src/data/shop-stock.json'); console.log(j.length, Ob
 - Snapshot can lag real shelves — staff should still cek rak fisik.
 - Never put POS `.env` secrets into Wheelpedia.
 
+## Counter Kit routes (Wheelpedia)
+
+| Route | Purpose |
+|-------|---------|
+| `/counter` | Mobile-first: cari mobil → OEM → stok cocok → ranking merk → AI script |
+| `/stok` | Browse snapshot (filter brand/ring/query) |
+| `/ai-assistant` | System prompt asisten karyawan OmahBan + stock context |
+
+Vehicle detail (`/vehicles`) also shows **Siap di OmahBan** strip from the same snapshot.
+
 ## Future (optional): live API
 
-ProjectOmahBan already has `GET /api/products` (Sanctum). Phase 2 may add a server-only proxy with `OMAHBAN_API_URL` + `OMAHBAN_API_TOKEN`. Not implemented in v1.
+ProjectOmahBan already has `GET /api/products` (Sanctum). Phase 2 may add a server-only proxy:
+
+- Env (server-only): `OMAHBAN_API_URL`, `OMAHBAN_API_TOKEN`
+- Feature flag: `STOCK_SOURCE=snapshot|live`
+- Fallback to JSON if API down
+
+**Not implemented in v1.** Do not copy POS DB credentials into this app.
 
 ## Selfcheck
 
 ```powershell
 node scripts/selfcheck-shop-stock.mjs
+node scripts/selfcheck-brand-ranking.mjs
 ```
