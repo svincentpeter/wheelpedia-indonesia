@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Award, Car, Ruler, Bookmark, ChevronRight, Send, Sparkles } from "lucide-react";
 import { TIRE_BRANDS, WHEEL_BRANDS } from "@/data/brands";
 import { VEHICLES } from "@/data/vehicles";
@@ -16,16 +16,16 @@ export default function DashboardView({
   onNavigateToAssistant,
 }: DashboardViewProps) {
   const [miniPrompt, setMiniPrompt] = useState("");
-  const [catalogCount, setCatalogCount] = useState(0);
-
-  useEffect(() => {
-    const specs = localStorage.getItem("savedSpecs");
-    if (specs) {
-      setCatalogCount(JSON.parse(specs).length);
-    } else {
-      setCatalogCount(2); // fallback seed specs
+  const [catalogCount] = useState(() => {
+    if (typeof window === "undefined") return 2;
+    try {
+      const specs = localStorage.getItem("savedSpecs");
+      if (specs) return (JSON.parse(specs) as unknown[]).length;
+    } catch {
+      // ignore
     }
-  }, []);
+    return 2;
+  });
 
   const handleMiniSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,7 +56,21 @@ export default function DashboardView({
       {/* Greeting */}
       <div>
         <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">Selamat Datang, Budi!</h2>
-        <p className="text-gray-500 mt-1 font-medium">Here's your learning overview for today.</p>
+        <p className="text-gray-500 mt-1 font-medium">Ringkasan belajar kamu hari ini.</p>
+        <div className="mt-3 flex flex-wrap gap-3">
+          <a
+            href="/counter"
+            className="inline-flex min-h-11 items-center rounded-xl bg-[#3B82F6] px-4 py-2 text-sm font-bold text-white shadow-sm"
+          >
+            Buka Counter OmahBan
+          </a>
+          <a
+            href="/quiz"
+            className="inline-flex min-h-11 items-center text-sm font-bold text-[#3B82F6] hover:underline"
+          >
+            Mulai Quiz Acak →
+          </a>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

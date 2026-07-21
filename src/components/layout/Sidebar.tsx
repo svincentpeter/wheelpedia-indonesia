@@ -6,12 +6,10 @@ import { usePathname } from "next/navigation";
 import {
   BookOpen,
   Car,
-  Bookmark,
   Sparkles,
   Calculator,
   Settings,
   HelpCircle,
-  MessageSquare,
   X,
   LayoutDashboard,
   BookMarked,
@@ -21,7 +19,9 @@ import {
   Heart,
   History,
   FolderOpen,
-  Wrench
+  Wrench,
+  Store,
+  Package,
 } from "lucide-react";
 
 interface SidebarProps {
@@ -38,6 +38,8 @@ export function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
     {
       title: "Main Menu",
       items: [
+        { id: "counter", name: "Counter", href: "/counter", icon: Store },
+        { id: "stok", name: "Stok OmahBan", href: "/stok", icon: Package },
         { id: "dashboard", name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
         { id: "assistant", name: "AI Assistant", href: "/ai-assistant", icon: Sparkles },
         { id: "catalog", name: "Katalog Saya", href: "/catalog", icon: FolderOpen },
@@ -48,6 +50,7 @@ export function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
       items: [
         { id: "learning", name: "Belajar Ban", href: "/learning", icon: BookOpen },
         { id: "learning-velg", name: "Belajar Velg", href: "/learning/velg", icon: Wrench },
+        { id: "quiz", name: "Quiz Acak", href: "/quiz", icon: HelpCircle },
         { id: "glossary", name: "Glossary", href: "/glossary", icon: BookMarked },
       ],
     },
