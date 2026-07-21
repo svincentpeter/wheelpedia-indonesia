@@ -3,7 +3,8 @@
 import React, { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Search, Package } from "lucide-react";
-import { getShopStock, searchStock, type ShopStockItem } from "@/lib/shop-stock";
+import { searchStock, type ShopStockItem } from "@/lib/shop-stock";
+import { useShopStock } from "@/lib/use-shop-stock";
 
 function formatRp(n: number): string {
   return `Rp ${n.toLocaleString("id-ID")}`;
@@ -12,8 +13,8 @@ function formatRp(n: number): string {
 export default function ShopStockView() {
   const searchParams = useSearchParams();
   const initialQ = searchParams.get("q") ?? "";
+  const { items: all, source, warning, loading } = useShopStock();
 
-  const all = useMemo(() => getShopStock(), []);
   const brands = useMemo(
     () => Array.from(new Set(all.map((i) => i.brand))).sort(),
     [all],
@@ -52,8 +53,17 @@ export default function ShopStockView() {
           Stok OmahBan
         </h1>
         <p className="text-sm font-medium text-gray-500">
-          Harga jual + qty dari import Excel. Bukan stok live POS.
+          {loading
+            ? "Memuat stok…"
+            : source === "live"
+              ? "Sumber: live POS (Sanctum proxy). Harga jual + qty saja."
+              : "Sumber: snapshot Excel. Set STOCK_SOURCE=live untuk POS."}
         </p>
+        {warning && (
+          <p className="text-xs font-medium text-amber-600 dark:text-amber-400">
+            {warning}
+          </p>
+        )}
       </header>
 
       <div className="space-y-3 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900">

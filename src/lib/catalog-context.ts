@@ -1,22 +1,23 @@
 import { VEHICLES } from "@/data/vehicles";
 import { TIRE_PRODUCTS } from "@/data/tires";
 import { TIRE_BRANDS, WHEEL_BRANDS } from "@/data/brands";
-import { getShopStock } from "@/lib/shop-stock";
+import { getShopStock, type ShopStockItem } from "@/lib/shop-stock";
 import { BRAND_RANKS } from "@/lib/brand-ranking";
+import { resolveShopStock } from "@/lib/omahban-live";
 
 const STOCK_CONTEXT_CAP = 80;
 
-function buildStockSummary(): string {
-  const items = getShopStock()
+function buildStockSummary(items: ShopStockItem[], sourceLabel: string): string {
+  const lines = items
     .filter((i) => i.qty > 0)
     .sort((a, b) => b.qty - a.qty || a.sellPrice - b.sellPrice)
     .slice(0, STOCK_CONTEXT_CAP);
 
-  if (items.length === 0) {
-    return "(snapshot kosong atau semua qty 0 — sarankan cek rak / refresh import)";
+  if (lines.length === 0) {
+    return `(${sourceLabel} kosong atau semua qty 0 — sarankan cek rak / refresh import)`;
   }
 
-  return items
+  return lines
     .map(
       (i) =>
         `- ${i.brand} ${i.productName} ${i.sizeNormalized} | Rp ${i.sellPrice} | sisa ${i.qty}`,
@@ -24,8 +25,7 @@ function buildStockSummary(): string {
     .join("\n");
 }
 
-/** Compact catalog dump for AI system context (server-only use). */
-export function buildCatalogContext(): string {
+function formatCatalog(stockBlock: string, stockTitle: string): string {
   const vehicles = VEHICLES.map(
     (v) =>
       `- ${v.brand} ${v.model} ${v.generation} (${v.yearStart}${v.yearEnd ? `-${v.yearEnd}` : "+"}): PCD ${v.pcd}, CB ${v.centerBore}, ET ${v.stockOffset}, OEM ban ${v.oemTire}, OEM velg ${v.oemWheel}, tekanan ${v.tirePressure}`,
@@ -50,15 +50,13 @@ export function buildCatalogContext(): string {
     (b) => `- [${b.tier}] ${b.brand}: ${b.oneLiner}`,
   ).join("\n");
 
-  const stock = buildStockSummary();
-
   return `DATA KATALOG WHEELPEDIA + OMAHBAN (sumber internal, prioritaskan):
 
 ## Mobil Indonesia (${VEHICLES.length})
 ${vehicles}
 
-## Stok OmahBan (snapshot, qty & harga jual — max ${STOCK_CONTEXT_CAP} baris qty>0)
-${stock}
+## ${stockTitle}
+${stockBlock}
 
 ## Ranking merk counter (bahasa toko)
 ${ranks}
@@ -71,4 +69,25 @@ ${tireBrands}
 
 ## Brand velg
 ${wheelBrands}`;
+}
+
+export function buildCatalogContext(): string {
+  const stock = buildStockSummary(getShopStock(), "snapshot");
+  return formatCatalog(
+    stock,
+    `Stok OmahBan (snapshot, qty & harga jual — max ${STOCK_CONTEXT_CAP} baris qty>0)`,
+  );
+}
+
+export async function buildCatalogContextAsync(
+  signal?: AbortSignal,
+): Promise<string> {
+  const resolved = await resolveShopStock(signal);
+  const label = resolved.source === "live" ? "live POS" : "snapshot";
+  const stock = buildStockSummary(resolved.items, label);
+  const warn = resolved.error ? `\n(catatan: ${resolved.error})` : "";
+  return formatCatalog(
+    stock + warn,
+    `Stok OmahBan (${label}, qty & harga jual — max ${STOCK_CONTEXT_CAP} baris qty>0)`,
+  );
 }

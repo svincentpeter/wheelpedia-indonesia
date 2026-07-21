@@ -7,6 +7,7 @@ import { Search, Sparkles, Package, Car, ChevronRight } from "lucide-react";
 import { VEHICLES, type Vehicle } from "@/data/vehicles";
 import { matchStockForOem, type ShopStockItem } from "@/lib/shop-stock";
 import { BRAND_RANKS, getRanksByTier } from "@/lib/brand-ranking";
+import { useShopStock } from "@/lib/use-shop-stock";
 
 function formatRp(n: number): string {
   return `Rp ${n.toLocaleString("id-ID")}`;
@@ -24,6 +25,8 @@ export default function CounterView() {
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const { items: stockItems, source: stockSource, warning: stockWarning, loading: stockLoading } =
+    useShopStock();
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -41,11 +44,11 @@ export default function CounterView() {
 
   const stockHits: ShopStockItem[] = useMemo(() => {
     if (!selected) return [];
-    const oem = matchStockForOem(selected.oemTire, undefined, {
+    const oem = matchStockForOem(selected.oemTire, stockItems, {
       inStockOnly: false,
     });
     const compat = selected.compatibleTires.flatMap((size) =>
-      matchStockForOem(size, undefined, { inStockOnly: false }),
+      matchStockForOem(size, stockItems, { inStockOnly: false }),
     );
     const byId = new Map<string, ShopStockItem>();
     for (const it of [...oem, ...compat]) byId.set(it.id, it);
@@ -53,7 +56,7 @@ export default function CounterView() {
       if (b.qty !== a.qty) return b.qty - a.qty;
       return a.sellPrice - b.sellPrice;
     });
-  }, [selected]);
+  }, [selected, stockItems]);
 
   const tiers = getRanksByTier();
 
@@ -95,8 +98,19 @@ export default function CounterView() {
           Cari mobil → stok → jelasin
         </h1>
         <p className="text-sm font-medium text-gray-500">
-          Bantuan counter. Bukan kasir — stok dari snapshot, cek rak fisik.
+          Bantuan counter. Bukan kasir — stok{" "}
+          {stockLoading
+            ? "loading…"
+            : stockSource === "live"
+              ? "live POS"
+              : "snapshot"}
+          , cek rak fisik.
         </p>
+        {stockWarning && (
+          <p className="text-xs font-medium text-amber-600 dark:text-amber-400">
+            {stockWarning}
+          </p>
+        )}
       </header>
 
       <label className="block">

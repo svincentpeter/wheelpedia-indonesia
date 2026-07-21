@@ -6,6 +6,7 @@ import { Sparkles, ArrowRight, BadgeInfo, Package } from "lucide-react";
 import { VEHICLES, type Vehicle } from "@/data/vehicles";
 import { SafeImage } from "@/components/SafeImage";
 import { matchStockForOem } from "@/lib/shop-stock";
+import { useShopStock } from "@/lib/use-shop-stock";
 
 interface VehicleDatabaseViewProps {
   onNavigateToAssistant: (initialPrompt?: string) => void;
@@ -29,23 +30,24 @@ export default function VehicleDatabaseView({
   setSelectedVehicleId,
 }: VehicleDatabaseViewProps) {
   const [selectedBrandFilter, setSelectedBrandFilter] = useState("All");
+  const { items: stockItems } = useShopStock();
 
   const selectedVehicle = VEHICLES.find((v) => v.id === selectedVehicleId);
 
   const shopMatches = useMemo(() => {
     if (!selectedVehicle) return [];
-    const oem = matchStockForOem(selectedVehicle.oemTire, undefined, {
+    const oem = matchStockForOem(selectedVehicle.oemTire, stockItems, {
       inStockOnly: false,
     });
     const compat = selectedVehicle.compatibleTires.flatMap((size) =>
-      matchStockForOem(size, undefined, { inStockOnly: false }),
+      matchStockForOem(size, stockItems, { inStockOnly: false }),
     );
     const byId = new Map(oem.map((i) => [i.id, i]));
     for (const it of compat) byId.set(it.id, it);
     return Array.from(byId.values())
       .sort((a, b) => b.qty - a.qty || a.sellPrice - b.sellPrice)
       .slice(0, 8);
-  }, [selectedVehicle]);
+  }, [selectedVehicle, stockItems]);
 
   const filteredVehicles = VEHICLES.filter((vehicle) => {
     const q = searchQuery.toLowerCase();
