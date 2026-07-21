@@ -51,15 +51,36 @@ node -e "const j=require('./src/data/shop-stock.json'); console.log(j.length, Ob
 
 Vehicle detail (`/vehicles`) also shows **Siap di OmahBan** strip from the same snapshot.
 
-## Future (optional): live API
+## Live stock API (optional)
 
-ProjectOmahBan already has `GET /api/products` (Sanctum). Phase 2 may add a server-only proxy:
+ProjectOmahBan: `GET /api/products` (Sanctum). Wheelpedia proxies **server-side only**.
 
-- Env (server-only): `OMAHBAN_API_URL`, `OMAHBAN_API_TOKEN`
-- Feature flag: `STOCK_SOURCE=snapshot|live`
-- Fallback to JSON if API down
+| Env | Role |
+|-----|------|
+| `STOCK_SOURCE` | `snapshot` (default) or `live` |
+| `OMAHBAN_API_URL` | POS base URL, e.g. `http://127.0.0.1:8000` |
+| `OMAHBAN_API_TOKEN` | Sanctum personal access token (Bearer) |
 
-**Not implemented in v1.** Do not copy POS DB credentials into this app.
+```powershell
+# .env.local (never commit)
+STOCK_SOURCE=live
+OMAHBAN_API_URL=http://127.0.0.1:8000
+OMAHBAN_API_TOKEN=your-sanctum-token
+```
+
+Wheelpedia endpoint:
+
+```
+GET /api/omahban-products
+→ { success, source: "live"|"snapshot", count, items: ShopStockItem[], warning? }
+```
+
+- Token never sent to browser.
+- Response strips cost/modal/hpp.
+- Live fail / empty → fallback `src/data/shop-stock.json`.
+- `/counter`, `/stok`, vehicle strip, AI catalog all use this resolver.
+
+Do not put POS DB credentials into Wheelpedia.
 
 ## Selfcheck
 
