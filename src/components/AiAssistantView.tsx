@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Sparkles, Send, Paperclip, Copy, RefreshCw, ThumbsUp, ThumbsDown, MessageSquare, History, Check, AlertCircle } from "lucide-react";
-import { ChatHistory, ChatMessage } from "../types";
-import { DEFAULT_CHAT_HISTORIES } from "../data";
+import type { ChatHistory, ChatMessage } from "../types";
 import { sendChatMessage, SYSTEM_PROMPT } from "@/lib/ai";
 import { renderMarkdown } from "@/lib/utils";
 
@@ -27,125 +26,124 @@ export default function AiAssistantView({
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [feedbackIds, setFeedbackIds] = useState<{ [key: string]: "up" | "down" }>({});
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const initialPromptHandled = useRef<string | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const activeChat = chatHistories.find((c) => c.id === activeChatId) || chatHistories[0];
-
-  // Auto scroll to bottom
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  const activeChatIdStable = activeChat?.id;
 
   useEffect(() => {
-    scrollToBottom();
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [activeChat?.messages, isLoading]);
 
-  // Handle deep-link prompts from dashboard/database/specs
-  useEffect(() => {
-    if (initialPromptToSend) {
-      handleSendPrompt(initialPromptToSend);
-      if (onClearInitialPrompt) onClearInitialPrompt();
-    }
-  }, [initialPromptToSend]);
+  const handleSendPrompt = useCallback(
+    async (text: string) => {
+      if (!text.trim() || !activeChatIdStable) return;
+      setErrorMessage(null);
 
-  const handleSendPrompt = async (text: string) => {
-    if (!text.trim()) return;
-    setErrorMessage(null);
+      const userMsg: ChatMessage = {
+        id: "msg-" + Date.now(),
+        role: "user",
+        content: text,
+        date: new Date().toLocaleTimeString("id-ID", {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
+      };
 
-    // Create user message
-    const userMsg: ChatMessage = {
-      id: "msg-" + Date.now(),
-      role: "user",
-      content: text,
-      date: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }),
-    };
+      const modelMsgId = "msg-" + (Date.now() + 1);
+      const modelMsg: ChatMessage = {
+        id: modelMsgId,
+        role: "model",
+        content: "",
+        date: new Date().toLocaleTimeString("id-ID", {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
+      };
 
-    // Pre-populate histories state with user message and an empty model message for streaming
-    const modelMsgId = "msg-" + (Date.now() + 1);
-    const modelMsg: ChatMessage = {
-      id: modelMsgId,
-      role: "model",
-      content: "",
-      date: new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }),
-    };
+      setChatHistories((prev) =>
+        prev.map((chat) =>
+          chat.id === activeChatIdStable
+            ? { ...chat, messages: [...chat.messages, userMsg, modelMsg] }
+            : chat,
+        ),
+      );
+      setInputText("");
+      setIsLoading(true);
 
-    const updatedHistories = chatHistories.map((chat) => {
-      if (chat.id === activeChat.id) {
-        return {
-          ...chat,
-          messages: [...chat.messages, userMsg, modelMsg],
-        };
-      }
-      return chat;
-    });
+      try {
+        const chatContext =
+          chatHistories.find((c) => c.id === activeChatIdStable)?.messages || [];
+        const messagesPayload = [
+          ...chatContext.map((m) => ({
+            role: (m.role === "model" ? "assistant" : "user") as
+              | "user"
+              | "assistant",
+            content: m.content,
+          })),
+          { role: "user" as const, content: text },
+        ];
 
-    setChatHistories(updatedHistories);
-    setInputText("");
-    setIsLoading(true);
+        const chatMessages = [
+          { role: "system" as const, content: SYSTEM_PROMPT },
+          ...messagesPayload,
+        ];
 
-    try {
-      // Get all messages from active chat for context, including the new user message
-      const chatContext = updatedHistories.find((c) => c.id === activeChat.id)?.messages || [];
-      // Remove the last empty model message from context
-      const contextWithoutLast = chatContext.slice(0, -1);
-      
-      const messagesPayload = contextWithoutLast.map((m) => ({
-        role: (m.role === "model" ? "assistant" : "user") as "user" | "assistant" | "system",
-        content: m.content,
-      }));
-
-      const chatMessages = [
-        { role: "system" as const, content: SYSTEM_PROMPT },
-        ...messagesPayload,
-      ];
-
-      await sendChatMessage(chatMessages, (chunk) => {
-        setChatHistories((prev) =>
-          prev.map((chat) => {
-            if (chat.id === activeChat.id) {
+        await sendChatMessage(chatMessages, (chunk) => {
+          setChatHistories((prev) =>
+            prev.map((chat) => {
+              if (chat.id !== activeChatIdStable) return chat;
               return {
                 ...chat,
-                messages: chat.messages.map((m) => {
-                  if (m.id === modelMsgId) {
-                    return { ...m, content: m.content + chunk };
-                  }
-                  return m;
-                }),
+                messages: chat.messages.map((m) =>
+                  m.id === modelMsgId
+                    ? { ...m, content: m.content + chunk }
+                    : m,
+                ),
               };
-            }
-            return chat;
-          })
-        );
-      });
-    } catch (err: any) {
-      console.error(err);
-      setErrorMessage(err.message || "Gagal menghubungkan ke AI server.");
-      
-      // Update the empty model message with fallback/error text
-      setChatHistories((prev) =>
-        prev.map((chat) => {
-          if (chat.id === activeChat.id) {
+            }),
+          );
+        });
+      } catch (err: unknown) {
+        const message =
+          err instanceof Error
+            ? err.message
+            : "Gagal menghubungkan ke AI server.";
+        console.error(err);
+        setErrorMessage(message);
+
+        setChatHistories((prev) =>
+          prev.map((chat) => {
+            if (chat.id !== activeChatIdStable) return chat;
             return {
               ...chat,
-              messages: chat.messages.map((m) => {
-                if (m.id === modelMsgId) {
-                  return {
-                    ...m,
-                    content: `Maaf, terjadi kesalahan saat menghubungkan ke AI. Pastikan API server berjalan di localhost:20128.\n\n[Detail Error]: ${err.message || "Unknown error"}`,
-                  };
-                }
-                return m;
-              }),
+              messages: chat.messages.map((m) =>
+                m.id === modelMsgId
+                  ? {
+                      ...m,
+                      content: `Maaf, terjadi kesalahan saat menghubungkan ke AI. Cek Settings / .env.local (AI_API_KEY) dan pastikan endpoint (9router) jalan.\n\n[Detail Error]: ${message}`,
+                    }
+                  : m,
+              ),
             };
-          }
-          return chat;
-        })
-      );
-    } finally {
-      setIsLoading(false);
-    }
-  };
+          }),
+        );
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [activeChatIdStable, chatHistories, setChatHistories],
+  );
+
+  useEffect(() => {
+    if (!initialPromptToSend) return;
+    if (initialPromptHandled.current === initialPromptToSend) return;
+    initialPromptHandled.current = initialPromptToSend;
+    void handleSendPrompt(initialPromptToSend);
+    onClearInitialPrompt?.();
+  }, [initialPromptToSend, handleSendPrompt, onClearInitialPrompt]);
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -187,28 +185,29 @@ export default function AiAssistantView({
     setErrorMessage(null);
   };
 
-  // Quick Chips
   const suggestionChips = [
-    "Berapa harga Michelin Primacy 4?",
-    "Perbandingan dengan Yokohama Advan dB",
-    "Rekomendasi toko ban di Jakarta Selatan",
+    "PCD Avanza Gen 3 berapa dan kenapa beda dari Gen 2?",
+    "Jelaskan offset ET dan efeknya ke poke",
+    "Plus size aman: batas perubahan diameter berapa persen?",
+    "Center bore Toyota vs Honda bedanya apa?",
+    "Rekomendasi ban harian Innova Zenix (range harga)",
   ];
 
   return (
     <div className="flex h-[calc(100vh-100px)] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm">
       
       {/* 1. History Sidebar (Left Panel) */}
-      <div className="hidden md:flex flex-col w-[260px] border-r border-gray-100 dark:border-gray-800 flex-shrink-0 bg-gray-50/50 dark:bg-gray-850/20">
-        <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center bg-white dark:bg-gray-900">
-          <span className="font-bold text-gray-900 dark:text-white text-sm flex items-center gap-2">
-            <History size={16} className="text-gray-400" />
-            Chat History
+      <div className="hidden md:flex flex-col w-[260px] border-r border-tokocream flex-shrink-0 bg-tokobg/50">
+        <div className="p-4 border-b border-tokocream flex justify-between items-center bg-white">
+          <span className="font-display font-bold text-tokonavy text-sm flex items-center gap-2">
+            <History size={16} className="text-tokomuted" />
+            Riwayat Chat
           </span>
           <button
             onClick={handleNewChat}
-            className="text-xs font-bold text-[#3B82F6] hover:underline"
+            className="text-xs font-bold text-tokoterracotta hover:underline"
           >
-            + New
+            + Baru
           </button>
         </div>
 
@@ -262,20 +261,20 @@ export default function AiAssistantView({
       </div>
 
       {/* 2. Active Chat Panel (Right/Main Panel) */}
-      <div className="flex-1 flex flex-col justify-between h-full relative bg-white dark:bg-gray-900">
+      <div className="flex-1 flex flex-col justify-between h-full relative bg-white rounded-xl border border-tokocream overflow-hidden md:border-0 md:rounded-none">
         
         {/* Chat Header */}
-        <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center bg-gray-50/20 dark:bg-gray-850/10 text-left">
+        <div className="p-4 border-b border-tokocream flex justify-between items-center bg-white text-left">
           <div>
-            <h3 className="font-extrabold text-gray-900 dark:text-white text-sm leading-snug">{activeChat?.title || "Assistant AI"}</h3>
-            <p className="text-[10px] text-gray-400 mt-0.5 font-semibold">Tanya teknis, ukuran PCD, offset, dan model kustom ban</p>
+            <h3 className="font-display font-bold text-tokoteal text-sm leading-snug">{activeChat?.title || "Asisten AI OmahBan"}</h3>
+            <p className="text-[10px] text-tokonavy/50 mt-0.5 font-semibold">Penjelasan customer · PCD · ET · stok toko</p>
           </div>
           <div className="md:hidden">
             <button
               onClick={handleNewChat}
-              className="px-3 py-1.5 bg-[#3B82F6] text-white font-bold text-xs rounded-lg shadow-sm"
+              className="px-3 py-1.5 bg-tokoterracotta text-white font-bold text-xs rounded-lg shadow-sm"
             >
-              + New Chat
+              + Chat Baru
             </button>
           </div>
         </div>
@@ -289,7 +288,7 @@ export default function AiAssistantView({
                 
                 {/* AI Avatar */}
                 {!isUser && (
-                  <div className="w-8 h-8 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-[#3B82F6] flex-shrink-0 flex items-center justify-center shadow-sm font-bold">
+                  <div className="w-8 h-8 rounded-xl bg-tokoterracotta/10 text-tokoterracotta flex-shrink-0 flex items-center justify-center shadow-sm font-bold">
                     <Sparkles size={16} />
                   </div>
                 )}
@@ -297,7 +296,7 @@ export default function AiAssistantView({
                 <div className={`flex flex-col max-w-[85%] md:max-w-[75%] space-y-1.5`}>
                   <div className={`p-4 rounded-2xl relative ${
                     isUser
-                      ? "bg-[#3B82F6] text-white rounded-tr-sm shadow-md shadow-blue-500/5"
+                      ? "bg-tokoterracotta text-white rounded-tr-sm shadow-md shadow-blue-500/5"
                       : "bg-[#F3F4F6] dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-tl-sm border border-gray-100 dark:border-gray-700"
                   }`}>
                     {/* Render message formatting */}
