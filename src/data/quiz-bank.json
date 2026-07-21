@@ -1,0 +1,381 @@
+[
+  {
+    "id": "q-pcd-avanza-g3",
+    "category": "Fitment",
+    "prompt": "PCD Toyota Avanza Gen 3 (All New / DNGA) adalah?",
+    "choices": ["4x100", "5x100", "5x114.3", "6x139.7"],
+    "correctIndex": 1,
+    "explanation": "Avanza Gen 3 ganti ke PCD 5x100. Velg Gen 1/2 (4x100) tidak pasang langsung."
+  },
+  {
+    "id": "q-pcd-innova",
+    "category": "Fitment",
+    "prompt": "PCD Innova Zenix umumnya?",
+    "choices": ["4x100", "5x100", "5x114.3", "6x139.7"],
+    "correctIndex": 2,
+    "explanation": "Innova Zenix memakai 5x114.3 — umum di banyak mobil Jepang/Korea."
+  },
+  {
+    "id": "q-offset-meaning",
+    "category": "Velg",
+    "prompt": "Apa arti Offset (ET) pada velg?",
+    "choices": [
+      "Lebar velg dalam inci",
+      "Jarak permukaan mounting ke centerline velg",
+      "Diameter lubang baut",
+      "Tekanan angin maksimum"
+    ],
+    "correctIndex": 1,
+    "explanation": "ET = jarak mounting face ke centerline. ET lebih kecil = velg lebih keluar (poke)."
+  },
+  {
+    "id": "q-center-bore",
+    "category": "Velg",
+    "prompt": "Center bore (CB) adalah?",
+    "choices": [
+      "Jarak antar baut",
+      "Diameter lubang tengah velg yang duduk di hub",
+      "Lebar ban",
+      "Load index"
+    ],
+    "correctIndex": 1,
+    "explanation": "CB harus cocok hub (atau pakai hub-centric ring). Toyota sering 60.1 mm, Honda 64.1 mm."
+  },
+  {
+    "id": "q-plus-size-3pct",
+    "category": "Ban",
+    "prompt": "Aturan umum perubahan diameter luar ban agar speedo aman?",
+    "choices": ["Maks ±1%", "Maks ±3%", "Maks ±10%", "Bebas asal muat"],
+    "correctIndex": 1,
+    "explanation": "Usahakan diameter luar baru dalam ±3% dari OEM agar speedometer & ground clearance wajar."
+  },
+  {
+    "id": "q-load-index-88",
+    "category": "Ban",
+    "prompt": "Load index 88 kira-kira kapasitas per ban?",
+    "choices": ["280 kg", "560 kg", "800 kg", "1000 kg"],
+    "correctIndex": 1,
+    "explanation": "LI 88 ≈ 560 kg per ban. Jangan pasang LI lebih rendah dari OEM."
+  },
+  {
+    "id": "q-speed-h",
+    "category": "Ban",
+    "prompt": "Speed rating H berarti kecepatan maks sekitar?",
+    "choices": ["160 km/h", "190 km/h", "210 km/h", "240 km/h"],
+    "correctIndex": 2,
+    "explanation": "H = 210 km/h. Rating harus ≥ kebutuhan kendaraan / OEM."
+  },
+  {
+    "id": "q-aspect-ratio",
+    "category": "Ban",
+    "prompt": "Pada 185/65 R15, angka 65 artinya?",
+    "choices": [
+      "Lebar ban 65 mm",
+      "Tinggi profil = 65% dari lebar",
+      "Diameter velg 65 inci",
+      "Load index 65"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aspect ratio 65% dari 185 mm ≈ tinggi sidewall 120 mm."
+  },
+  {
+    "id": "q-dot-code",
+    "category": "Ban",
+    "prompt": "Kode DOT 2523 pada ban berarti diproduksi?",
+    "choices": [
+      "Minggu 25 tahun 2023",
+      "25 Januari 2023",
+      "Tahun 2523",
+      "Batch 2523 pabrik"
+    ],
+    "correctIndex": 0,
+    "explanation": "4 digit terakhir DOT: WWYY — minggu & tahun produksi."
+  },
+  {
+    "id": "q-radial",
+    "category": "Ban",
+    "prompt": "Huruf R pada 185/65 R15 berarti?",
+    "choices": ["Rim size", "Radial construction", "Run-flat", "Reinforced"],
+    "correctIndex": 1,
+    "explanation": "R = konstruksi radial (standar ban modern)."
+  },
+  {
+    "id": "q-pcd-fortuner",
+    "category": "Fitment",
+    "prompt": "PCD Fortuner modern umumnya?",
+    "choices": ["5x114.3", "5x100", "6x139.7", "4x100"],
+    "correctIndex": 2,
+    "explanation": "Fortuner / banyak ladder-frame Toyota pakai 6x139.7."
+  },
+  {
+    "id": "q-jimny-pcd",
+    "category": "Fitment",
+    "prompt": "PCD Suzuki Jimny Gen 4 unik karena?",
+    "choices": ["4x100", "5x114.3", "5x139.7", "6x139.7"],
+    "correctIndex": 2,
+    "explanation": "Jimny sering 5x139.7 — pilihan aftermarket lebih terbatas."
+  },
+  {
+    "id": "q-tire-pressure",
+    "category": "Ban",
+    "prompt": "Kapan ideal mengukur tekanan ban?",
+    "choices": [
+      "Setelah perjalanan jauh (panas)",
+      "Saat ban dingin sebelum dipakai",
+      "Hanya saat hujan",
+      "Tidak perlu rutin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cold pressure: ukur sebelum jalan atau setelah diam beberapa jam."
+  },
+  {
+    "id": "q-et-lower",
+    "category": "Velg",
+    "prompt": "Jika ET diturunkan (misal 45 → 35) dengan lebar sama, velg cenderung?",
+    "choices": [
+      "Lebih masuk (inset)",
+      "Lebih keluar (poke)",
+      "Tidak berubah",
+      "Hanya mengubah PCD"
+    ],
+    "correctIndex": 1,
+    "explanation": "ET lebih kecil = mounting lebih ke dalam relatif centerline → outer edge lebih keluar."
+  },
+  {
+    "id": "q-hubcentric",
+    "category": "Velg",
+    "prompt": "Hub-centric ring dipakai jika?",
+    "choices": [
+      "PCD tidak cocok",
+      "Center bore velg lebih besar dari hub",
+      "Offset salah",
+      "Ban tubeless bocor"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ring mengisi gap CB agar velg center di hub, kurangi getaran."
+  },
+  {
+    "id": "q-plus-one",
+    "category": "Ban",
+    "prompt": "Plus-one sizing biasanya berarti?",
+    "choices": [
+      "Naik 1 inci diameter velg, sesuaikan profil/lebar",
+      "Tambah 1 ban serep",
+      "Naik 1 bar tekanan",
+      "Ganti brand premium"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plus 1: rim +1\", turunkan profile agar diameter luar mirip OEM."
+  },
+  {
+    "id": "q-wet-groove",
+    "category": "Ban",
+    "prompt": "Alur (groove) pada tapak ban utamanya untuk?",
+    "choices": [
+      "Mengurangi berat ban",
+      "Membuang air agar kurangi aquaplaning",
+      "Menaikkan load index",
+      "Mengganti fungsi offset"
+    ],
+    "correctIndex": 1,
+    "explanation": "Groove buang air dari contact patch → grip basah lebih baik."
+  },
+  {
+    "id": "q-runflat",
+    "category": "Ban",
+    "prompt": "Ban run-flat dirancang agar?",
+    "choices": [
+      "Tidak perlu tekanan sama sekali",
+      "Bisa dikemudikan jarak terbatas meski bocor",
+      "Selalu lebih murah",
+      "Hanya untuk off-road"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sidewall kaku menopang beban sementara setelah puncture."
+  },
+  {
+    "id": "q-honda-cb",
+    "category": "Fitment",
+    "prompt": "Center bore banyak Honda (Jazz/Brio) sering?",
+    "choices": ["54.1 mm", "60.1 mm", "64.1 mm", "106.1 mm"],
+    "correctIndex": 2,
+    "explanation": "Honda populer 64.1 mm; Toyota banyak 60.1 mm — jangan ditukar asal."
+  },
+  {
+    "id": "q-toyota-cb",
+    "category": "Fitment",
+    "prompt": "Center bore banyak Toyota (Avanza/Innova) sering?",
+    "choices": ["64.1 mm", "60.1 mm", "67.1 mm", "108 mm"],
+    "correctIndex": 1,
+    "explanation": "60.1 mm umum di banyak Toyota penumpang Indonesia."
+  },
+  {
+    "id": "q-nut-size",
+    "category": "Velg",
+    "prompt": "M12x1.5 pada nut size berarti?",
+    "choices": [
+      "Diameter 12 mm, pitch ulir 1.5 mm",
+      "Offset 12, ET 1.5",
+      "PCD 12x1.5",
+      "Lebar ban 12 inci"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spesifikasi baut/mur roda: diameter × pitch."
+  },
+  {
+    "id": "q-tpms",
+    "category": "Umum",
+    "prompt": "TPMS adalah sistem untuk?",
+    "choices": [
+      "Mengukur offset velg",
+      "Memantau tekanan ban",
+      "Menghitung load index",
+      "Kalibrasi PCD"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tire Pressure Monitoring System memperingatkan tekanan rendah."
+  },
+  {
+    "id": "q-direction-tire",
+    "category": "Ban",
+    "prompt": "Ban directional harus dipasang?",
+    "choices": [
+      "Bebas kiri/kanan",
+      "Sesuai panah putaran di sidewall",
+      "Hanya di belakang",
+      "Dengan ET negatif saja"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pola tapak directional dirancang satu arah putaran."
+  },
+  {
+    "id": "q-all-season",
+    "category": "Ban",
+    "prompt": "Di iklim tropis Indonesia, prioritas ban harian biasanya?",
+    "choices": [
+      "Studded winter",
+      "Keseimbangan wet grip, daya tahan, kenyamanan",
+      "Slick balap kering saja",
+      "Ban pertanian"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fokus hujan, panas, umur tapak — bukan ban salju."
+  },
+  {
+    "id": "q-rotation",
+    "category": "Ban",
+    "prompt": "Rotasi ban bertujuan utama?",
+    "choices": [
+      "Mengubah PCD",
+      "Meratakan keausan tapak",
+      "Menaikkan speed rating",
+      "Mengganti center bore"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rotasi periodik meratakan wear depan-belakang/kiri-kanan."
+  },
+  {
+    "id": "q-alignment",
+    "category": "Umum",
+    "prompt": "Spooring/balancing penting setelah ganti ban/velg karena?",
+    "choices": [
+      "Hanya formalitas bengkel",
+      "Mencegah getar, aus tidak merata, handling buruk",
+      "Mengubah load index",
+      "Mengisi nitrogen otomatis"
+    ],
+    "correctIndex": 1,
+    "explanation": "Alignment & balance menjaga stabilitas dan umur ban."
+  },
+  {
+    "id": "q-width-mm",
+    "category": "Ban",
+    "prompt": "Angka 185 pada 185/65 R15 adalah?",
+    "choices": [
+      "Lebar penampang ban dalam mm",
+      "Diameter velg mm",
+      "Tekanan PSI",
+      "Offset"
+    ],
+    "correctIndex": 0,
+    "explanation": "Section width nominal 185 mm."
+  },
+  {
+    "id": "q-rim-15",
+    "category": "Ban",
+    "prompt": "Angka 15 pada 185/65 R15 adalah?",
+    "choices": [
+      "Load index",
+      "Diameter velg dalam inci",
+      "Aspect ratio",
+      "Jumlah baut"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rim diameter 15 inci."
+  },
+  {
+    "id": "q-compatible-pcd",
+    "category": "Fitment",
+    "prompt": "Bolehkah memasang velg 5x114.3 ke hub 5x100?",
+    "choices": [
+      "Ya, selalu aman",
+      "Tidak — PCD harus cocok",
+      "Ya jika ET sama",
+      "Ya jika ban radial"
+    ],
+    "correctIndex": 1,
+    "explanation": "PCD & jumlah baut harus match (kecuali adapter khusus, berisiko)."
+  },
+  {
+    "id": "q-adapter-risk",
+    "category": "Fitment",
+    "prompt": "Wheel adapter/spacer menambah risiko jika?",
+    "choices": [
+      "Dipasang dengan torsi benar & kualitas bagus",
+      "Terlalu tebal, murah, atau torsi salah",
+      "Hanya pada mobil LCGC",
+      "Tidak pernah berisiko"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adapter buruk/torsi salah → getar, patah stud, clearance issue."
+  },
+  {
+    "id": "q-utqg",
+    "category": "Ban",
+    "prompt": "UTQG (treadwear/traction/temperature) berguna untuk?",
+    "choices": [
+      "Membandingkan karakteristik ban (relatif)",
+      "Menentukan PCD",
+      "Mengganti offset",
+      "Mengukur center bore"
+    ],
+    "correctIndex": 0,
+    "explanation": "Skor UTQG bantu banding merek/model — bukan ukuran fitment."
+  },
+  {
+    "id": "q-nitrogen",
+    "category": "Ban",
+    "prompt": "Nitrogen vs udara biasa untuk ban harian?",
+    "choices": [
+      "Wajib nitrogen agar aman",
+      "Opsional; yang penting tekanan benar & dicek rutin",
+      "Udara biasa dilarang",
+      "Nitrogen menaikkan load index"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tekanan & perawatan lebih penting daripada gas isi."
+  },
+  {
+    "id": "q-spare",
+    "category": "Umum",
+    "prompt": "Ban serep jenis donut (T-size) sebaiknya?",
+    "choices": [
+      "Dipakai jarak jauh dengan kecepatan tinggi",
+      "Sementara, kecepatan & jarak terbatas sesuai label",
+      "Pengganti permanen OEM",
+      "Tidak perlu tekanan"
+    ],
+    "correctIndex": 1,
+    "explanation": "Space-saver: darurat saja, ikuti batas kecepatan pabrikan."
+  }
+]

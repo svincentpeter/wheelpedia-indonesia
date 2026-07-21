@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
-import { getModulesByCategory, LEARNING_MODULES } from "@/data/learning";
+import { getModulesByCategory } from "@/data/learning";
 import { renderMarkdown } from "@/lib/utils";
 
 const AppShell = dynamic(() => import("@/components/AppShell"), { ssr: false });
