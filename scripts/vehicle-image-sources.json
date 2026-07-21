@@ -1,0 +1,202 @@
+{
+  "avanza-gen1": {
+    "url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "avanza-gen2": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/2020_Toyota_Avanza_1.5_Veloz_%28front%29%2C_West_Surabaya_03.jpg",
+    "attribution": "Wikimedia Commons — Alex Neman, Toyota Avanza Veloz 2020 (CC)"
+  },
+  "avanza-gen3": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Toyota_Avanza_1.3_E_2022_%285%29.jpg",
+    "attribution": "Wikimedia Commons — Ethan Llamas, Toyota Avanza 2022"
+  },
+  "innova-gen1": {
+    "url": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
+    "attribution": "Unsplash — sedan/MPV stock"
+  },
+  "innova-gen2": {
+    "url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
+    "attribution": "Unsplash — vehicle stock"
+  },
+  "innova-zenix": {
+    "url": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80",
+    "attribution": "Unsplash — modern MPV stock"
+  },
+  "yaris-xp150": {
+    "url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+    "attribution": "Unsplash — hatchback stock"
+  },
+  "yaris-xp210": {
+    "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
+    "attribution": "Unsplash — hatchback stock"
+  },
+  "raize": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — compact SUV stock"
+  },
+  "rush": {
+    "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
+    "attribution": "Unsplash — SUV stock"
+  },
+  "calya": {
+    "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "agya": {
+    "url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+    "attribution": "Unsplash — LCGC hatch stock"
+  },
+  "chr": {
+    "url": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80",
+    "attribution": "Unsplash — crossover stock"
+  },
+  "fortuner": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — body-on-frame SUV stock"
+  },
+  "brio": {
+    "url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "jazz-ge": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "jazz-gk": {
+    "url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80",
+    "attribution": "Unsplash — hatch stock"
+  },
+  "city-gn3": {
+    "url": "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80",
+    "attribution": "Unsplash — hatch/sedan stock"
+  },
+  "hrv-gen1": {
+    "url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
+    "attribution": "Unsplash — compact SUV stock"
+  },
+  "hrv-gen2": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — compact SUV stock"
+  },
+  "crv-gen5": {
+    "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
+    "attribution": "Unsplash — mid SUV stock"
+  },
+  "brv-gen2": {
+    "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "ertiga-gen1": {
+    "url": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "ertiga-gen2": {
+    "url": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
+    "attribution": "Unsplash — MPV stock"
+  },
+  "xl7": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — SUV stock"
+  },
+  "swift": {
+    "url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+    "attribution": "Unsplash — hatch stock"
+  },
+  "jimny": {
+    "url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "xpander": {
+    "url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "xpander-cross": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — crossover MPV stock"
+  },
+  "pajero-sport": {
+    "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
+    "attribution": "Unsplash — SUV stock"
+  },
+  "triton": {
+    "url": "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "xenia-gen2": {
+    "url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "ayla": {
+    "url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+    "attribution": "Unsplash — LCGC stock"
+  },
+  "sigra": {
+    "url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "terios": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — SUV stock"
+  },
+  "rocky": {
+    "url": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80",
+    "attribution": "Unsplash — compact SUV stock"
+  },
+  "creta": {
+    "url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
+    "attribution": "Unsplash — compact SUV stock"
+  },
+  "stargazer": {
+    "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "tucson-nx4": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — SUV stock"
+  },
+  "seltos": {
+    "url": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80",
+    "attribution": "Unsplash — compact SUV stock"
+  },
+  "confero": {
+    "url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "almaz": {
+    "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
+    "attribution": "Unsplash — SUV stock"
+  },
+  "air-ev": {
+    "url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&q=80",
+    "attribution": "Unsplash — EV stock"
+  },
+  "mazda3-bp": {
+    "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
+    "attribution": "Unsplash — sedan stock"
+  },
+  "cx5-kf": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash — crossover stock"
+  },
+  "livina-gen2": {
+    "url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "serena-c27": {
+    "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
+    "attribution": "Unsplash free stock (retry)"
+  },
+  "bmw-320i-g20": {
+    "url": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
+    "attribution": "Unsplash — BMW sedan stock"
+  },
+  "bmw-x1-f48": {
+    "url": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80",
+    "attribution": "Unsplash — BMW SUV stock"
+  },
+  "mercedes-c200-w206": {
+    "url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80",
+    "attribution": "Unsplash — Mercedes sedan stock"
+  }
+}
