@@ -2,16 +2,27 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #f9fafb;
-  --foreground: #111827;
-}
-
 @theme {
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  
+  --color-tokobg: #f8fafc;
+  --color-tokonavy: #0f172a;
+  --color-tokoteal: #1e3a8a;
+  --color-tokoterracotta: #3b82f6;
+  --color-tokocream: #e2e8f0;
+  --color-tokosidebar: #0f172a;
+  --color-tokomuted: #64748b;
+  --color-tokoolive: #475569;
+  --color-tokowarmbg: #f1f5f9;
+  --color-tokogreen: #10b981;
+  --color-tokored: #ef4444;
+  --color-tokotilt: #2563eb;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+
   --animate-fade-in: fade-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
   @keyframes fade-in {
@@ -27,7 +38,28 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  background-color: var(--color-tokobg);
+  color: var(--color-tokonavy);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark body {
+  background-color: #020617;
+  color: #f1f5f9;
 }
