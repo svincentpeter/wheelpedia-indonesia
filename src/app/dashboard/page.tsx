@@ -11,7 +11,8 @@ export default function DashboardPage() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleModuleClick = (moduleId: string) => {
+  const handleModuleClick = (_moduleId: string) => {
+    void _moduleId;
     router.push("/learning");
   };
 
