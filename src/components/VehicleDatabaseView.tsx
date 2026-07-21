@@ -77,26 +77,26 @@ export default function VehicleDatabaseView({
     <div className="space-y-8 animate-fade-in text-left">
       {!selectedVehicle ? (
         <div className="space-y-6">
-          <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-              Vehicle Specs Database
+          <div className="bg-white rounded-xl p-5 border border-tokocream">
+            <h2 className="font-display font-bold text-lg text-tokoteal">
+              Database Spesifikasi Mobil (OEM)
             </h2>
-            <p className="text-gray-500 mt-1 font-medium">
-              Database PCD, Center Bore, dan spesifikasi ban OEM mobil Indonesia (
-              {VEHICLES.length} model).
+            <p className="text-xs text-tokonavy/60 mt-1">
+              Referensi ukuran velg & ban bawaan pabrik. {VEHICLES.length} model.
+              Pilih mobil → buka Counter untuk cocokkan stok.
             </p>
           </div>
 
-          <div className="flex gap-2 pb-2 overflow-x-auto scrollbar-none">
+          <div className="flex gap-2 pb-2 overflow-x-auto">
             {brands.map((brand) => (
               <button
                 key={brand}
                 type="button"
                 onClick={() => setSelectedBrandFilter(brand)}
-                className={`px-4 py-2 text-xs font-bold rounded-full transition-all ${
+                className={`px-4 py-2 text-xs font-bold rounded-full transition-all shrink-0 ${
                   selectedBrandFilter === brand
-                    ? "bg-[#3B82F6] text-white shadow-md shadow-blue-500/10"
-                    : "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300"
+                    ? "bg-tokoterracotta text-white"
+                    : "bg-white border border-tokocream text-tokonavy/70 hover:bg-tokobg"
                 }`}
               >
                 {brand}
@@ -166,13 +166,21 @@ export default function VehicleDatabaseView({
       ) : (
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <button
-              type="button"
-              onClick={() => setSelectedVehicleId(null)}
-              className="text-xs font-bold text-[#3B82F6] hover:underline flex items-center gap-1.5 self-start"
-            >
-              ← Back to Database Gallery
-            </button>
+            <div className="flex flex-wrap items-center gap-3 self-start">
+              <button
+                type="button"
+                onClick={() => setSelectedVehicleId(null)}
+                className="text-xs font-bold text-tokoterracotta hover:underline flex items-center gap-1.5"
+              >
+                ← Kembali ke gallery
+              </button>
+              <Link
+                href={`/counter?vehicle=${selectedVehicle.id}`}
+                className="text-xs font-bold px-3 py-1.5 rounded-lg bg-tokoterracotta text-white"
+              >
+                Buka di Counter →
+              </Link>
+            </div>
             <div className="text-xs text-gray-400 font-semibold">
               Vehicle Database / {selectedVehicle.brand} /{" "}
               <span className="text-gray-750 dark:text-gray-300 font-bold">
