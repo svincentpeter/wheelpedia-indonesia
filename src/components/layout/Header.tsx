@@ -3,13 +3,12 @@
 import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Menu, Search, Bell, Moon, Sun, User } from "lucide-react";
-import Link from "next/link";
 
 interface HeaderProps {
   isDark: boolean;
   toggleDark: () => void;
   onMenuClick: () => void;
-  sidebarOpen: boolean;
+  sidebarOpen?: boolean;
   searchQuery?: string;
   setSearchQuery?: (q: string) => void;
 }
@@ -18,7 +17,6 @@ export function Header({
   isDark,
   toggleDark,
   onMenuClick,
-  sidebarOpen,
   searchQuery = "",
   setSearchQuery,
 }: HeaderProps) {
@@ -160,10 +158,6 @@ export function Header({
     }
   };
 
-  const handleNewInquiry = () => {
-    router.push("/ai-assistant?prompt=Saya ingin bertanya seputar rekomendasi upgrade velg dan ban.");
-  };
-
   const handleCompare = () => {
     router.push("/comparison");
   };
@@ -257,18 +251,8 @@ export function Header({
 
         {/* Profile Avatar */}
         <div className="ml-2 pl-2 border-l border-gray-150 dark:border-gray-800 flex items-center">
-          <div className="w-8 h-8 rounded-full overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:border-[#3B82F6] transition-colors cursor-pointer">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk_mjoR37XOu9b2-MNP989P_jVzlAi1Koo_onCjujG8OQTB70ad9hrcINNzbI1-TjLtCSjTwtCkXhjgM-j1Ah6Jz2DYRkIYgNpCTsXw0uokjp9yKTBY8sHNi_3f0kLwyNSpEtrI6f4pj3PmudaA3yUo5ac9AynPwgK9hqh7U2XdBh2Q-Pq2TJbzm8PIv-3WXLAT2gi3M16tSbwA08VriCHgv9AatlTzwhHMs4RVKTo3K7IwKhcN5XMkl09x-7KnS3jRTEdMtY5Otc"
-              alt="Budi Profile"
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                e.currentTarget.style.display = "none";
-              }}
-            />
-            <div className="w-full h-full flex items-center justify-center bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
-              <User size={15} />
-            </div>
+          <div className="w-8 h-8 rounded-full border border-gray-100 dark:border-gray-800 shadow-sm hover:border-[#3B82F6] transition-colors cursor-pointer flex items-center justify-center bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
+            <User size={15} aria-label="Profil" />
           </div>
         </div>
       </div>

@@ -1,28 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Calculator, Gauge, ArrowRight, Compass, ShieldAlert, Check, Sliders, Info } from "lucide-react";
+import { Calculator, Gauge, Compass, ShieldAlert, Check, Sliders, Info } from "lucide-react";
 
 export default function UtilitiesView() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  
-  // Tab state
-  const [activeTab, setActiveTab] = useState<"tire" | "wheel">("tire");
 
-  // Read tab parameter from URL on mount/change
-  useEffect(() => {
-    const tabParam = searchParams.get("tab");
-    if (tabParam === "wheel") {
-      setActiveTab("wheel");
-    } else {
-      setActiveTab("tire");
-    }
-  }, [searchParams]);
+  const activeTab: "tire" | "wheel" =
+    searchParams.get("tab") === "wheel" ? "wheel" : "tire";
 
   const handleTabChange = (tab: "tire" | "wheel") => {
-    setActiveTab(tab);
     const params = new URLSearchParams(searchParams.toString());
     if (tab === "wheel") {
       params.set("tab", "wheel");

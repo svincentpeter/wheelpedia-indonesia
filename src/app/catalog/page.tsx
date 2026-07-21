@@ -1,95 +1,95 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, Suspense } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
-import { SavedTireSpec } from "@/types";
+import type { SavedTireSpec } from "@/types";
+import { writeJson } from "@/lib/browser-storage";
 
 const AppShell = dynamic(() => import("@/components/AppShell"), { ssr: false });
-const MyCatalogView = dynamic(() => import("@/components/MyCatalogView"), { ssr: false });
+const MyCatalogView = dynamic(() => import("@/components/MyCatalogView"), {
+  ssr: false,
+});
+
+const DEFAULT_VEHICLES = ["innova-zenix", "pajero-sport"];
+const DEFAULT_SPECS: SavedTireSpec[] = [
+  {
+    id: "spec-1",
+    name: "Innova Zenix OEM 18",
+    width: 225,
+    aspect: 50,
+    construction: "R",
+    rim: 18,
+    dateSaved: "18 Jul 2026",
+  },
+  {
+    id: "spec-2",
+    name: "Avanza Veloz Ring 17",
+    width: 205,
+    aspect: 50,
+    construction: "R",
+    rim: 17,
+    dateSaved: "17 Jul 2026",
+  },
+];
 
 function CatalogPageContent() {
   const router = useRouter();
 
-  // Local storage state with preseeded fallback values
-  const [savedVehicles, setSavedVehiclesState] = useState<string[]>([]);
-  const [savedSpecs, setSavedSpecsState] = useState<SavedTireSpec[]>([]);
-  const [loaded, setLoaded] = useState(false);
-
-  // Load from localStorage on mount
-  useEffect(() => {
-    const localVehicles = localStorage.getItem("savedVehicles");
-    const localSpecs = localStorage.getItem("savedSpecs");
-
-    if (localVehicles) {
-      setSavedVehiclesState(JSON.parse(localVehicles));
-    } else {
-      setSavedVehiclesState(["innova-zenix", "pajero-sport"]);
+  const [savedVehicles, setSavedVehiclesState] = useState<string[]>(() => {
+    if (typeof window === "undefined") return DEFAULT_VEHICLES;
+    try {
+      const raw = localStorage.getItem("savedVehicles");
+      if (raw) return JSON.parse(raw) as string[];
+    } catch {
+      // ignore
     }
+    return DEFAULT_VEHICLES;
+  });
 
-    if (localSpecs) {
-      setSavedSpecsState(JSON.parse(localSpecs));
-    } else {
-      setSavedSpecsState([
-        {
-          id: "spec-1",
-          name: "Innova Zenix OEM 18",
-          width: 225,
-          aspect: 50,
-          construction: "R",
-          rim: 18,
-          dateSaved: "18 Jul 2026",
-        },
-        {
-          id: "spec-2",
-          name: "Avanza Veloz Ring 17",
-          width: 205,
-          aspect: 50,
-          construction: "R",
-          rim: 17,
-          dateSaved: "17 Jul 2026",
-        },
-      ]);
+  const [savedSpecs, setSavedSpecsState] = useState<SavedTireSpec[]>(() => {
+    if (typeof window === "undefined") return DEFAULT_SPECS;
+    try {
+      const raw = localStorage.getItem("savedSpecs");
+      if (raw) return JSON.parse(raw) as SavedTireSpec[];
+    } catch {
+      // ignore
     }
-    setLoaded(true);
-  }, []);
+    return DEFAULT_SPECS;
+  });
 
   const setSavedVehicles = (vehicles: string[]) => {
     setSavedVehiclesState(vehicles);
-    localStorage.setItem("savedVehicles", JSON.stringify(vehicles));
+    writeJson("savedVehicles", vehicles);
   };
 
   const setSavedSpecs = (specs: SavedTireSpec[]) => {
     setSavedSpecsState(specs);
-    localStorage.setItem("savedSpecs", JSON.stringify(specs));
-  };
-
-  const handleVehicleClick = (vehicleId: string) => {
-    router.push(`/vehicles?id=${vehicleId}`);
+    writeJson("savedSpecs", specs);
   };
 
   return (
     <AppShell>
-      {loaded && (
-        <MyCatalogView
-          savedVehicles={savedVehicles}
-          setSavedVehicles={setSavedVehicles}
-          savedSpecs={savedSpecs}
-          setSavedSpecs={setSavedSpecs}
-          onVehicleClick={handleVehicleClick}
-        />
-      )}
+      <MyCatalogView
+        savedVehicles={savedVehicles}
+        setSavedVehicles={setSavedVehicles}
+        savedSpecs={savedSpecs}
+        setSavedSpecs={setSavedSpecs}
+        onVehicleClick={(vehicleId) => router.push(`/vehicles?id=${vehicleId}`)}
+      />
     </AppShell>
   );
 }
 
 export default function CatalogPage() {
   return (
-    <Suspense fallback={
-      <div className="flex h-screen items-center justify-center bg-gray-50 dark:bg-gray-950 text-gray-400 font-medium animate-pulse">
-        Loading Catalog...
-      </div>
-    }>
+    <Suspense
+      fallback={
+        <div className="flex h-screen items-center justify-center bg-gray-50 dark:bg-gray-950 text-gray-400 font-medium animate-pulse">
+          Loading Catalog...
+        </div>
+      }
+    >
       <CatalogPageContent />
     </Suspense>
   );

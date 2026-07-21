@@ -3,7 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { TIRE_SIZES, getTireSizeInfo } from "@/data/tires";
-import { calcOverallDiameter, calcSpeedError } from "@/lib/calculators";
+import { calcSpeedError } from "@/lib/calculators";
 
 const AppShell = dynamic(() => import("@/components/AppShell"), { ssr: false });
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HelpCircle, Mail, Send, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2 } from "lucide-react";
 
 export default function SupportView() {
   const [name, setName] = useState("Budi");

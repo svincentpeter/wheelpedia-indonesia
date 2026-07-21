@@ -1,8 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Bookmark, Trash2, Plus, ArrowRight, Gauge, Check, FileCheck2, Tag, UploadCloud, File, Loader2, Info } from "lucide-react";
-import { SavedTireSpec, Vehicle } from "../types";
-import { VEHICLES } from "../data";
+import {
+  Bookmark,
+  Trash2,
+  Plus,
+  ArrowRight,
+  Gauge,
+  FileCheck2,
+  UploadCloud,
+  File,
+} from "lucide-react";
+import type { SavedTireSpec } from "../types";
+import { VEHICLES } from "@/data/vehicles";
+import { SafeImage } from "@/components/SafeImage";
 
 interface MyCatalogViewProps {
   savedVehicles: string[];
@@ -17,8 +27,7 @@ interface CatalogFile {
   name: string;
   size: string;
   type: string;
-  status: "uploading" | "ocr" | "embedding" | "indexing" | "ready";
-  progress: number;
+  status: "local";
   dateAdded: string;
 }
 
@@ -32,126 +41,42 @@ export default function MyCatalogView({
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  // Tab state: "specs" or "upload"
-  const [activeTab, setActiveTab] = useState<"specs" | "upload">("specs");
-
-  // Read URL tab param
-  useEffect(() => {
-    const tabParam = searchParams.get("tab");
-    if (tabParam === "upload") {
-      setActiveTab("upload");
-    } else {
-      setActiveTab("specs");
-    }
-  }, [searchParams]);
+  const activeTab: "specs" | "upload" =
+    searchParams.get("tab") === "upload" ? "upload" : "specs";
 
   const handleTabChange = (tab: "specs" | "upload") => {
-    setActiveTab(tab);
     const params = new URLSearchParams(searchParams.toString());
-    if (tab === "upload") {
-      params.set("tab", "upload");
-    } else {
-      params.delete("tab");
-    }
-    router.replace(`/catalog?${params.toString()}`);
+    if (tab === "upload") params.set("tab", "upload");
+    else params.delete("tab");
+    const qs = params.toString();
+    router.replace(qs ? `/catalog?${qs}` : "/catalog");
   };
 
-  // Add Spec Form State
   const [name, setName] = useState("");
   const [width, setWidth] = useState(185);
   const [aspect, setAspect] = useState(65);
   const [rim, setRim] = useState(15);
   const [isAdding, setIsAdding] = useState(false);
 
-  // Uploaded Files State
-  const [uploadedFiles, setUploadedFiles] = useState<CatalogFile[]>([]);
+  const [uploadedFiles, setUploadedFiles] = useState<CatalogFile[]>(() => {
+    if (typeof window === "undefined") return [];
+    try {
+      const raw = localStorage.getItem("uploadedFiles");
+      if (!raw) return [];
+      const parsed = JSON.parse(raw) as CatalogFile[];
+      return parsed.map((f) => ({
+        ...f,
+        status: "local" as const,
+      }));
+    } catch {
+      return [];
+    }
+  });
   const [isDragging, setIsDragging] = useState(false);
 
-  // Load files from localStorage on mount
-  useEffect(() => {
-    const localFiles = localStorage.getItem("uploadedFiles");
-    if (localFiles) {
-      setUploadedFiles(JSON.parse(localFiles));
-    } else {
-      const defaultFiles: CatalogFile[] = [
-        {
-          id: "file-1",
-          name: "Catalog_Omah_Ban_V1.pdf",
-          size: "4.2 MB",
-          type: "PDF",
-          status: "ready",
-          progress: 100,
-          dateAdded: "18 Jul 2026",
-        },
-        {
-          id: "file-2",
-          name: "Spesifikasi_Velg_Aftermarket.xlsx",
-          size: "1.8 MB",
-          type: "Excel",
-          status: "ready",
-          progress: 100,
-          dateAdded: "17 Jul 2026",
-        },
-      ];
-      setUploadedFiles(defaultFiles);
-      localStorage.setItem("uploadedFiles", JSON.stringify(defaultFiles));
-    }
-  }, []);
-
-  // Sync uploaded files with localStorage
   const saveFiles = (files: CatalogFile[]) => {
     setUploadedFiles(files);
     localStorage.setItem("uploadedFiles", JSON.stringify(files));
-  };
-
-  // Simulated OCR & Indexing process for uploaded files
-  const startFileProcessing = (fileId: string) => {
-    let currentStep: "uploading" | "ocr" | "embedding" | "indexing" | "ready" = "uploading";
-    let progressVal = 0;
-
-    const interval = setInterval(() => {
-      progressVal += 10;
-
-      setUploadedFiles((prev) => {
-        const next = prev.map((f) => {
-          if (f.id === fileId) {
-            // Update progress
-            let nextStatus = currentStep;
-            let currentProgress = progressVal;
-
-            if (progressVal >= 100) {
-              currentProgress = 0;
-              progressVal = 0;
-              if (currentStep === "uploading") {
-                currentStep = "ocr";
-                nextStatus = "ocr";
-              } else if (currentStep === "ocr") {
-                currentStep = "embedding";
-                nextStatus = "embedding";
-              } else if (currentStep === "embedding") {
-                currentStep = "indexing";
-                nextStatus = "indexing";
-              } else if (currentStep === "indexing") {
-                currentStep = "ready";
-                nextStatus = "ready";
-                currentProgress = 100;
-                clearInterval(interval);
-              }
-            }
-
-            return {
-              ...f,
-              status: nextStatus,
-              progress: currentProgress,
-            };
-          }
-          return f;
-        });
-
-        localStorage.setItem("uploadedFiles", JSON.stringify(next));
-        return next;
-      });
-    }, 400);
   };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -159,37 +84,28 @@ export default function MyCatalogView({
     if (!files || files.length === 0) return;
 
     const newFilesList: CatalogFile[] = [];
-
     for (let i = 0; i < files.length; i++) {
       const file = files[i];
-      const newFile: CatalogFile = {
+      newFilesList.push({
         id: "file-" + (Date.now() + i),
         name: file.name,
         size: (file.size / (1024 * 1024)).toFixed(1) + " MB",
         type: file.name.split(".").pop()?.toUpperCase() || "TXT",
-        status: "uploading",
-        progress: 0,
+        status: "local",
         dateAdded: new Date().toLocaleDateString("id-ID", {
           day: "numeric",
           month: "short",
           year: "numeric",
         }),
-      };
-      newFilesList.push(newFile);
+      });
     }
 
-    const updated = [...newFilesList, ...uploadedFiles];
-    saveFiles(updated);
-
-    // Trigger background process simulation for each newly added file
-    newFilesList.forEach((file) => {
-      startFileProcessing(file.id);
-    });
+    saveFiles([...newFilesList, ...uploadedFiles]);
+    e.target.value = "";
   };
 
   const handleDeleteFile = (id: string) => {
-    const updated = uploadedFiles.filter((f) => f.id !== id);
-    saveFiles(updated);
+    saveFiles(uploadedFiles.filter((f) => f.id !== id));
   };
 
   // Filter saved vehicle objects
@@ -230,17 +146,6 @@ export default function MyCatalogView({
     const sidewallHeight = w * (a / 100);
     const rimDiameterMm = r * 25.4;
     return (sidewallHeight * 2 + rimDiameterMm).toFixed(1);
-  };
-
-  const getProcessingLabel = (status: string) => {
-    switch (status) {
-      case "uploading": return "Uploading...";
-      case "ocr": return "OCR Text Extraction...";
-      case "embedding": return "Generating Vector Embeddings...";
-      case "indexing": return "Indexing Catalog Database...";
-      case "ready": return "Ready for AI Search";
-      default: return "";
-    }
   };
 
   return (
@@ -432,8 +337,14 @@ export default function MyCatalogView({
                     className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow cursor-pointer relative"
                   >
                     <div className="h-28 overflow-hidden relative" onClick={() => onVehicleClick(vehicle.id)}>
-                      <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover" />
-                      <div className="absolute top-2.5 left-2.5 bg-black/50 backdrop-blur-md text-white font-bold text-[9px] uppercase px-2 py-0.5 rounded">
+                      <SafeImage
+                        src={vehicle.image}
+                        alt={`${vehicle.brand} ${vehicle.model}`}
+                        fill
+                        className="object-cover"
+                        sizes="200px"
+                      />
+                      <div className="absolute top-2.5 left-2.5 bg-black/50 backdrop-blur-md text-white font-bold text-[9px] uppercase px-2 py-0.5 rounded z-10">
                         {vehicle.brand}
                       </div>
                     </div>
@@ -444,7 +355,7 @@ export default function MyCatalogView({
                           onClick={() => onVehicleClick(vehicle.id)}
                           className="font-bold text-gray-900 dark:text-white hover:text-[#3B82F6] transition-colors text-sm"
                         >
-                          {vehicle.name}
+                          {vehicle.model} {vehicle.generation}
                         </h4>
                         <button
                           onClick={() => handleRemoveVehicle(vehicle.id)}
@@ -480,9 +391,13 @@ export default function MyCatalogView({
         // --- UPLOAD CATALOG ZONE & FILE LIST ---
         <div className="space-y-6">
           <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm space-y-4">
-            <h3 className="font-bold text-gray-900 dark:text-white text-base">Knowledge Base Catalog Ingress</h3>
+            <h3 className="font-bold text-gray-900 dark:text-white text-base">
+              Daftar File Katalog (lokal)
+            </h3>
             <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl font-medium">
-              Upload file katalog spesifikasi, brosur pabrik ban, daftar offset velg (PDF, Excel, CSV, TXT, Word, Image). AI Assistant akan mengekstrak data menggunakan OCR, menghasilkan vektor embedding, dan secara otomatis memasukkannya sebagai konteks RAG pencarian Anda.
+              Upload menyimpan <strong>metadata file saja</strong> di browser
+              (localStorage). OCR, embedding, dan RAG <strong>belum diimplementasi</strong>{" "}
+              — fitur ini placeholder daftar referensi, bukan knowledge base AI.
             </p>
 
             {/* Drag & Drop Zone */}
@@ -516,7 +431,9 @@ export default function MyCatalogView({
           {/* Files List Table */}
           <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden">
             <div className="p-5 border-b border-gray-100 dark:border-gray-800">
-              <h4 className="font-bold text-gray-900 dark:text-white text-sm">Indexed Knowledge Files ({uploadedFiles.length})</h4>
+              <h4 className="font-bold text-gray-900 dark:text-white text-sm">
+                File lokal ({uploadedFiles.length})
+              </h4>
             </div>
 
             {uploadedFiles.length > 0 ? (
@@ -527,8 +444,8 @@ export default function MyCatalogView({
                       <th className="p-4">File Name</th>
                       <th className="p-4">Size</th>
                       <th className="p-4">Type</th>
-                      <th className="p-4">Date Uploaded</th>
-                      <th className="p-4">Indexing Status</th>
+                      <th className="p-4">Date</th>
+                      <th className="p-4">Status</th>
                       <th className="p-4 text-center">Action</th>
                     </tr>
                   </thead>
@@ -546,29 +463,14 @@ export default function MyCatalogView({
                           </span>
                         </td>
                         <td className="p-4 font-semibold text-gray-500">{file.dateAdded}</td>
-                        <td className="p-4">
-                          <div className="flex flex-col gap-1 max-w-[200px]">
-                            <div className="flex items-center gap-2 font-bold text-gray-700 dark:text-gray-300">
-                              {file.status !== "ready" && (
-                                <Loader2 size={13} className="text-[#3B82F6] animate-spin" />
-                              )}
-                              <span>{getProcessingLabel(file.status)}</span>
-                            </div>
-                            {file.status !== "ready" && (
-                              <div className="w-full bg-gray-100 dark:bg-gray-800 h-1.5 rounded-full overflow-hidden">
-                                <div
-                                  className="bg-[#3B82F6] h-full rounded-full transition-all duration-300"
-                                  style={{ width: `${file.progress}%` }}
-                                />
-                              </div>
-                            )}
-                          </div>
+                        <td className="p-4 font-semibold text-amber-600 dark:text-amber-400">
+                          Metadata only (no OCR)
                         </td>
                         <td className="p-4 text-center">
                           <button
                             onClick={() => handleDeleteFile(file.id)}
                             className="p-1.5 rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 transition-colors"
-                            title="Delete file knowledge"
+                            title="Hapus dari daftar"
                           >
                             <Trash2 size={14} />
                           </button>
