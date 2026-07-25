@@ -123,7 +123,7 @@ export default function AiAssistantView({
                 m.id === modelMsgId
                   ? {
                       ...m,
-                      content: `Maaf, terjadi kesalahan saat menghubungkan ke AI. Cek Settings / .env.local (AI_API_KEY) dan pastikan endpoint (9router) jalan.\n\n[Detail Error]: ${message}`,
+                      content: `Maaf, terjadi kesalahan saat menghubungkan ke AI. Cek Settings / .env.local (AI_API_KEY).\n\n[Detail Error]: ${message}`,
                     }
                   : m,
               ),

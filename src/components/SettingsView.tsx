@@ -92,9 +92,8 @@ export default function SettingsView() {
               chat (tidak di-commit ke git).
             </li>
             <li>
-              Default lokal: endpoint{" "}
-              <code className="font-mono">http://127.0.0.1:20128/v1</code>{" "}
-              (9router).
+              Default: endpoint{" "}
+              <code className="font-mono">https://api.xiaomimimo.com/v1</code>
             </li>
           </ol>
         </div>
@@ -106,7 +105,7 @@ export default function SettingsView() {
               type="url"
               value={endpoint}
               onChange={(e) => setEndpoint(e.target.value)}
-              placeholder="http://127.0.0.1:20128/v1"
+              placeholder="https://api.xiaomimimo.com/v1"
               className="mt-1 w-full px-3 py-2 text-sm border rounded-xl dark:bg-gray-800 dark:border-gray-700"
             />
           </label>

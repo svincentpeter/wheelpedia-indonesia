@@ -16,10 +16,23 @@ type ChatBody = {
   model?: string;
 };
 
-const DEFAULT_ENDPOINT = "http://127.0.0.1:20128/v1";
+const DEFAULT_ENDPOINT = "https://api.xiaomimimo.com/v1";
 const DEFAULT_MODEL = "XM/mimo-v2.5-pro";
 const MAX_MESSAGES = 40;
 const MAX_CONTENT_LEN = 8000;
+
+function getApiKeys(clientKey?: string): string[] {
+  if (clientKey?.trim()) return [clientKey.trim()];
+  
+  const keysEnv = process.env.AI_API_KEYS;
+  if (keysEnv) {
+    const keys = keysEnv.split(",").map(k => k.trim()).filter(Boolean);
+    if (keys.length > 0) return keys;
+  }
+  
+  const single = process.env.AI_API_KEY;
+  return single?.trim() ? [single.trim()] : [];
+}
 
 function isMessage(value: unknown): value is IncomingMessage {
   if (!value || typeof value !== "object") return false;
@@ -50,33 +63,28 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid message shape" }, { status: 400 });
   }
 
-  // Drop client system messages; we inject our own + catalog
   const userThread = raw.filter((m) => m.role !== "system");
 
   const endpoint =
     (typeof body.endpoint === "string" && body.endpoint.trim()) ||
     process.env.AI_ENDPOINT ||
     DEFAULT_ENDPOINT;
-  const apiKey =
-    (typeof body.apiKey === "string" && body.apiKey.trim()) ||
-    process.env.AI_API_KEY ||
-    "";
   const model =
     (typeof body.model === "string" && body.model.trim()) ||
     process.env.AI_MODEL ||
     DEFAULT_MODEL;
 
-  if (!apiKey) {
+  const apiKeys = getApiKeys(body.apiKey);
+  if (apiKeys.length === 0) {
     return NextResponse.json(
       {
         error:
-          "AI API key belum dikonfigurasi. Set AI_API_KEY di .env.local atau isi API key di Settings (BYOK).",
+          "AI API key belum dikonfigurasi. Set AI_API_KEYS atau AI_API_KEY di .env.local, atau isi API key di Settings (BYOK).",
       },
       { status: 503 },
     );
   }
 
-  // Basic SSRF guard: only allow http(s) localhost / private lab endpoints or https
   try {
     const url = new URL(endpoint);
     const isLocal =
@@ -99,48 +107,59 @@ export async function POST(request: Request) {
     ...userThread,
   ];
 
-  let upstream: Response;
-  try {
-    upstream = await fetch(`${endpoint.replace(/\/$/, "")}/chat/completions`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model,
-        messages,
-        stream: true,
-        temperature: 0.7,
-        max_tokens: 2000,
-      }),
-      signal: request.signal,
-    });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : "Upstream unreachable";
-    return NextResponse.json(
-      {
-        error: `Gagal menghubungi AI endpoint (${endpoint}). Pastikan 9router/proxy jalan. Detail: ${msg}`,
-      },
-      { status: 502 },
-    );
-  }
-
-  if (!upstream.ok || !upstream.body) {
-    const text = await upstream.text().catch(() => "");
-    return NextResponse.json(
-      {
-        error: `Upstream AI error ${upstream.status}${text ? `: ${text.slice(0, 200)}` : ""}`,
-      },
-      { status: 502 },
-    );
-  }
-
-  return new Response(upstream.body, {
-    headers: {
-      "Content-Type": "text/event-stream; charset=utf-8",
-      "Cache-Control": "no-cache, no-transform",
-      Connection: "keep-alive",
-    },
+  const upstreamUrl = `${endpoint.replace(/\/$/, "")}/chat/completions`;
+  const requestBody = JSON.stringify({
+    model,
+    messages,
+    stream: true,
+    temperature: 0.7,
+    max_tokens: 2000,
   });
+
+  let lastError = "";
+  for (const apiKey of apiKeys) {
+    let upstream: Response;
+    try {
+      upstream = await fetch(upstreamUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: requestBody,
+        signal: request.signal,
+      });
+    } catch (err) {
+      lastError = err instanceof Error ? err.message : "Upstream unreachable";
+      continue;
+    }
+
+    if (upstream.ok && upstream.body) {
+      return new Response(upstream.body, {
+        headers: {
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          Connection: "keep-alive",
+        },
+      });
+    }
+
+    const text = await upstream.text().catch(() => "");
+    const status = upstream.status;
+
+    if (status === 429 || status === 401 || status === 403) {
+      lastError = `Key habis/blocked (${status})`;
+      continue;
+    }
+
+    return NextResponse.json(
+      { error: `AI error ${status}${text ? `: ${text.slice(0, 200)}` : ""}` },
+      { status: 502 },
+    );
+  }
+
+  return NextResponse.json(
+    { error: `Semua API key habis. Terakhir: ${lastError}` },
+    { status: 429 },
+  );
 }
