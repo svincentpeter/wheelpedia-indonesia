@@ -1,6 +1,8 @@
 # Wheelpedia Indonesia 🚗
 
-Platform pembelajaran ban dan velg mobil Indonesia berbasis AI. Database lengkap 40+ mobil Indonesia, katalog ban, velg, dan AI assistant untuk tanya jawab.
+> **Bagi pengguna (tanpa coding):** Lihat [Public Spec](docs/PUBLIC-SPEC.md) untuk penjelasan lengkap fitur, cara pakai, dan contoh penggunaan.
+
+Platform web gratis untuk memahami, memilih, dan mempelajari ban serta velg mobil Indonesia. Database 40+ mobil, katalog ban & velg, learning center, AI assistant, dan kalkulator — semua dalam satu tempat.
 
 ## OmahBan Counter Kit
 

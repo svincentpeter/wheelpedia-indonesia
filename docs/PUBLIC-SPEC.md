@@ -1,23 +1,311 @@
-# Public Specification
-# Catalog Omah Ban - Data, Knowledge Base & Domain Reference
+# Wheelpedia Indonesia — Public Specification
+
+> **Platform pembelajaran dan referensi lengkap tentang ban serta velg mobil Indonesia.**
 
 ---
 
-## 1. Overview
+## Apa itu Wheelpedia Indonesia?
 
-Dokumen ini berisi **seluruh data domain** yang dibutuhkan untuk mengisi database Catalog Omah Ban. Mencakup:
-- Referensi ukuran ban per mobil Indonesia
-- Database ban (merek, ukuran, tipe, harga)
-- Database velg (merek, ukuran, PCD, material)
-- Data mobil Indonesia (merek, model, generasi, ukuran ban standar)
-- Materi pembelajaran (outline artikel, glossary)
-- Spesifikasi teknis ban & velg
+Wheelpedia Indonesia adalah **platform web gratis** yang membantu siapa saja memahami, memilih, dan mempelajari ban serta velg mobil di Indonesia. Semua data, tools, dan materi belajar tersedia dalam satu tempat — tanpa perlu coding, tanpa perlu akun.
+
+**Tagline:** *Belajar Ban & Velg, Dari Rumah.*
 
 ---
 
-## 2. Ukuran Ban - Penjelasan Lengkap
+## Masalah yang Dipecahkan
 
-### 2.1 Cara Membaca Ukuran Ban
+Banyak orang di Indonesia kesulitan saat harus:
+
+- **Tidak tahu ukuran ban standar** mobil mereka — Toyota Avanza pakai ban ukuran berapa?
+- **Bingung memilih ban** karena terlalu banyak merek, tipe, dan ukuran
+- **Tidak paham istilah teknis** seperti PCD, offset, aspect ratio, load index
+- **Sulit menemukan velg** yang cocok dengan ban dan mobil mereka
+- **Tidak ada sumber belajar terpadu** dalam bahasa Indonesia yang mudah dipahami
+- **Butuh referensi cepat** saat melayani pelanggan di toko ban
+
+Wheelpedia hadir sebagai **solusi satu atap** untuk semua kebutuhan tersebut.
+
+---
+
+## Siapa yang Mendapat Manfaat?
+
+| Pengguna | Kebutuhan | Fitur Utama |
+|----------|-----------|-------------|
+| **Pemilik Mobil Awam** | Cari tahu ukuran ban standar, pilih ban yang cocok | Database mobil, rekomendasi ban & velg |
+| **Penggemar Modifikasi** | Cari velg yang cocok, belajar soal fitment | PCD Finder, kalkulator offset, brand library |
+| **Pemilik & Staf Toko Ban** | Referensi cepat untuk menjawab pertanyaan pelanggan | Counter Kit, stok snapshot, AI assistant |
+| **Siswa SMK Otomotif** | Belajar tentang ban dan velg untuk ujian dan praktik | Learning center, quiz interaktif, glossary |
+| **Siapa saja** | Mencari informasi ban & velg secara cepat dan akurat | Search, kalkulator, AI chat |
+
+---
+
+## Yang Bisa Anda Dapatkan
+
+### 1. Database Mobil Indonesia Lengkap
+
+**40+ mobil populer Indonesia** dari Toyota, Honda, Suzuki, Mitsubishi, Daihatsu, Hyundai, Kia, Wuling, Mazda, Nissan, BMW, Mercedes, dan lainnya.
+
+Untuk setiap mobil, Anda bisa melihat:
+
+- **Ukuran ban standar OEM** (yang terpasang dari pabrik)
+- **Spesifikasi velg**: PCD, Center Bore, Offset, Nut Size
+- **Rekomendasi ban & velg** yang kompatibel
+- **Tips upgrade** untuk ukuran ban/velg yang lebih besar atau lebih kecil
+
+**Contoh:** Anda punya Toyota Avanza Gen 2 (2012-2022)? Cukup cari "Avanza" dan Anda langsung tahu:
+
+| Data | Nilai |
+|------|-------|
+| Ban standar | 185/65 R15 |
+| PCD | 4x100 |
+| Center Bore | 60.1mm |
+| Offset | +40 |
+| Velg yang cocok | Semua velg PCD 4x100 ukuran 14-17 inch |
+
+### 2. Katalog Ban Lengkap
+
+**14 ukuran ban populer** dari 175/65 R14 (mobil LCGC) hingga 265/65 R17 (Fortuner/Pajero).
+
+**20+ produk ban** dari merek terkenal: Bridgestone, Dunlop, GT Radial, Yokohama, Michelin, Falken, Hankook, Toyo, Accelera, Continental, dan lainnya.
+
+Untuk setiap ban, Anda bisa melihat:
+
+- **Tipe**: Touring, Sport, Eco, All-Terrain, Off-Road
+- **Load Index & Speed Rating**: Berapa beban maksimal dan kecepatan aman
+- **Harga range** (estimasi dalam Rupiah)
+- **Rating** berdasarkan performa
+- **Kompatibilitas**: Mobil mana yang bisa pakai ban ini
+
+### 3. Katalog Velg Lengkap
+
+**10+ brand velg populer** di Indonesia: Enkei, OZ Racing, Rays, Work, SSR, BBS, Sparco, Lenso, TSW, Rotiform, Vossen, ART, dan lainnya.
+
+Untuk setiap velg, Anda bisa melihat:
+
+- **Ukuran**: Diameter x Lebar (contoh: 17x8)
+- **PCD**: Pola lubang baut (4x100, 5x114.3, 5x112, dll)
+- **Offset (ET)**: Posisi velg terhadap fender
+- **Material**: Alloy, Flow Formed, atau Forged
+- **Harga per piece dan per set**
+- **Kompatibilitas**: Mobil mana yang bisa pakai velg ini
+
+### 4. Learning Center - Belajar dari Nol
+
+**7 modul pembelajaran** yang dirancang untuk pemula hingga lanjutan:
+
+| Modul | Topik | Level |
+|-------|-------|-------|
+| Cara Membaca Ukuran Ban | Penjelasan angka di samping ban | Pemula |
+| Jenis-Jenis Ban | Touring, Sport, Off-Road, Eco, Runflat | Pemula |
+| Merek Ban Populer | Perbandingan Bridgestone, Dunlop, GT Radial, dll | Pemula |
+| Kapan Harus Ganti Ban | Tanda-tanda ban aus dan tips perawatan | Pemula |
+| Apa itu Velg/Rim | Dasar-dasar velg untuk pemula | Pemula |
+| Memahami PCD | Cara kerja PCD dan cara mengukur | Menengah |
+| Memahami Offset (ET) | Pengaruh offset terhadap tampilan dan keamanan | Menengah |
+
+**Quiz Interaktif**: Uji pemahaman Anda dengan soal pilihan ganda yang disertai penjelasan.
+
+**Glossary**: 55+ istilah teknis ban, velg, dan fitment yang dijelaskan dengan bahasa sederhana.
+
+### 5. AI Assistant - Tanya Jawab Langsung
+
+**Chat AI real-time** yang bisa menjawab pertanyaan Anda tentang ban dan velg.
+
+Contoh pertanyaan yang bisa diajukan:
+
+- "Ban terbaik untuk Toyota Avanza untuk pemakaian harian?"
+- "Apa bedanya Bridgestone Ecopia dan Dunlop Enasave?"
+- "Velg apa yang cocok untuk Honda Jazz dengan PCD 4x100?"
+- "Saya punya budget 3 juta untuk upgrade ban Avanza, rekomendasi apa?"
+- "Apa itu PCD dan mengapa penting saat memilih velg?"
+- "Ban apa yang bagus untuk musim hujan di Indonesia?"
+
+**Fitur AI Assistant:**
+
+- Jawaban real-time dengan streaming
+- Kontekstual - AI tahu data katalog saat menjawab
+- Quick prompts - template pertanyaan siap pakai
+- BYOK (Bring Your Own Key) - bawa API key sendiri untuk privasi
+
+### 6. Kalkulator & Tools
+
+| Tool | Fungsi | Siapa yang Butuh |
+|------|--------|------------------|
+| **Tire Calculator** | Hitung diameter luar, speed error, clearance change | Pemilik mobil yang mau upgrade ban |
+| **Wheel Calculator** | Hitung inner/outer clearance, poke | Penggemar modifikasi |
+| **Perbandingan Ukuran** | Bandingkan 2 ukuran ban side-by-side | Yang bingung pilih ukuran |
+| **PCD Finder** | Cari velg yang cocok berdasarkan PCD mobil | Yang mau ganti velg |
+
+### 7. OmahBan Counter Kit (untuk Staf Toko Ban)
+
+Fitur khusus untuk pemilik dan staf toko ban:
+
+- **Counter**: Cari mobil > lihat stok yang cocok > rekomendasi merk > AI script penjualan
+- **Browse Stok**: Lihat snapshot stok toko dari Excel
+- **AI Assistant**: Asisten penjualan yang tahu stok toko
+
+---
+
+## Bagaimana Menggunakannya
+
+### Akses Gratis
+
+Wheelpedia Indonesia bisa diakses secara gratis melalui browser web:
+
+- **Komputer/Laptop**: Buka browser, kunjungi alamat web
+- **Smartphone/Tablet**: Desain responsive, nyaman di layar kecil
+- **Dark Mode**: Toggle dark/light sesuai kenyamanan
+
+### Tanpa Pendaftaran
+
+Sebagian besar fitur bisa digunakan **tanpa membuat akun**:
+
+- Browsing database mobil, ban, dan velg
+- Menggunakan kalkulator ban dan velg
+- Membaca materi pembelajaran
+- Mengikuti quiz interaktif
+- Mencari istilah di glossary
+- Menggunakan AI Assistant (dengan API key sendiri)
+
+### Tips Memulai
+
+1. **Mulai dari Dashboard** - Lihat ringkasan data dan fitur yang tersedia
+2. **Cari Mobil Anda** - Buka halaman Vehicles dan cari merek/model mobil Anda
+3. **Lihat Spesifikasi** - Klik mobil Anda untuk melihat ukuran ban standar, PCD, dan rekomendasi
+4. **Eksplorasi Katalog** - Browsing ban dan velg yang tersedia, filter berdasarkan ukuran atau merek
+5. **Belajar** - Buka Learning Center untuk memahami istilah teknis
+6. **Tanya AI** - Gunakan AI Assistant untuk pertanyaan spesifik tentang ban dan velg
+
+### Route Penting
+
+| Halaman | Apa yang Ada |
+|---------|-------------|
+| /dashboard | Ringkasan statistik dan navigasi cepat |
+| /vehicles | Database 40+ mobil Indonesia dengan spesifikasi lengkap |
+| /tires | Katalog ban lengkap dengan filter ukuran dan merek |
+| /wheels | Katalog velg lengkap dengan filter PCD dan ukuran |
+| /brands | Profil lengkap 22 brand ban dan velg |
+| /learning | 7 modul pembelajaran dari dasar hingga lanjutan |
+| /glossary | 55+ istilah teknis yang dijelaskan sederhana |
+| /calculators | Kalkulator ban, velg, dan perbandingan ukuran |
+| /ai-assistant | Chat AI untuk tanya jawab tentang ban dan velg |
+| /counter | Counter kit untuk staf toko OmahBan |
+| /stok | Browse snapshot stok toko |
+
+---
+
+## Contoh Penggunaan Nyata
+
+### Skenario 1: Pemilik Mobil yang Mau Ganti Ban
+
+> Saya punya Honda Brio, ban sudah tipis. Beli ukuran berapa ya?
+
+1. Buka halaman **Vehicles**
+2. Cari Honda Brio
+3. Lihat: Ban standar = **175/65 R14**, PCD = **4x100**
+4. Buka halaman **Tires**, filter ukuran **175/65 R14**
+5. Lihat pilihan: Bridgestone Ecopia (Rp 350-450rb), Dunlop Enasave (Rp 350-430rb), GT Radial Champiro Eco (Rp 280-350rb)
+6. Pilih sesuai budget dan kebutuhan
+
+### Skenario 2: Penggemar Modifikasi yang Mau Ganti Velg
+
+> Saya mau pasang velg aftermarket di Toyota Yaris. PCD-nya berapa?
+
+1. Buka halaman **Vehicles**
+2. Cari Toyota Yaris
+3. Lihat: PCD = **4x100**, Center Bore = **60.1mm**
+4. Buka halaman **Wheels**, filter PCD **4x100**
+5. Lihat pilihan: Enkei RPF1 (Rp 4.5jt/pc), OZ Racing Ultraleggera (Rp 4jt/pc), ART Berlin (Rp 1.2jt/pc)
+6. Gunakan **Wheel Calculator** untuk cek clearance
+
+### Skenario 3: Staf Toko Ban Melayani Pelanggan
+
+> Pelanggan tanya: ban ukuran 205/55 R16 ada merek apa saja?
+
+1. Buka halaman **Counter**
+2. Pilih mobil pelanggan
+3. Lihat stok yang tersedia di toko
+4. Lihat rekomendasi merk berdasarkan data katalog
+5. Gunakan **AI Assistant** untuk script penjualan
+
+### Skenario 4: Siswa SMK Belajar
+
+> Apa itu PCD dan offset? Saya mau belajar untuk ujian.
+
+1. Buka halaman **Learning Center**
+2. Baca modul Memahami PCD dan Memahami Offset (ET)
+3. Buka **Glossary** untuk definisi lengkap istilah teknis
+4. Ikuti **Quiz** untuk menguji pemahaman
+
+---
+
+## Ringkasan Data Teknis
+
+> Bagian data teknis di bawah mencakup: cara membaca ukuran ban & velg, speed rating, load index, PCD reference, center bore, material comparison, database mobil Indonesia (40+ model), database ban (8 ukuran, 20+ produk), database velg (3 PCD, 30+ model), glossary 55+ istilah, kalkulator tools, AI chat templates, dan SEO metadata.
+
+
+## Segmen Kendaraan Listrik di Indonesia
+
+### Arsitektur Elektrifikasi
+
+| Arsitektur | Keterangan | Merek Aktif di Indonesia |
+|-----------|------------|-------------------------|
+| **BEV** (Battery Electric Vehicle) | Baterai murni, zero emission | Wuling, BYD, Hyundai, Chery, MG, Neta, GAC Aion, BMW, Mercedes, Porsche, Tesla |
+| **HEV** (Hybrid Electric Vehicle) | Hibrida konvensional, tidak perlu colok | Toyota, Honda, Suzuki, Wuling, GWM, Lexus |
+| **PHEV** (Plug-in Hybrid Electric Vehicle) | Hibrida colok, bisa listrik murni jarak pendek | Toyota, Mitsubishi, Volvo, Lexus |
+
+### Model BEV Populer di Indonesia
+
+| Merek | Model | Range (km) | Harga (estimasi) | PCD |
+|-------|-------|------------|------------------|-----|
+| **Wuling** | Air EV | 200-300 | Rp 110-170jt | 4x100 |
+| **Wuling** | Cloud EV | 360 | Rp 230jt | 5x114.3 |
+| **BYD** | Dolphin | 427 | Rp 355-400jt | 4x100 |
+| **BYD** | Atto 3 | 480 | Rp 465-500jt | 5x114.3 |
+| **BYD** | Seal | 520 | Rp 650-750jt | 5x114.3 |
+| **Hyundai** | Ioniq 5 | 481 | Rp 700-850jt | 5x114.3 |
+| **Chery** | Omoda E5 | 430 | Rp 380-420jt | 5x114.3 |
+| **MG** | MG4 EV | 350-450 | Rp 380-450jt | 5x114.3 |
+| **Tesla** | Model 3 | 510-602 | Rp 650-900jt | 5x114.3 |
+
+### Insentif Pemerintah untuk EV
+
+- **PPN-BM 0%** untuk kendaraan listrik
+- **Potongan PPN** untuk komponen EV
+- **Bebas ganjil-genap** untuk kendaraan listrik
+- **TKDN** mendorong pembangunan pabrik baterai lokal di Karawang
+
+---
+
+## Peta Merek Otomotif di Indonesia
+
+### Merek Aktif per Kategori
+
+| Kategori | Merek Utama | Merek Tambahan |
+|----------|-------------|----------------|
+| **Jepang** | Toyota, Honda, Suzuki, Mitsubishi, Nissan, Mazda, Daihatsu | Lexus, Subaru, Isuzu, Hino |
+| **Tiongkok** | Wuling | BYD, Chery, GWM (Haval/Tank/Ora), MG, Neta, DFSK, Seres, BAIC, GAC Aion, Jetour |
+| **Eropa** | BMW, Mercedes-Benz | Audi, VW, Porsche, Volvo, Peugeot, Citroen, MINI, Ferrari, Lamborghini |
+| **Korea** | Hyundai, Kia | SsangYong/KG Mobility |
+| **Amerika** | Jeep | Ford, Tesla, Dodge |
+| **Komersial** | Isuzu, Hino, Mitsubishi Fuso | Tata Motors, UD Trucks, Scania, Volvo Trucks |
+
+### Impiasi Teknis per Segmen
+
+| Segmen | PCD | Center Bore | Ukuran Roda |
+|--------|-----|-------------|-------------|
+| City Car & LCGC | 4x100 | 54.1-56.1mm | R14-R15 |
+| LMPV Masal | 4x114.3 / 5x114.3 | 60.1-67.1mm | R15-R17 |
+| Medium SUV & MPV | 5x114.3 | 60.1-67.1mm | R16-R18 |
+| SUV Ladder Frame | 6x139.7 | 106.1-107.1mm | R17-R18 |
+| BEV Tiongkok & Korea | 5x114.3 | 67.1mm | R17-R20 |
+| Eropa Premium | 5x112 / 5x120 | 66.6-72.6mm | R17-R19 |
+
+---
+
+## Ukuran Ban - Cara Membaca
+
+### Cara Membaca Ukuran Ban
 
 Contoh: **185/65 R15 88H**
 
@@ -30,7 +318,7 @@ Contoh: **185/65 R15 88H**
 | **88** | Load Index | Maks beban 560 kg per ban |
 | **H** | Speed Rating | Maks kecepatan 210 km/h |
 
-### 2.2 Rumus Menghitung Diameter Luar Ban
+### Rumus Menghitung Diameter Luar Ban
 
 ```
 Diameter Luar = (2 × lebar × aspect_ratio / 100) + (rim × 25.4)
@@ -42,7 +330,7 @@ Contoh: 185/65 R15
 = 621.5 mm
 ```
 
-### 2.3 Speed Rating Lengkap
+### Speed Rating Lengkap
 
 | Rating | Max Speed | Kegunaan |
 |--------|-----------|----------|
@@ -61,7 +349,7 @@ Contoh: 185/65 R15
 | Y | 300 km/h | Ultra high performance |
 | ZR | >240 km/h | Z-rated (suffix) |
 
-### 2.4 Load Index Tabel (Yang Umum di Indonesia)
+### Load Index Tabel (Yang Umum di Indonesia)
 
 | Load Index | Beban (kg) | Load Index | Beban (kg) |
 |------------|------------|------------|------------|
@@ -83,9 +371,9 @@ Contoh: 185/65 R15
 
 ---
 
-## 3. Velg (Rim) - Penjelasan Lengkap
+## Velg - Cara Membaca
 
-### 3.1 Cara Membaca Ukuran Velg
+### Cara Membaca Ukuran Velg
 
 Contoh: **7J x 15 ET35 4x100 CB60.1**
 
@@ -99,7 +387,7 @@ Contoh: **7J x 15 ET35 4x100 CB60.1**
 | **4x100** | PCD | 4 lubang baut, diameter lingkaran 100mm |
 | **CB60.1** | Center Bore | Diameter lubang tengah 60.1mm |
 
-### 3.2 PCD (Pitch Circle Diameter)
+### PCD (Pitch Circle Diameter)
 
 PCD = jumlah baut × diameter lingkaran baut (dalam mm)
 
@@ -114,7 +402,7 @@ PCD = jumlah baut × diameter lingkaran baut (dalam mm)
 | **5x112** | BMW, Mercedes-Benz, VW, Audi |
 | **5x120** | BMW (sebagian), Honda Odyssey |
 
-### 3.3 Offset (ET) Explained
+### Offset (ET) Explained
 
 ```
 ET (Einpresstiefe) = jarak dari mounting surface ke centerline velg
@@ -136,7 +424,7 @@ Efek:
 - ET lebih besar → velg lebih masuk, bisa kena strut/spring
 ```
 
-### 3.4 Center Bore Umum
+### Center Bore Umum
 
 | Center Bore | Mobil |
 |-------------|-------|
@@ -148,7 +436,7 @@ Efek:
 | 72.6mm | BMW |
 | 66.5mm | Hyundai, Kia |
 
-### 3.5 Material Comparison
+### Material Comparison
 
 | Property | Steel | Alloy (Cast) | Flow Formed | Forged |
 |----------|-------|-------------|-------------|--------|
@@ -160,7 +448,7 @@ Efek:
 | Repair | Mudah dilas | Sulit | Sulit | Sangat Sulit |
 | Cocok untuk | Harian, ekonomis | Upgrade estetika | Performance | Track, show |
 
-### 3.6 Brand Velg Populer di Indonesia
+### Brand Velg Populer di Indonesia
 
 | Brand | Asal | Harga Range (per pc) | Tipe |
 |-------|------|---------------------|------|
@@ -183,26 +471,26 @@ Efek:
 
 ---
 
-## 4. Data Mobil Indonesia Lengkap
+## Data Mobil Indonesia Lengkap
 
-### 4.1 TOYOTA
+### TOYOTA
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
-| **Avanza** | Gen 1 | 2004-2011 | 175/65 R14 | 4x100 | 60.1 | +40 | MPV |
-| **Avanza** | Gen 2 | 2012-2022 | 185/65 R15 | 4x100 | 60.1 | +40 | MPV |
-| **Avanza** | Gen 3 (All New) | 2022+ | 185/60 R15 | 4x100 | 60.1 | +40 | MPV |
-| **Xenia** | Gen 1 | 2004-2011 | 175/65 R14 | 4x100 | 60.1 | +40 | MPV |
-| **Xenia** | Gen 2 | 2012-2022 | 185/65 R15 | 4x100 | 60.1 | +40 | MPV |
-| **Xenia** | Gen 3 | 2022+ | 185/60 R15 | 4x100 | 60.1 | +40 | MPV |
+| **Avanza** | Gen 1 | 2004-2011 | 185/70 R14 | 4x114.3 | 60.1 | +45 | MPV |
+| **Avanza** | Gen 2 | 2012-2022 | 185/65 R15 | 4x114.3 | 60.1 | +45 | MPV |
+| **Avanza** | Gen 3 (All New) | 2022+ | 185/65 R15 | 4x100 | 54.1 | +45 | MPV |
+| **Xenia** | Gen 1 | 2004-2011 | 185/70 R14 | 4x114.3 | 54.1 | +45 | MPV |
+| **Xenia** | Gen 2 | 2012-2022 | 185/65 R15 | 4x114.3 | 54.1 | +45 | MPV |
+| **Xenia** | Gen 3 | 2022+ | 185/65 R15 | 4x100 | 54.1 | +45 | MPV |
 | **Innova** | Gen 1 (Reborn) | 2004-2015 | 205/65 R15 | 5x114.3 | 60.1 | +40 | MPV |
 | **Innova** | Gen 2 (Venturer) | 2015-2022 | 205/65 R16 | 5x114.3 | 60.1 | +40 | MPV |
 | **Innova** | Gen 3 (Zenix) | 2022+ | 215/55 R17 | 5x114.3 | 60.1 | +40 | MPV |
-| **Yaris** | XP150 | 2013-2020 | 185/60 R15 | 4x100 | 60.1 | +45 | Hatchback |
-| **Yaris** | XP210 | 2020+ | 195/55 R16 | 4x100 | 60.1 | +45 | Hatchback |
-| **Yaris Cross** | - | 2023+ | 215/55 R17 | 5x114.3 | 60.1 | +40 | SUV |
-| **Raize** | - | 2021+ | 195/60 R16 | 4x100 | 60.1 | +40 | SUV |
-| **Rush** | Gen 2 | 2018+ | 215/60 R16 | 5x114.3 | 60.1 | +40 | SUV |
+| **Yaris** | XP150 | 2013-2020 | 195/50 R16 | 4x100 | 54.1 | +45 | Hatchback |
+| **Yaris** | XP210 | 2020+ | 195/55 R16 | 4x100 | 54.1 | +45 | Hatchback |
+| **Yaris Cross** | - | 2023+ | 215/60 R17 | 5x100 | 54.1 | +45 | SUV |
+| **Raize** | - | 2021+ | 195/65 R16 | 4x100 | 54.1 | +45 | SUV |
+| **Rush** | Gen 2 | 2018+ | 215/60 R17 | 5x114.3 | 60.1 | +45 | SUV |
 | **CHR** | - | 2017+ | 215/60 R17 | 5x114.3 | 60.1 | +40 | SUV |
 | **Fortuner** | Gen 2 | 2015+ | 265/65 R17 | 6x139.7 | 106.1 | +30 | SUV |
 | **Calya** | - | 2016+ | 175/65 R14 | 4x100 | 60.1 | +40 | MPV |
@@ -214,18 +502,18 @@ Efek:
 | **Hilux** | Gen 8 | 2015+ | 265/65 R17 | 6x139.7 | 106.1 | +30 | Pickup |
 | **Land Cruiser** | LC300 | 2022+ | 265/55 R20 | 6x139.7 | 106.1 | +40 | SUV |
 
-### 4.2 HONDA
+### HONDA
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
-| **Brio** | Gen 1 | 2013-2018 | 175/65 R14 | 4x100 | 64.1 | +45 | Hatchback |
-| **Brio** | Gen 2 (Satya) | 2018+ | 175/65 R14 | 4x100 | 64.1 | +45 | Hatchback |
-| **Jazz** | GE | 2008-2014 | 175/65 R15 | 4x100 | 64.1 | +45 | Hatchback |
-| **Jazz** | GK | 2014-2020 | 185/55 R16 | 4x100 | 64.1 | +45 | Hatchback |
-| **City** | GN2 | 2014-2020 | 185/55 R16 | 4x100 | 64.1 | +45 | Sedan |
-| **City** | GN3 (Hatchback) | 2021+ | 185/55 R16 | 4x100 | 64.1 | +45 | Hatchback |
+| **Brio** | Gen 1 | 2013-2018 | 175/65 R14 | 4x100 | 56.1 | +50 | Hatchback |
+| **Brio** | Gen 2 (Satya) | 2018+ | 175/65 R14 | 4x100 | 56.1 | +50 | Hatchback |
+| **Jazz** | GE | 2008-2014 | 185/55 R16 | 4x100 | 56.1 | +53 | Hatchback |
+| **Jazz** | GK | 2014-2020 | 185/55 R16 | 4x100 | 56.1 | +53 | Hatchback |
+| **City** | GN2 | 2014-2020 | 185/55 R16 | 4x100 | 56.1 | +53 | Sedan |
+| **City** | GN3 (Hatchback) | 2021+ | 185/55 R16 | 4x100 | 56.1 | +53 | Hatchback |
 | **HRV** | Gen 1 | 2014-2022 | 215/55 R17 | 5x114.3 | 64.1 | +40 | SUV |
-| **HRV** | Gen 2 (RS) | 2022+ | 215/55 R17 | 5x114.3 | 64.1 | +40 | SUV |
+| **HRV** | Gen 2 (RS) | 2022+ | 215/60 R17 | 5x114.3 | 64.1 | +45 | SUV |
 | **BRV** | Gen 1 | 2016-2022 | 195/60 R16 | 5x114.3 | 64.1 | +40 | SUV |
 | **BRV** | Gen 2 | 2022+ | 215/55 R17 | 5x114.3 | 64.1 | +40 | SUV |
 | **CRV** | Gen 5 | 2017+ | 235/60 R18 | 5x114.3 | 64.1 | +40 | SUV |
@@ -233,12 +521,12 @@ Efek:
 | **Civic** | Gen 11 (FE) | 2022+ | 235/40 R18 | 5x114.3 | 64.1 | +45 | Sedan |
 | **Accord** | Gen 11 | 2023+ | 235/45 R18 | 5x114.3 | 64.1 | +45 | Sedan |
 
-### 4.3 SUZUKI
+### SUZUKI
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
-| **Ertiga** | Gen 1 | 2012-2018 | 185/65 R15 | 4x100 | 60.1 | +40 | MPV |
-| **Ertiga** | Gen 2 | 2018+ | 185/65 R15 | 4x100 | 60.1 | +40 | MPV |
+| **Ertiga** | Gen 1 | 2012-2018 | 185/65 R15 | 5x114.3 | 60.1 | +45 | MPV |
+| **Ertiga** | Gen 2 | 2018+ | 185/65 R15 | 5x114.3 | 60.1 | +45 | MPV |
 | **Swift** | Gen 3 | 2010-2017 | 185/60 R16 | 4x100 | 60.1 | +40 | Hatchback |
 | **Swift** | Gen 4 | 2018+ | 185/55 R16 | 4x100 | 60.1 | +40 | Hatchback |
 | **Baleno** | New | 2016+ | 185/55 R16 | 4x100 | 60.1 | +40 | Hatchback |
@@ -248,7 +536,7 @@ Efek:
 | **XL7** | - | 2020+ | 195/60 R16 | 5x114.3 | 60.1 | +40 | SUV |
 | **S-Presso** | - | 2020+ | 165/70 R14 | 4x100 | 60.1 | +40 | Hatchback |
 
-### 4.4 DAIHATSU
+### DAIHATSU
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
@@ -259,20 +547,20 @@ Efek:
 | **Rocky** | - | 2021+ | 195/60 R16 | 4x100 | 60.1 | +40 | SUV |
 | **Xenia** | (lihat Toyota) | - | - | - | - | - | MPV |
 
-### 4.5 MITSUBISHI
+### MITSUBISHI
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
-| **Xpander** | Gen 1 | 2017-2022 | 205/55 R16 | 5x114.3 | 66.1 | +40 | MPV |
-| **Xpander** | Gen 2 (Cross) | 2022+ | 205/55 R16 | 5x114.3 | 66.1 | +40 | MPV |
-| **Xpander Cross** | - | 2019+ | 205/55 R17 | 5x114.3 | 66.1 | +40 | SUV |
+| **Xpander** | Gen 1 | 2017-2022 | 205/55 R16 | 5x114.3 | 67.1 | +46 | MPV |
+| **Xpander** | Gen 2 (Cross) | 2022+ | 205/55 R17 | 5x114.3 | 67.1 | +45 | MPV |
+| **Xpander Cross** | - | 2019+ | 205/55 R17 | 5x114.3 | 67.1 | +45 | SUV |
 | **Pajero Sport** | Gen 3 | 2016+ | 265/60 R18 | 6x139.7 | 112 | +30 | SUV |
 | **Triton** | Gen 5 | 2019+ | 245/70 R16 | 6x139.7 | 112 | +30 | Pickup |
 | **Outlander Sport** | - | 2012-2020 | 215/65 R17 | 5x114.3 | 66.1 | +40 | SUV |
 | **Eclipse Cross** | - | 2019+ | 225/55 R18 | 5x114.3 | 66.1 | +40 | SUV |
 | **L300** | - | 1980+ | 185 R14 LT | 5x114.3 | 66.1 | +40 | Van/Pickup |
 
-### 4.6 NISSAN
+### NISSAN
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
@@ -283,7 +571,7 @@ Efek:
 | **Terra** | - | 2018+ | 255/60 R18 | 6x139.7 | 100 | +30 | SUV |
 | **Magnite** | - | 2021+ | 195/60 R16 | 4x100 | 60.1 | +40 | SUV |
 
-### 4.7 MAZDA
+### MAZDA
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
@@ -294,7 +582,7 @@ Efek:
 | **CX-5** | KF | 2017+ | 225/65 R17 | 5x114.3 | 67.1 | +40 | SUV |
 | **CX-8** | - | 2019+ | 225/55 R19 | 5x114.3 | 67.1 | +40 | SUV |
 
-### 4.8 HYUNDAI
+### HYUNDAI
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
@@ -305,7 +593,7 @@ Efek:
 | **Ioniq 5** | - | 2022+ | 235/55 R19 | 5x114.3 | 67.1 | +40 | EV SUV |
 | **Palisade** | - | 2020+ | 245/50 R20 | 5x114.3 | 67.1 | +40 | SUV |
 
-### 4.9 KIA
+### KIA
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
@@ -314,17 +602,17 @@ Efek:
 | **Sportage** | Gen 5 (NQ5) | 2022+ | 235/55 R18 | 5x114.3 | 67.1 | +40 | SUV |
 | **Carnival** | Gen 4 (KA4) | 2021+ | 235/60 R18 | 5x114.3 | 67.1 | +40 | MPV |
 
-### 4.10 WULING
+### WULING
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
-| **Confero** | - | 2017+ | 195/60 R15 | 4x100 | 60.1 | +40 | MPV |
-| **Cortez** | - | 2018+ | 195/55 R16 | 4x100 | 60.1 | +40 | MPV |
+| **Confero** | - | 2017+ | 195/60 R15 | 4x114.3 | 56.6 | +43 | MPV |
+| **Cortez** | - | 2018+ | 195/55 R16 | 4x114.3 | 56.6 | +43 | MPV |
 | **Almaz** | - | 2019+ | 215/55 R17 | 5x114.3 | 60.1 | +40 | SUV |
 | **Air EV** | - | 2022+ | 165/65 R14 | 4x100 | 60.1 | +40 | EV |
 | **Bingo** | - | 2023+ | 185/55 R15 | 4x100 | 60.1 | +40 | EV |
 
-### 4.11 BMW & MERCEDES (Populer di Indonesia)
+### BMW & MERCEDES (Populer di Indonesia)
 
 | Model | Generasi | Tahun | Ban Standar | PCD | CB | ET | Body |
 |-------|----------|-------|-------------|-----|-----|-----|------|
@@ -336,9 +624,9 @@ Efek:
 
 ---
 
-## 5. Database Ban Lengkap (Populer di Indonesia)
+## Database Ban Lengkap (Populer di Indonesia)
 
-### 5.1 Ban Ukuran 175/65 R14 (Mobil LCGC & City Car)
+### Ban Ukuran 175/65 R14 (Mobil LCGC & City Car)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -349,7 +637,7 @@ Efek:
 | Accelera | Phi-R | Touring | 82T | 220-300rb | ⭐3.8 |
 | Hankook | Kinergy Eco2 | Eco | 82T | 350-420rb | ⭐4.1 |
 
-### 5.2 Ban Ukuran 185/65 R15 (Avanza, Ertiga, dll)
+### Ban Ukuran 185/65 R15 (Avanza, Ertiga, dll)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -364,7 +652,7 @@ Efek:
 | Toyo | Nano Energy 3 | Eco | 88H | 480-600rb | ⭐4.1 |
 | Accelera | Phi-R | Touring | 88H | 300-400rb | ⭐3.9 |
 
-### 5.3 Ban Ukuran 195/55 R16 (Yaris, Jazz GK, City)
+### Ban Ukuran 195/55 R16 (Yaris, Jazz GK, City)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -375,7 +663,7 @@ Efek:
 | Michelin | Primacy 4 | Premium Touring | 87V | 950-1200rb | ⭐4.7 |
 | Continental | UltraContact UC6 | Touring | 87V | 800-1000rb | ⭐4.4 |
 
-### 5.4 Ban Ukuran 205/55 R16 (Innova, Xpander, Livina)
+### Ban Ukuran 205/55 R16 (Innova, Xpander, Livina)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -388,7 +676,7 @@ Efek:
 | Hankook | Ventus Prime4 | Touring | 91V | 750-950rb | ⭐4.3 |
 | Toyo | Proxes CF2 | Sport Touring | 91V | 700-900rb | ⭐4.2 |
 
-### 5.5 Ban Ukuran 215/55 R17 (HRV, Creta, BRV, dll)
+### Ban Ukuran 215/55 R17 (HRV, Creta, BRV, dll)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -400,7 +688,7 @@ Efek:
 | Hankook | Ventus S1 evo3 | Performance | 94V | 1000-1300rb | ⭐4.4 |
 | Falken | Azenis FK510 | Sport | 94W | 900-1200rb | ⭐4.4 |
 
-### 5.6 Ban Ukuran 215/60 R17 (Rush, Terios, Creta)
+### Ban Ukuran 215/60 R17 (Rush, Terios, Creta)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -410,7 +698,7 @@ Efek:
 | Yokohama | Geolandar CV G058 | Crossover | 96H | 1100-1400rb | ⭐4.4 |
 | Hankook | Dynapro HP2 | Highway | 96H | 900-1150rb | ⭐4.2 |
 
-### 5.7 Ban Ukuran 215/65 R17 (CRV, Innova Zenix)
+### Ban Ukuran 215/65 R17 (CRV, Innova Zenix)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -419,7 +707,7 @@ Efek:
 | Continental | CrossContact LX Sport | SUV | 99H | 1300-1600rb | ⭐4.5 |
 | Michelin | Latitude Sport 3 | Premium SUV | 99H | 1500-1800rb | ⭐4.6 |
 
-### 5.8 Ban Ukuran 265/65 R17 (Fortuner, Pajero, Hilux)
+### Ban Ukuran 265/65 R17 (Fortuner, Pajero, Hilux)
 
 | Merek | Model | Tipe | Load/Speed | Harga (IDR) | Rating |
 |-------|-------|------|------------|-------------|--------|
@@ -432,9 +720,9 @@ Efek:
 
 ---
 
-## 6. Data Velg Populer (PCD Umum Indonesia)
+## Data Velg Populer (PCD Umum Indonesia)
 
-### 6.1 Velg PCD 4x100 (Avanza, Jazz, Brio, Yaris, Ayla, dll)
+### Velg PCD 4x100 (Avanza, Jazz, Brio, Yaris, Ayla, dll)
 
 | Brand | Model | Ukuran | ET | Material | Harga/pc | Harga Set |
 |-------|-------|--------|-----|----------|----------|-----------|
@@ -449,7 +737,7 @@ Efek:
 | TSW | Sebring | 15x7 | +35 | Alloy | 2jt | 8jt |
 | Rays | Volk Racing TE37 | 15x8 | +25 | Forged | 8jt | 32jt |
 
-### 6.2 Velg PCD 5x114.3 (Innova, HRV, CRV, Xpander, dll)
+### Velg PCD 5x114.3 (Innova, HRV, CRV, Xpander, dll)
 
 | Brand | Model | Ukuran | ET | Material | Harga/pc | Harga Set |
 |-------|-------|--------|-----|----------|----------|-----------|
@@ -464,7 +752,7 @@ Efek:
 | Lenso | Jager | 17x8 | +38 | Alloy | 1.2jt | 4.8jt |
 | Sparco | Terra | 17x8 | +37 | Alloy | 3jt | 12jt |
 
-### 6.3 Velg PCD 5x112 (BMW, Mercedes, VW)
+### Velg PCD 5x112 (BMW, Mercedes, VW)
 
 | Brand | Model | Ukuran | ET | Material | Harga/pc | Harga Set |
 |-------|-------|--------|-----|----------|----------|-----------|
@@ -476,9 +764,9 @@ Efek:
 
 ---
 
-## 7. Materi Pembelajaran (Learning Center Content)
+## Materi Pembelajaran (Learning Center)
 
-### 7.1 Outline Artikel - Ban 101 (Beginner)
+### Artikel Ban 101 (Beginner)
 
 #### Artikel 1: "Cara Membaca Ukuran Ban - Panduan Lengkap"
 ```
@@ -551,7 +839,7 @@ Isi:
 Visual: Foto ban yang perlu diganti
 ```
 
-### 7.2 Outline Artikel - Velg 101 (Beginner)
+### Artikel Velg 101 (Beginner)
 
 #### Artikel 5: "Apa itu Velg/Rim? Panduan untuk Pemula"
 ```
@@ -602,7 +890,7 @@ Isi:
 Visual: Diagram offset side-view
 ```
 
-### 7.3 Outline Artikel - Advanced
+### Artikel Advanced
 
 #### Artikel 8: "Menghitung Speedometer Error Setelah Ganti Ban"
 ```
@@ -638,7 +926,7 @@ Level: Advanced
 Silica vs carbon black, tread pattern engineering, wet grip rating
 ```
 
-### 7.4 Outline Tips & Practical
+### Tips & Practical
 
 #### Artikel 11: "Tips Merawat Ban agar Awet"
 #### Artikel 12: "Cara Cek Tekanan Ban yang Benar"
@@ -651,9 +939,9 @@ Silica vs carbon black, tread pattern engineering, wet grip rating
 
 ---
 
-## 8. Glossary Lengkap
+## Glossary Lengkap
 
-### 8.1 Istilah Ban
+### Istilah Ban
 
 | Istilah | Definisi | Contoh |
 |---------|----------|--------|
@@ -677,7 +965,7 @@ Silica vs carbon black, tread pattern engineering, wet grip rating
 | **Treadwear** | Indeks ketahanan aus | 300 = standar, 600 = awet |
 | **TWI** | Tread Wear Indicator | Tonjolan di alur = saatnya ganti |
 
-### 8.2 Istilah Velg
+### Istilah Velg
 
 | Istilah | Definisi | Contoh |
 |---------|----------|--------|
@@ -703,7 +991,7 @@ Silica vs carbon black, tread pattern engineering, wet grip rating
 | **Weight** | Berat velg | Kg per piece |
 | **Width** | Lebar velg dalam inch | 7J = 7 inch |
 
-### 8.3 Istilah Mobil & Fitment
+### Istilah Mobil & Fitment
 
 | Istilah | Definisi |
 |---------|----------|
@@ -720,9 +1008,9 @@ Silica vs carbon black, tread pattern engineering, wet grip rating
 
 ---
 
-## 9. Kalkulator & Tools (Fitur Aplikasi)
+## Kalkulator & Tools (Detail Fitur)
 
-### 9.1 Tire Size Calculator
+### Tire Size Calculator
 
 ```
 Input:
@@ -745,7 +1033,7 @@ Output:
 └──────────────────────────────────────────┘
 ```
 
-### 9.2 Offset Calculator
+### Offset Calculator
 
 ```
 Input:
@@ -765,7 +1053,7 @@ Output:
 └──────────────────────────────────────────┘
 ```
 
-### 9.3 PCD Finder
+### PCD Finder
 
 ```
 Input: Toyota Avanza Gen 2
@@ -785,9 +1073,9 @@ Output:
 
 ---
 
-## 10. AI Chat - Template Prompts & Responses
+## AI Chat - Template Prompts & Responses
 
-### 10.1 Quick Prompt Templates
+### Quick Prompt Templates
 
 ```json
 [
@@ -842,7 +1130,7 @@ Output:
 ]
 ```
 
-### 10.2 Expected AI Behaviors
+### Expected AI Behaviors
 
 ```
 AI HARUS:
@@ -866,7 +1154,7 @@ AI TIDAK BOLEH:
 
 ---
 
-## 11. External Data Sources (Referensi)
+## External Data Sources (Referensi)
 
 | Source | URL | Usage |
 |--------|-----|-------|
@@ -881,9 +1169,9 @@ AI TIDAK BOLEH:
 
 ---
 
-## 12. Data Validation Rules
+## Data Validation Rules
 
-### 12.1 Tire Size Validation
+### Tire Size Validation
 ```typescript
 const TIRE_SIZE_REGEX = /^(\d{3})\/(\d{2})\s*R(\d{2})$/;
 
@@ -893,14 +1181,14 @@ const VALID_PROFILE = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85];
 const VALID_RIM = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 ```
 
-### 12.2 PCD Validation
+### PCD Validation
 ```typescript
 const PCD_REGEX = /^([456])x(\d{3}(\.\d+)?)$/;
 
 const COMMON_PCD = ['4x100', '4x114.3', '5x100', '5x112', '5x114.3', '5x120', '6x139.7'];
 ```
 
-### 12.3 Price Validation
+### Price Validation
 ```typescript
 // Prices in IDR
 const TIRE_PRICE_MIN = 150000;    // Rp 150rb (ban kecil LCGC)
@@ -911,9 +1199,9 @@ const RIM_PRICE_MAX = 100000000;  // Rp 100jt (velg forged premium)
 
 ---
 
-## 13. SEO & Content Metadata
+## SEO & Content Metadata
 
-### 13.1 Page Titles Template
+### Page Titles Template
 ```
 Dashboard: "Dashboard - Catalog Omah Ban"
 Katalog Ban: "Katalog Ban [Size] - Harga & Spesifikasi | Omah Ban"
@@ -924,7 +1212,7 @@ Learning: "[Article Title] - Belajar Ban & Velg | Omah Ban"
 AI Chat: "AI Assistant - Tanya Soal Ban & Velg | Omah Ban"
 ```
 
-### 13.2 Meta Description Template
+### Meta Description Template
 ```
 "Temukan ukuran ban standar [Brand Model], rekomendasi ban terbaik,
 harga terbaru, dan panduan lengkap di Catalog Omah Ban."
@@ -933,6 +1221,6 @@ harga terbaru, dan panduan lengkap di Catalog Omah Ban."
 ---
 
 **Document Owner:** Content & Engineering Team
-**Last Updated:** 2026-07-18
-**Status:** Approved - Data Reference for Development
-**Version:** 1.0
+**Last Updated:** 2026-07-21
+**Status:** Public Specification - User-Facing Documentation
+**Version:** 2.0

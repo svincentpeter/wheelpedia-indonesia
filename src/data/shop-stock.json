@@ -1,62 +1,28 @@
 [
   {
-    "id": "ob-00001",
+    "id": "stock-0001",
     "brand": "Bridgestone",
-    "productName": "Bs Duravis",
-    "sizeRaw": "165",
-    "rim": 13,
-    "sizeNormalized": "165 R13",
-    "sellPrice": 795000,
-    "qty": 2,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00002",
-    "brand": "Bridgestone",
-    "productName": "Bs Duravis",
-    "sizeRaw": "165",
-    "rim": 13,
-    "sizeNormalized": "165 R13",
-    "sellPrice": 795000,
-    "qty": 4,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00003",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno",
+    "productName": "Bs Techno (24) @590",
     "sizeRaw": "165/80",
     "rim": 13,
     "sizeNormalized": "165/80 R13",
     "sellPrice": 545000,
     "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00004",
+    "id": "stock-0002",
     "brand": "Bridgestone",
     "productName": "Bs Duravis",
     "sizeRaw": "175",
     "rim": 13,
     "sizeNormalized": "175 R13",
     "sellPrice": 820000,
-    "qty": 0,
+    "qty": 5,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00005",
-    "brand": "Bridgestone",
-    "productName": "Bs Duravis",
-    "sizeRaw": "175",
-    "rim": 13,
-    "sizeNormalized": "175 R13",
-    "sellPrice": 820000,
-    "qty": 3,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00006",
+    "id": "stock-0003",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "175/65",
@@ -67,30 +33,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00007",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 685000,
-    "qty": 4,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00008",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 0,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00009",
+    "id": "stock-0004",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "175/65",
@@ -101,29 +44,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00010",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 640000,
-    "qty": 6,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00011",
-    "brand": "Bridgestone",
-    "productName": "Bs Duravis",
-    "sizeRaw": "185",
-    "rim": 14,
-    "sizeNormalized": "185 R14",
-    "sellPrice": 945000,
-    "qty": 0,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00012",
+    "id": "stock-0005",
     "brand": "Bridgestone",
     "productName": "Bs Duravis",
     "sizeRaw": "185",
@@ -134,86 +55,51 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00013",
+    "id": "stock-0006",
     "brand": "Bridgestone",
-    "productName": "Bs Duravis (Casadi)",
-    "sizeRaw": "185",
-    "rim": 14,
-    "sizeNormalized": "185 R14",
-    "sellPrice": 945000,
-    "qty": 2,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00014",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
+    "productName": "Bs Ecopia (20) @790",
     "sizeRaw": "185/65",
     "rim": 14,
     "sizeNormalized": "185/65 R14",
     "sellPrice": 675000,
     "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2020"
-  },
-  {
-    "id": "ob-00015",
-    "brand": "Bridgestone",
-    "productName": "Bs T6",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 795000,
-    "qty": 0,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00016",
+    "id": "stock-0007",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "185/70",
     "rim": 14,
     "sizeNormalized": "185/70 R14",
     "sellPrice": 705000,
-    "qty": 0,
+    "qty": 11,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00017",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 705000,
-    "qty": 9,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00018",
+    "id": "stock-0008",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "185/70",
     "rim": 14,
     "sizeNormalized": "185/70 R14",
     "sellPrice": 635000,
-    "qty": 1,
+    "qty": 7,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00019",
+    "id": "stock-0009",
     "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
+    "productName": "Bs Ecopia (22) @795",
     "sizeRaw": "185/80",
     "rim": 14,
     "sizeNormalized": "185/80 R14",
     "sellPrice": 695000,
     "qty": 3,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00020",
+    "id": "stock-0010",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "185/80",
@@ -224,7 +110,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00021",
+    "id": "stock-0011",
     "brand": "Bridgestone",
     "productName": "Bs Duravis",
     "sizeRaw": "195",
@@ -235,18 +121,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00022",
-    "brand": "Bridgestone",
-    "productName": "Bs Duravis",
-    "sizeRaw": "195",
-    "rim": 14,
-    "sizeNormalized": "195 R14",
-    "sellPrice": 1095000,
-    "qty": 4,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00023",
+    "id": "stock-0012",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "195/70",
@@ -257,9 +132,9 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00024",
+    "id": "stock-0013",
     "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
+    "productName": "Bs Ecopia (16)",
     "sizeRaw": "175/60",
     "rim": 15,
     "sizeNormalized": "175/60 R15",
@@ -268,9 +143,9 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00025",
+    "id": "stock-0014",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza T005A",
+    "productName": "Bs Turanza T005A (19) @1.235",
     "sizeRaw": "185/55",
     "rim": 15,
     "sizeNormalized": "185/55 R15",
@@ -279,53 +154,29 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00026",
+    "id": "stock-0015",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza T005A",
-    "sizeRaw": "185/55",
-    "rim": 15,
-    "sizeNormalized": "185/55 R15",
-    "sellPrice": 900000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00027",
-    "brand": "Bridgestone",
-    "productName": "Bs Potenza RE030",
+    "productName": "Bs Potenza RE030 (21) @1.525",
     "sizeRaw": "185/55",
     "rim": 15,
     "sizeNormalized": "185/55 R15",
     "sellPrice": 1000000,
     "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00028",
+    "id": "stock-0016",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "185/55",
     "rim": 15,
     "sizeNormalized": "185/55 R15",
     "sellPrice": 785000,
-    "qty": 0,
+    "qty": 6,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00029",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "185/55",
-    "rim": 15,
-    "sizeNormalized": "185/55 R15",
-    "sellPrice": 785000,
-    "qty": 0,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00030",
+    "id": "stock-0017",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "185/60",
@@ -336,40 +187,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00031",
+    "id": "stock-0018",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "185/65",
     "rim": 15,
     "sizeNormalized": "185/65 R15",
     "sellPrice": 840000,
-    "qty": 0,
+    "qty": 8,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00032",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 840000,
-    "qty": 2,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00033",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 840000,
-    "qty": 4,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00034",
+    "id": "stock-0019",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "185/65",
@@ -380,66 +209,40 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00035",
+    "id": "stock-0020",
     "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 715000,
-    "qty": 1,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00036",
-    "brand": "Bridgestone",
-    "productName": "Bs Duravis",
+    "productName": "Bs Duravis (25) @1.150",
     "sizeRaw": "195",
     "rim": 15,
     "sizeNormalized": "195 R15",
-    "sellPrice": 1150000,
+    "sellPrice": 1075000,
     "qty": 7,
-    "sheet": "Bridgestone",
-    "yearHint": "2025"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00037",
+    "id": "stock-0021",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza ER33",
+    "productName": "Bs Turanza ER33 (23)",
     "sizeRaw": "195/50",
     "rim": 15,
     "sizeNormalized": "195/50 R15",
     "sellPrice": 0,
     "qty": 4,
-    "sheet": "Bridgestone",
-    "yearHint": "2023"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00038",
+    "id": "stock-0022",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza",
+    "productName": "Bs Turanza (2018) @1.240",
     "sizeRaw": "195/55",
     "rim": 15,
     "sizeNormalized": "195/55 R15",
     "sellPrice": 850000,
     "qty": 4,
-    "sheet": "Bridgestone",
-    "yearHint": "2020"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00039",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "195/55",
-    "rim": 15,
-    "sizeNormalized": "195/55 R15",
-    "sellPrice": 730000,
-    "qty": 5,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00040",
+    "id": "stock-0023",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "195/60",
@@ -450,19 +253,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00041",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "195/60",
-    "rim": 15,
-    "sizeNormalized": "195/60 R15",
-    "sellPrice": 810000,
-    "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00042",
+    "id": "stock-0024",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "195/65",
@@ -473,30 +264,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00043",
+    "id": "stock-0025",
     "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "195/65",
-    "rim": 15,
-    "sizeNormalized": "195/65 R15",
-    "sellPrice": 930000,
-    "qty": 2,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00044",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D684",
+    "productName": "Bs Dueler HT D684 (20) @1.335",
     "sizeRaw": "195/80",
     "rim": 15,
     "sizeNormalized": "195/80 R15",
     "sellPrice": 1075000,
     "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2020"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00045",
+    "id": "stock-0026",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "205/65",
@@ -507,19 +286,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00046",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 895000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00047",
+    "id": "stock-0027",
     "brand": "Bridgestone",
     "productName": "Bs B-390",
     "sizeRaw": "205/65",
@@ -530,18 +297,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00048",
-    "brand": "Bridgestone",
-    "productName": "Bs B-390",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 1245000,
-    "qty": 4,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00049",
+    "id": "stock-0028",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "205/70",
@@ -552,42 +308,9 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00050",
+    "id": "stock-0029",
     "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "205/70",
-    "rim": 15,
-    "sizeNormalized": "205/70 R15",
-    "sellPrice": 920000,
-    "qty": 1,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00051",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "205/70",
-    "rim": 15,
-    "sizeNormalized": "205/70 R15",
-    "sellPrice": 920000,
-    "qty": 1,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00052",
-    "brand": "Bridgestone",
-    "productName": "Bs AT002",
-    "sizeRaw": "205/70",
-    "rim": 15,
-    "sizeNormalized": "205/70 R15",
-    "sellPrice": 1250000,
-    "qty": 0,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00053",
-    "brand": "Bridgestone",
-    "productName": "Bs D-HT 687",
+    "productName": "Bs D-HT 687 @1.360",
     "sizeRaw": "205/70",
     "rim": 15,
     "sizeNormalized": "205/70 R15",
@@ -596,30 +319,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00054",
+    "id": "stock-0030",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza T005",
+    "productName": "Bs Turanza T005 (21) @1.325",
     "sizeRaw": "215/65",
     "rim": 15,
     "sizeNormalized": "215/65 R15",
     "sellPrice": 1100000,
     "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00055",
-    "brand": "Bridgestone",
-    "productName": "Bs Turanza T005",
-    "sizeRaw": "215/65",
-    "rim": 15,
-    "sizeNormalized": "215/65 R15",
-    "sellPrice": 850000,
-    "qty": 2,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00056",
+    "id": "stock-0031",
     "brand": "Bridgestone",
     "productName": "Bs Dueler AT 002",
     "sizeRaw": "235/70",
@@ -630,31 +341,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00057",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HL D683",
-    "sizeRaw": "235/70",
-    "rim": 15,
-    "sizeNormalized": "235/70 R15",
-    "sellPrice": 1225000,
-    "qty": 0,
-    "sheet": "Bridgestone",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00058",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HL D683",
-    "sizeRaw": "235/70",
-    "rim": 15,
-    "sizeNormalized": "235/70 R15",
-    "sellPrice": 975000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2020"
-  },
-  {
-    "id": "ob-00059",
+    "id": "stock-0032",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HT D689",
     "sizeRaw": "235/75",
@@ -665,21 +352,9 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00060",
+    "id": "stock-0033",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D689",
-    "sizeRaw": "235/75",
-    "rim": 15,
-    "sizeNormalized": "235/75 R15",
-    "sellPrice": 1135000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00061",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler AT D697",
+    "productName": "Bs Dueler AT D697 @1.345",
     "sizeRaw": "235/75",
     "rim": 15,
     "sizeNormalized": "235/75 R15",
@@ -688,31 +363,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00062",
+    "id": "stock-0034",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza ER370",
+    "productName": "Bs Turanza ER370 (24) @1.490",
     "sizeRaw": "185/55",
     "rim": 16,
     "sizeNormalized": "185/55 R16",
     "sellPrice": 1335000,
     "qty": 5,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00063",
-    "brand": "Bridgestone",
-    "productName": "Bs Turanza ER370",
-    "sizeRaw": "185/55",
-    "rim": 16,
-    "sizeNormalized": "185/55 R16",
-    "sellPrice": 1335000,
-    "qty": 3,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00064",
+    "id": "stock-0035",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "185/55",
@@ -723,18 +385,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00065",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "185/55",
-    "rim": 16,
-    "sizeNormalized": "185/55 R16",
-    "sellPrice": 895000,
-    "qty": 4,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00066",
+    "id": "stock-0036",
     "brand": "Bridgestone",
     "productName": "Bs T6",
     "sizeRaw": "185/55",
@@ -745,7 +396,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00067",
+    "id": "stock-0037",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "195/50",
@@ -756,7 +407,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00068",
+    "id": "stock-0038",
     "brand": "Bridgestone",
     "productName": "Bs Turanza T6",
     "sizeRaw": "195/50",
@@ -767,7 +418,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00069",
+    "id": "stock-0039",
     "brand": "Bridgestone",
     "productName": "Bs Techno Sports",
     "sizeRaw": "195/55",
@@ -778,7 +429,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00070",
+    "id": "stock-0040",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "195/60",
@@ -789,30 +440,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00071",
+    "id": "stock-0041",
     "brand": "Bridgestone",
-    "productName": "Bs Turanza T005A",
+    "productName": "Bs Turanza T005A (21) @1.270",
     "sizeRaw": "195/60",
     "rim": 16,
     "sizeNormalized": "195/60 R16",
     "sellPrice": 950000,
     "qty": 5,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00072",
-    "brand": "Bridgestone",
-    "productName": "Bs T6",
-    "sizeRaw": "205/55",
-    "rim": 16,
-    "sizeNormalized": "205/55 R16",
-    "sellPrice": 1350000,
-    "qty": 0,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00073",
+    "id": "stock-0042",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "205/55",
@@ -823,30 +462,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00074",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "205/55",
-    "rim": 16,
-    "sizeNormalized": "205/55 R16",
-    "sellPrice": 1125000,
-    "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00075",
-    "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "205/55",
-    "rim": 16,
-    "sizeNormalized": "205/55 R16",
-    "sellPrice": 650000,
-    "qty": 1,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00076",
+    "id": "stock-0043",
     "brand": "Bridgestone",
     "productName": "Bs Techno",
     "sizeRaw": "205/55",
@@ -857,21 +473,9 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00077",
+    "id": "stock-0044",
     "brand": "Bridgestone",
-    "productName": "Bs Techno",
-    "sizeRaw": "205/55",
-    "rim": 16,
-    "sizeNormalized": "205/55 R16",
-    "sellPrice": 800000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00078",
-    "brand": "Bridgestone",
-    "productName": "Bs Turanza AR20",
+    "productName": "Bs Turanza AR20 (16 + 18)",
     "sizeRaw": "205/60",
     "rim": 16,
     "sizeNormalized": "205/60 R16",
@@ -880,63 +484,29 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00079",
+    "id": "stock-0045",
     "brand": "Bridgestone",
     "productName": "Bs Ecopia",
     "sizeRaw": "205/65",
     "rim": 16,
     "sizeNormalized": "205/65 R16",
     "sellPrice": 1050000,
-    "qty": 0,
+    "qty": 7,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00080",
+    "id": "stock-0046",
     "brand": "Bridgestone",
-    "productName": "Bs Ecopia",
-    "sizeRaw": "205/65",
-    "rim": 16,
-    "sizeNormalized": "205/65 R16",
-    "sellPrice": 1050000,
-    "qty": 1,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00081",
-    "brand": "Bridgestone",
-    "productName": "Bs Turanza T005",
+    "productName": "Bs Turanza T005 (24)",
     "sizeRaw": "205/65",
     "rim": 16,
     "sizeNormalized": "205/65 R16",
     "sellPrice": 1250000,
     "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00082",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D689",
-    "sizeRaw": "215/65",
-    "rim": 16,
-    "sizeNormalized": "215/65 R16",
-    "sellPrice": 1310000,
-    "qty": 0,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00083",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D689",
-    "sizeRaw": "215/65",
-    "rim": 16,
-    "sizeNormalized": "215/65 R16",
-    "sellPrice": 850000,
-    "qty": 1,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00084",
+    "id": "stock-0047",
     "brand": "Bridgestone",
     "productName": "Bs Duravis",
     "sizeRaw": "225/75",
@@ -947,7 +517,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00085",
+    "id": "stock-0048",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HT D687",
     "sizeRaw": "235/60",
@@ -958,69 +528,31 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00086",
+    "id": "stock-0049",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D687",
-    "sizeRaw": "235/60",
-    "rim": 16,
-    "sizeNormalized": "235/60 R16",
-    "sellPrice": 1450000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00087",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler MT D674",
+    "productName": "Bs Dueler MT D674 (21) @1.780",
     "sizeRaw": "245/75",
     "rim": 16,
     "sizeNormalized": "245/75 R16",
     "sellPrice": 1450000,
     "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00088",
+    "id": "stock-0050",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler MT D674",
-    "sizeRaw": "245/75",
-    "rim": 16,
-    "sizeNormalized": "245/75 R16",
-    "sellPrice": 1450000,
-    "qty": 5,
-    "sheet": "Bridgestone",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00089",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT",
+    "productName": "Bs Dueler HT (24) @1.920",
     "sizeRaw": "265/70",
     "rim": 16,
     "sizeNormalized": "265/70 R16",
     "sellPrice": 1700000,
     "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00090",
+    "id": "stock-0051",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler HT",
-    "sizeRaw": "265/70",
-    "rim": 16,
-    "sizeNormalized": "265/70 R16",
-    "sellPrice": 1400000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2020"
-  },
-  {
-    "id": "ob-00091",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler MT D674 (16+17+19)",
+    "productName": "Bs Dueler MT D674 (16+17+19) @2.025",
     "sizeRaw": "265/75",
     "rim": 16,
     "sizeNormalized": "265/75 R16",
@@ -1029,42 +561,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00092",
+    "id": "stock-0052",
     "brand": "Bridgestone",
-    "productName": "Bs Techno",
+    "productName": "Bs Techno (22)",
     "sizeRaw": "215/45",
     "rim": 17,
     "sizeNormalized": "215/45 R17",
     "sellPrice": 0,
     "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00093",
-    "brand": "Bridgestone",
-    "productName": "Bs Turanza ER33",
-    "sizeRaw": "215/55",
-    "rim": 17,
-    "sizeNormalized": "215/55 R17",
-    "sellPrice": 1775000,
-    "qty": 0,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00094",
-    "brand": "Bridgestone",
-    "productName": "Bs Turanza ER33",
-    "sizeRaw": "215/55",
-    "rim": 17,
-    "sizeNormalized": "215/55 R17",
-    "sellPrice": 1500000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00095",
+    "id": "stock-0053",
     "brand": "Bridgestone",
     "productName": "Bs Turanza T6",
     "sizeRaw": "215/55",
@@ -1075,76 +583,29 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00096",
+    "id": "stock-0054",
     "brand": "Bridgestone",
     "productName": "Bs Alenza AL01 T",
     "sizeRaw": "215/60",
     "rim": 17,
     "sizeNormalized": "215/60 R17",
     "sellPrice": 1385000,
-    "qty": 4,
+    "qty": 2,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00097",
+    "id": "stock-0055",
     "brand": "Bridgestone",
-    "productName": "Bs Alenza AL01 T",
-    "sizeRaw": "215/60",
-    "rim": 17,
-    "sizeNormalized": "215/60 R17",
-    "sellPrice": 1335000,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00098",
-    "brand": "Bridgestone",
-    "productName": "Bs Alenza AL01 T",
-    "sizeRaw": "215/60",
-    "rim": 17,
-    "sizeNormalized": "215/60 R17",
-    "sellPrice": 0,
-    "qty": 1,
-    "sheet": "Bridgestone",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00099",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D687",
+    "productName": "Bs Dueler HT D687 (22) @1.335",
     "sizeRaw": "215/60",
     "rim": 17,
     "sizeNormalized": "215/60 R17",
     "sellPrice": 1250000,
     "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00100",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D687",
-    "sizeRaw": "215/60",
-    "rim": 17,
-    "sizeNormalized": "215/60 R17",
-    "sellPrice": 1000000,
-    "qty": 1,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00101",
-    "brand": "Bridgestone",
-    "productName": "Bs Techno Sports",
-    "sizeRaw": "225/45",
-    "rim": 17,
-    "sizeNormalized": "225/45 R17",
-    "sellPrice": 1235000,
-    "qty": 0,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00102",
+    "id": "stock-0056",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HT D470",
     "sizeRaw": "225/65",
@@ -1155,18 +616,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00103",
-    "brand": "Bridgestone",
-    "productName": "Bs Dueler HT D470",
-    "sizeRaw": "225/65",
-    "rim": 17,
-    "sizeNormalized": "225/65 R17",
-    "sellPrice": 1370000,
-    "qty": 2,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00104",
+    "id": "stock-0057",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HT copotan",
     "sizeRaw": "255/65",
@@ -1177,7 +627,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00105",
+    "id": "stock-0058",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HT D684",
     "sizeRaw": "265/65",
@@ -1188,33 +638,31 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00106",
+    "id": "stock-0059",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler AT halus D693",
+    "productName": "Bs Dueler AT halus D693 (22) @2.165",
     "sizeRaw": "265/65",
     "rim": 17,
     "sizeNormalized": "265/65 R17",
     "sellPrice": 1750000,
     "qty": 3,
-    "sheet": "Bridgestone",
-    "yearHint": "2022"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00107",
+    "id": "stock-0060",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler AT D697",
+    "productName": "Bs Dueler AT D697 (20) @1.955",
     "sizeRaw": "265/70",
     "rim": 17,
     "sizeNormalized": "265/70 R17",
     "sellPrice": 1600000,
     "qty": 2,
-    "sheet": "Bridgestone",
-    "yearHint": "2020"
+    "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00108",
+    "id": "stock-0061",
     "brand": "Bridgestone",
-    "productName": "Bs Dueler AT D697",
+    "productName": "Bs Dueler AT D697 (16) @1.955",
     "sizeRaw": "265/70",
     "rim": 17,
     "sizeNormalized": "265/70 R17",
@@ -1223,29 +671,18 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00109",
-    "brand": "Bridgestone",
-    "productName": "Bs Potenza RE003",
-    "sizeRaw": "235/50",
-    "rim": 18,
-    "sizeNormalized": "235/50 R18",
-    "sellPrice": 1635000,
-    "qty": 0,
-    "sheet": "Bridgestone"
-  },
-  {
-    "id": "ob-00110",
+    "id": "stock-0062",
     "brand": "Bridgestone",
     "productName": "Bs Turanza 6",
     "sizeRaw": "235/50",
     "rim": 18,
     "sizeNormalized": "235/50 R18",
     "sellPrice": 1545000,
-    "qty": 4,
+    "qty": 2,
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00111",
+    "id": "stock-0063",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HL 33",
     "sizeRaw": "235/60",
@@ -1256,7 +693,7 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00112",
+    "id": "stock-0064",
     "brand": "Bridgestone",
     "productName": "Bs Dueler HT D684",
     "sizeRaw": "265/60",
@@ -1267,63 +704,29 @@
     "sheet": "Bridgestone"
   },
   {
-    "id": "ob-00113",
-    "brand": "Dunlop",
-    "productName": "Dunlop LT5",
-    "sizeRaw": "165",
-    "rim": 13,
-    "sizeNormalized": "165 R13",
-    "sellPrice": 655000,
-    "qty": 15,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00114",
+    "id": "stock-0065",
     "brand": "Dunlop",
     "productName": "Dunlop LT5",
     "sizeRaw": "175",
     "rim": 13,
     "sizeNormalized": "175 R13",
     "sellPrice": 680000,
-    "qty": 6,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00115",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 590000,
-    "qty": 9,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00116",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 590000,
     "qty": 8,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00117",
+    "id": "stock-0066",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "175/65",
     "rim": 14,
     "sizeNormalized": "175/65 R14",
-    "sellPrice": 525000,
-    "qty": 3,
-    "sheet": "Dunlop",
-    "yearHint": "2024"
+    "sellPrice": 590000,
+    "qty": 5,
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00118",
+    "id": "stock-0067",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "175/65",
@@ -1334,19 +737,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00119",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 500000,
-    "qty": 1,
-    "sheet": "Dunlop",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00120",
+    "id": "stock-0068",
     "brand": "Dunlop",
     "productName": "Dunlop LT5",
     "sizeRaw": "185",
@@ -1357,18 +748,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00121",
-    "brand": "Dunlop",
-    "productName": "Dunlop LT5",
-    "sizeRaw": "185",
-    "rim": 14,
-    "sizeNormalized": "185 R14",
-    "sellPrice": 815000,
-    "qty": 3,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00122",
+    "id": "stock-0069",
     "brand": "Dunlop",
     "productName": "Dunlop SP10",
     "sizeRaw": "185/70",
@@ -1379,63 +759,18 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00123",
-    "brand": "Dunlop",
-    "productName": "Dunlop SP10",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 640000,
-    "qty": 4,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00124",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 640000,
-    "qty": 0,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00125",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 575000,
-    "qty": 14,
-    "sheet": "Dunlop",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00126",
+    "id": "stock-0070",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "185/70",
     "rim": 14,
     "sizeNormalized": "185/70 R14",
     "sellPrice": 595000,
-    "qty": 4,
+    "qty": 2,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00127",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 595000,
-    "qty": 9,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00128",
+    "id": "stock-0071",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "185/80",
@@ -1446,7 +781,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00129",
+    "id": "stock-0072",
     "brand": "Dunlop",
     "productName": "Dunlop LT5",
     "sizeRaw": "195",
@@ -1457,18 +792,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00130",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "195/70",
-    "rim": 14,
-    "sizeNormalized": "195/70 R14",
-    "sellPrice": 630000,
-    "qty": 4,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00131",
+    "id": "stock-0073",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "195/70",
@@ -1479,18 +803,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00132",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "175/65",
-    "rim": 15,
-    "sizeNormalized": "175/65 R15",
-    "sellPrice": 565000,
-    "qty": 0,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00133",
+    "id": "stock-0074",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "175/65",
@@ -1501,9 +814,9 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00134",
+    "id": "stock-0075",
     "brand": "Dunlop",
-    "productName": "Dunlop SP31",
+    "productName": "Dunlop SP31 (17) @725",
     "sizeRaw": "175/60",
     "rim": 15,
     "sizeNormalized": "175/60 R15",
@@ -1512,18 +825,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00135",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "185/55",
-    "rim": 15,
-    "sizeNormalized": "185/55 R15",
-    "sellPrice": 745000,
-    "qty": 2,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00136",
+    "id": "stock-0076",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "185/55",
@@ -1534,111 +836,51 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00137",
+    "id": "stock-0077",
     "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "185/55",
-    "rim": 15,
-    "sizeNormalized": "185/55 R15",
-    "sellPrice": 670000,
-    "qty": 2,
-    "sheet": "Dunlop",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00138",
-    "brand": "Dunlop",
-    "productName": "Dunlop Sportmaxx",
+    "productName": "Dunlop Sportmaxx (23) @1.040",
     "sizeRaw": "185/55",
     "rim": 15,
     "sizeNormalized": "185/55 R15",
     "sellPrice": 740000,
     "qty": 12,
-    "sheet": "Dunlop",
-    "yearHint": "2023"
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00139",
+    "id": "stock-0078",
     "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
+    "productName": "Dunlop Enasave (22) @810",
     "sizeRaw": "185/60",
     "rim": 15,
     "sizeNormalized": "185/60 R15",
     "sellPrice": 685000,
     "qty": 2,
-    "sheet": "Dunlop",
-    "yearHint": "2022"
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00140",
+    "id": "stock-0079",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "185/60",
     "rim": 15,
     "sizeNormalized": "185/60 R15",
     "sellPrice": 670000,
-    "qty": 6,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00141",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "185/60",
-    "rim": 15,
-    "sizeNormalized": "185/60 R15",
-    "sellPrice": 670000,
-    "qty": 0,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00142",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 735000,
     "qty": 5,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00143",
+    "id": "stock-0080",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "185/65",
     "rim": 15,
     "sizeNormalized": "185/65 R15",
     "sellPrice": 735000,
-    "qty": 0,
+    "qty": 3,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00144",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 675000,
-    "qty": 15,
-    "sheet": "Dunlop",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00145",
-    "brand": "Dunlop",
-    "productName": "Dunlop SP300",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 705000,
-    "qty": 0,
-    "sheet": "Dunlop",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00146",
+    "id": "stock-0081",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "185/65",
@@ -1649,40 +891,18 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00147",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 650000,
-    "qty": 4,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00148",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 825000,
-    "qty": 0,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00149",
+    "id": "stock-0082",
     "brand": "Dunlop",
     "productName": "Dunlop D80V4",
     "sizeRaw": "205/65",
     "rim": 15,
     "sizeNormalized": "205/65 R15",
     "sellPrice": 880000,
-    "qty": 3,
+    "qty": 5,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00150",
+    "id": "stock-0083",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "205/65",
@@ -1693,30 +913,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00151",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 765000,
-    "qty": 2,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00152",
-    "brand": "Dunlop",
-    "productName": "Dunlop Touring R1",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 725000,
-    "qty": 2,
-    "sheet": "Dunlop",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00153",
+    "id": "stock-0084",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "185/55",
@@ -1727,19 +924,18 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00154",
+    "id": "stock-0085",
     "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
+    "productName": "Dunlop Enasave (22) @835",
     "sizeRaw": "195/50",
     "rim": 16,
     "sizeNormalized": "195/50 R16",
     "sellPrice": 700000,
     "qty": 1,
-    "sheet": "Dunlop",
-    "yearHint": "2022"
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00155",
+    "id": "stock-0086",
     "brand": "Dunlop",
     "productName": "Dunlop Blue Response TG",
     "sizeRaw": "195/50",
@@ -1750,7 +946,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00156",
+    "id": "stock-0087",
     "brand": "Dunlop",
     "productName": "Dunlop Blue Response TG",
     "sizeRaw": "195/55",
@@ -1761,7 +957,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00157",
+    "id": "stock-0088",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "195/60",
@@ -1772,7 +968,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00158",
+    "id": "stock-0089",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "205/55",
@@ -1783,31 +979,18 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00159",
+    "id": "stock-0090",
     "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "205/55",
-    "rim": 16,
-    "sizeNormalized": "205/55 R16",
-    "sellPrice": 1085000,
-    "qty": 1,
-    "sheet": "Dunlop",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00160",
-    "brand": "Dunlop",
-    "productName": "Dunlop LM705",
+    "productName": "Dunlop LM705 (24)",
     "sizeRaw": "205/55",
     "rim": 16,
     "sizeNormalized": "205/55 R16",
     "sellPrice": 0,
     "qty": 2,
-    "sheet": "Dunlop",
-    "yearHint": "2024"
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00161",
+    "id": "stock-0091",
     "brand": "Dunlop",
     "productName": "Dunlop Touring R1",
     "sizeRaw": "205/60",
@@ -1818,65 +1001,40 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00162",
+    "id": "stock-0092",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "205/65",
     "rim": 16,
     "sizeNormalized": "205/65 R16",
     "sellPrice": 860000,
-    "qty": 3,
+    "qty": 4,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00163",
+    "id": "stock-0093",
     "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "205/65",
-    "rim": 16,
-    "sizeNormalized": "205/65 R16",
-    "sellPrice": 780000,
-    "qty": 21,
-    "sheet": "Dunlop",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00164",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "205/65",
-    "rim": 16,
-    "sizeNormalized": "205/65 R16",
-    "sellPrice": 785000,
-    "qty": 1,
-    "sheet": "Dunlop",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00165",
-    "brand": "Dunlop",
-    "productName": "Dunlop LM705",
+    "productName": "Dunlop LM705 (23)",
     "sizeRaw": "215/60",
     "rim": 16,
     "sizeNormalized": "215/60 R16",
     "sellPrice": 0,
     "qty": 1,
-    "sheet": "Dunlop",
-    "yearHint": "2023"
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00166",
+    "id": "stock-0094",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave (Taqi)",
     "sizeRaw": "215/60",
     "rim": 16,
     "sizeNormalized": "215/60 R16",
     "sellPrice": 940000,
-    "qty": 5,
+    "qty": 4,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00167",
+    "id": "stock-0095",
     "brand": "Dunlop",
     "productName": "Dlp Grandtrek ST20",
     "sizeRaw": "215/65",
@@ -1887,7 +1045,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00168",
+    "id": "stock-0096",
     "brand": "Dunlop",
     "productName": "Dunlop Blue Response TG",
     "sizeRaw": "215/65",
@@ -1898,7 +1056,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00169",
+    "id": "stock-0097",
     "brand": "Dunlop",
     "productName": "Dunlop Grandtrek ST20",
     "sizeRaw": "235/60",
@@ -1909,30 +1067,18 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00170",
+    "id": "stock-0098",
     "brand": "Dunlop",
-    "productName": "Dunlop Grandtrek ST20",
-    "sizeRaw": "235/60",
-    "rim": 16,
-    "sizeNormalized": "235/60 R16",
-    "sellPrice": 1295000,
-    "qty": 4,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00171",
-    "brand": "Dunlop",
-    "productName": "Dunlop Direzza",
+    "productName": "Dunlop Direzza (20) @920",
     "sizeRaw": "215/45",
     "rim": 17,
     "sizeNormalized": "215/45 R17",
     "sellPrice": 700000,
     "qty": 4,
-    "sheet": "Dunlop",
-    "yearHint": "2020"
+    "sheet": "Dunlop"
   },
   {
-    "id": "ob-00172",
+    "id": "stock-0099",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "205/55",
@@ -1943,18 +1089,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00173",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "205/55",
-    "rim": 17,
-    "sizeNormalized": "205/55 R17",
-    "sellPrice": 1100000,
-    "qty": 3,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00174",
+    "id": "stock-0100",
     "brand": "Dunlop",
     "productName": "Dunlop SP Sportmaxx 050",
     "sizeRaw": "215/55",
@@ -1965,18 +1100,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00175",
-    "brand": "Dunlop",
-    "productName": "Dunlop SP Sportmaxx 050",
-    "sizeRaw": "215/55",
-    "rim": 17,
-    "sizeNormalized": "215/55 R17",
-    "sellPrice": 1415000,
-    "qty": 2,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00176",
+    "id": "stock-0101",
     "brand": "Dunlop",
     "productName": "Dunlop Blue Response TG",
     "sizeRaw": "215/55",
@@ -1987,29 +1111,18 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00177",
+    "id": "stock-0102",
     "brand": "Dunlop",
     "productName": "Dunlop Enasave",
     "sizeRaw": "215/60",
     "rim": 17,
     "sizeNormalized": "215/60 R17",
     "sellPrice": 960000,
-    "qty": 0,
+    "qty": 6,
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00178",
-    "brand": "Dunlop",
-    "productName": "Dunlop Enasave",
-    "sizeRaw": "215/60",
-    "rim": 17,
-    "sizeNormalized": "215/60 R17",
-    "sellPrice": 960000,
-    "qty": 4,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00179",
+    "id": "stock-0103",
     "brand": "Dunlop",
     "productName": "Dunlop Grandtrek ST30",
     "sizeRaw": "225/65",
@@ -2020,18 +1133,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00180",
-    "brand": "Dunlop",
-    "productName": "Dunlop Grandtrek ST30",
-    "sizeRaw": "225/65",
-    "rim": 17,
-    "sizeNormalized": "225/65 R17",
-    "sellPrice": 1020000,
-    "qty": 2,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00181",
+    "id": "stock-0104",
     "brand": "Dunlop",
     "productName": "Dunlop Grandtrek AT25",
     "sizeRaw": "265/65",
@@ -2042,7 +1144,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00182",
+    "id": "stock-0105",
     "brand": "Dunlop",
     "productName": "Dunlop Blue Response TG",
     "sizeRaw": "235/50",
@@ -2053,29 +1155,7 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00183",
-    "brand": "Dunlop",
-    "productName": "Dunlop Grandtrek AT25",
-    "sizeRaw": "265/60",
-    "rim": 18,
-    "sizeNormalized": "265/60 R18",
-    "sellPrice": 1880000,
-    "qty": 3,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00184",
-    "brand": "Dunlop",
-    "productName": "Dunlop Grandtrek AT25",
-    "sizeRaw": "265/60",
-    "rim": 18,
-    "sizeNormalized": "265/60 R18",
-    "sellPrice": 1880000,
-    "qty": 0,
-    "sheet": "Dunlop"
-  },
-  {
-    "id": "ob-00185",
+    "id": "stock-0106",
     "brand": "Dunlop",
     "productName": "Dunlop Grandtrek AT25",
     "sizeRaw": "265/60",
@@ -2086,41 +1166,8 @@
     "sheet": "Dunlop"
   },
   {
-    "id": "ob-00186",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "155",
-    "rim": 12,
-    "sizeNormalized": "155 R12",
-    "sellPrice": 520000,
-    "qty": 0,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00187",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "155",
-    "rim": 12,
-    "sizeNormalized": "155 R12",
-    "sellPrice": 520000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00188",
-    "brand": "GT",
-    "productName": "GT Champiro BXT",
-    "sizeRaw": "155/80",
-    "rim": 12,
-    "sizeNormalized": "155/80 R12",
-    "sellPrice": 430000,
-    "qty": 0,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00189",
-    "brand": "GT",
+    "id": "stock-0107",
+    "brand": "GT Radial",
     "productName": "GT Champiro BXT",
     "sizeRaw": "155/80",
     "rim": 12,
@@ -2130,19 +1177,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00190",
-    "brand": "GT",
-    "productName": "GT Champiro BXT",
-    "sizeRaw": "155/80",
-    "rim": 12,
-    "sizeNormalized": "155/80 R12",
-    "sellPrice": 430000,
-    "qty": 3,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00191",
-    "brand": "GT",
+    "id": "stock-0108",
+    "brand": "GT GT Radial",
     "productName": "Gajah Tunggal",
     "sizeRaw": "500",
     "rim": 12,
@@ -2152,31 +1188,30 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00192",
-    "brand": "GT",
+    "id": "stock-0109",
+    "brand": "GT GT Radial",
     "productName": "Gajah Tunggal",
     "sizeRaw": "550",
     "rim": 13,
     "sizeNormalized": "550 R13",
     "sellPrice": 500000,
-    "qty": 1,
+    "qty": 4,
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00193",
-    "brand": "GT",
-    "productName": "Gajah Tunggal",
+    "id": "stock-0110",
+    "brand": "GT GT Radial",
+    "productName": "Gajah Tunggal (th 23, 24) @560",
     "sizeRaw": "600",
     "rim": 13,
     "sizeNormalized": "600 R13",
     "sellPrice": 560000,
     "qty": 3,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2024"
+    "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00194",
-    "brand": "GT",
+    "id": "stock-0111",
+    "brand": "GT Radial",
     "productName": "GT Champiro Eco",
     "sizeRaw": "145/80",
     "rim": 13,
@@ -2186,19 +1221,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00195",
-    "brand": "GT",
-    "productName": "GT Champiro Eco",
-    "sizeRaw": "145/80",
-    "rim": 13,
-    "sizeNormalized": "145/80 R13",
-    "sellPrice": 445000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00196",
-    "brand": "GT",
+    "id": "stock-0112",
+    "brand": "GT Radial",
     "productName": "GT Champiro Eco",
     "sizeRaw": "155/80",
     "rim": 13,
@@ -2208,41 +1232,19 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00197",
-    "brand": "GT",
+    "id": "stock-0113",
+    "brand": "GT Radial",
     "productName": "GT Maxmiller",
     "sizeRaw": "165",
     "rim": 13,
     "sizeNormalized": "165 R13",
     "sellPrice": 605000,
-    "qty": 5,
+    "qty": 4,
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00198",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "165",
-    "rim": 13,
-    "sizeNormalized": "165 R13",
-    "sellPrice": 605000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00199",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "165",
-    "rim": 13,
-    "sizeNormalized": "165 R13",
-    "sellPrice": 605000,
-    "qty": 6,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00200",
-    "brand": "GT",
+    "id": "stock-0114",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "165/65",
     "rim": 13,
@@ -2252,20 +1254,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00201",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "165/65",
-    "rim": 13,
-    "sizeNormalized": "165/65 R13",
-    "sellPrice": 465000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00202",
-    "brand": "GT",
+    "id": "stock-0115",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "165/80",
     "rim": 13,
@@ -2275,52 +1265,19 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00203",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "165/80",
-    "rim": 13,
-    "sizeNormalized": "165/80 R13",
-    "sellPrice": 510000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00204",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "165/80",
-    "rim": 13,
-    "sizeNormalized": "165/80 R13",
-    "sellPrice": 510000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00205",
-    "brand": "GT",
+    "id": "stock-0116",
+    "brand": "GT Radial",
     "productName": "GT Maxmiller",
     "sizeRaw": "175",
     "rim": 13,
     "sizeNormalized": "175 R13",
     "sellPrice": 655000,
-    "qty": 7,
+    "qty": 6,
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00206",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "175/70",
-    "rim": 13,
-    "sizeNormalized": "175/70 R13",
-    "sellPrice": 505000,
-    "qty": 0,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00207",
-    "brand": "GT",
+    "id": "stock-0117",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "175/70",
     "rim": 13,
@@ -2330,19 +1287,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00208",
-    "brand": "GT",
-    "productName": "Gajah Tunggal",
-    "sizeRaw": "700",
-    "rim": 14,
-    "sizeNormalized": "700 R14",
-    "sellPrice": 655000,
-    "qty": 0,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00209",
-    "brand": "GT",
+    "id": "stock-0118",
+    "brand": "GT GT Radial",
     "productName": "Gajah Tunggal",
     "sizeRaw": "700",
     "rim": 14,
@@ -2352,8 +1298,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00210",
-    "brand": "GT",
+    "id": "stock-0119",
+    "brand": "GT Radial",
     "productName": "GT Maxmiller",
     "sizeRaw": "175",
     "rim": 14,
@@ -2363,8 +1309,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00211",
-    "brand": "GT",
+    "id": "stock-0120",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "175/65",
     "rim": 14,
@@ -2374,19 +1320,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00212",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 530000,
-    "qty": 8,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00213",
-    "brand": "GT",
+    "id": "stock-0121",
+    "brand": "GT Radial",
     "productName": "GT Maxmiller",
     "sizeRaw": "185",
     "rim": 14,
@@ -2396,8 +1331,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00214",
-    "brand": "GT",
+    "id": "stock-0122",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "185/70",
     "rim": 14,
@@ -2407,20 +1342,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00215",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 550000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00216",
-    "brand": "GT",
+    "id": "stock-0123",
+    "brand": "GT Radial",
     "productName": "GT Maxmiller",
     "sizeRaw": "195",
     "rim": 14,
@@ -2430,30 +1353,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00217",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "195",
-    "rim": 14,
-    "sizeNormalized": "195 R14",
-    "sellPrice": 870000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00218",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "195",
-    "rim": 14,
-    "sizeNormalized": "195 R14",
-    "sellPrice": 870000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00219",
-    "brand": "GT",
+    "id": "stock-0124",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "195/70",
     "rim": 14,
@@ -2463,8 +1364,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00220",
-    "brand": "GT",
+    "id": "stock-0125",
+    "brand": "GT Radial",
     "productName": "GT Savero Komodo MT",
     "sizeRaw": "27/8,5",
     "rim": 14,
@@ -2474,8 +1375,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00221",
-    "brand": "GT",
+    "id": "stock-0126",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "185/55",
     "rim": 15,
@@ -2485,19 +1386,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00222",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "185/55",
-    "rim": 15,
-    "sizeNormalized": "185/55 R15",
-    "sellPrice": 655000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00223",
-    "brand": "GT",
+    "id": "stock-0127",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "185/60",
     "rim": 15,
@@ -2507,31 +1397,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00224",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "185/60",
-    "rim": 15,
-    "sizeNormalized": "185/60 R15",
-    "sellPrice": 705000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00225",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "185/60",
-    "rim": 15,
-    "sizeNormalized": "185/60 R15",
-    "sellPrice": 705000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00226",
-    "brand": "GT",
+    "id": "stock-0128",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "185/65",
     "rim": 15,
@@ -2541,31 +1408,19 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00227",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 655000,
-    "qty": 10,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00228",
-    "brand": "GT",
-    "productName": "GT Savero",
+    "id": "stock-0129",
+    "brand": "GT Radial",
+    "productName": "GT Savero (21)",
     "sizeRaw": "185/65",
     "rim": 15,
     "sizeNormalized": "185/65 R15",
     "sellPrice": 0,
     "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2021"
+    "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00229",
-    "brand": "GT",
+    "id": "stock-0130",
+    "brand": "GT Radial",
     "productName": "GT Maxmiller",
     "sizeRaw": "195",
     "rim": 15,
@@ -2575,19 +1430,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00230",
-    "brand": "GT",
-    "productName": "GT Maxmiller",
-    "sizeRaw": "195",
-    "rim": 15,
-    "sizeNormalized": "195 R15",
-    "sellPrice": 940000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00231",
-    "brand": "GT",
+    "id": "stock-0131",
+    "brand": "GT Radial",
     "productName": "GT SX2",
     "sizeRaw": "195/50",
     "rim": 15,
@@ -2597,19 +1441,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00232",
-    "brand": "GT",
-    "productName": "GT GTX Pro2",
-    "sizeRaw": "195/50",
-    "rim": 15,
-    "sizeNormalized": "195/50 R15",
-    "sellPrice": 695000,
-    "qty": 6,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00233",
-    "brand": "GT",
+    "id": "stock-0132",
+    "brand": "GT Radial",
     "productName": "GT SX2",
     "sizeRaw": "195/55",
     "rim": 15,
@@ -2619,9 +1452,9 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00234",
-    "brand": "GT",
-    "productName": "GT GTX Pro2",
+    "id": "stock-0133",
+    "brand": "GT Radial",
+    "productName": "GT  GTX Pro2",
     "sizeRaw": "195/55",
     "rim": 15,
     "sizeNormalized": "195/55 R15",
@@ -2630,8 +1463,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00235",
-    "brand": "GT",
+    "id": "stock-0134",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "195/60",
     "rim": 15,
@@ -2641,41 +1474,19 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00236",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "195/60",
-    "rim": 15,
-    "sizeNormalized": "195/60 R15",
-    "sellPrice": 640000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00237",
-    "brand": "GT",
+    "id": "stock-0135",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "195/65",
     "rim": 15,
     "sizeNormalized": "195/65 R15",
     "sellPrice": 675000,
-    "qty": 1,
+    "qty": 2,
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00238",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "195/65",
-    "rim": 15,
-    "sizeNormalized": "195/65 R15",
-    "sellPrice": 675000,
-    "qty": 3,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00239",
-    "brand": "GT",
+    "id": "stock-0136",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "205/65",
     "rim": 15,
@@ -2685,31 +1496,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00240",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 735000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00241",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 705000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00242",
-    "brand": "GT",
+    "id": "stock-0137",
+    "brand": "GT Radial",
     "productName": "GT Savero AT Pro",
     "sizeRaw": "205/70",
     "rim": 15,
@@ -2719,31 +1507,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00243",
-    "brand": "GT",
-    "productName": "GT Savero AT Pro",
-    "sizeRaw": "205/70",
-    "rim": 15,
-    "sizeNormalized": "205/70 R15",
-    "sellPrice": 860000,
-    "qty": 5,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00244",
-    "brand": "GT",
-    "productName": "GT Savero AT",
-    "sizeRaw": "205/70",
-    "rim": 15,
-    "sizeNormalized": "205/70 R15",
-    "sellPrice": 0,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00245",
-    "brand": "GT",
+    "id": "stock-0138",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "205/70",
     "rim": 15,
@@ -2753,8 +1518,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00246",
-    "brand": "GT",
+    "id": "stock-0139",
+    "brand": "GT Radial",
     "productName": "GT Savero AT Pro",
     "sizeRaw": "235/70",
     "rim": 15,
@@ -2764,8 +1529,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00247",
-    "brand": "GT",
+    "id": "stock-0140",
+    "brand": "GT Radial",
     "productName": "GT Savero MT",
     "sizeRaw": "235/75",
     "rim": 15,
@@ -2775,8 +1540,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00248",
-    "brand": "GT",
+    "id": "stock-0141",
+    "brand": "GT Radial",
     "productName": "GT Savero AT Pro",
     "sizeRaw": "235/75",
     "rim": 15,
@@ -2786,19 +1551,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00249",
-    "brand": "GT",
-    "productName": "GT Savero AT Pro",
-    "sizeRaw": "235/75",
-    "rim": 15,
-    "sizeNormalized": "235/75 R15",
-    "sellPrice": 1100000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00250",
-    "brand": "GT",
+    "id": "stock-0142",
+    "brand": "GT Radial",
     "productName": "GT Savero Komodo MT",
     "sizeRaw": "27/8.5",
     "rim": 15,
@@ -2808,9 +1562,9 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00251",
-    "brand": "GT",
-    "productName": "GT Savero AT Plus",
+    "id": "stock-0143",
+    "brand": "GT Radial",
+    "productName": "GT Savero AT Plus (17)",
     "sizeRaw": "30/9.5",
     "rim": 15,
     "sizeNormalized": "30/9.5 R15",
@@ -2819,8 +1573,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00252",
-    "brand": "GT",
+    "id": "stock-0144",
+    "brand": "GT Radial",
     "productName": "GT Savero AT Pro",
     "sizeRaw": "30/9.5",
     "rim": 15,
@@ -2830,19 +1584,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00253",
-    "brand": "GT",
-    "productName": "GT Savero AT Pro",
-    "sizeRaw": "30/9.5",
-    "rim": 15,
-    "sizeNormalized": "30/9.5 R15",
-    "sellPrice": 1275000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00254",
-    "brand": "GT",
+    "id": "stock-0145",
+    "brand": "GT Radial",
     "productName": "GT Komodo MT Plus",
     "sizeRaw": "30/9.5",
     "rim": 15,
@@ -2852,8 +1595,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00255",
-    "brand": "GT",
+    "id": "stock-0146",
+    "brand": "GT Radial",
     "productName": "GT Savero Komex",
     "sizeRaw": "31/10.5",
     "rim": 15,
@@ -2863,31 +1606,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00256",
-    "brand": "GT",
-    "productName": "GT Savero Komex",
-    "sizeRaw": "31/10.5",
-    "rim": 15,
-    "sizeNormalized": "31/10.5 R15",
-    "sellPrice": 1550000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00257",
-    "brand": "GT",
-    "productName": "GT Savero Komex",
-    "sizeRaw": "31/10.5",
-    "rim": 15,
-    "sizeNormalized": "31/10.5 R15",
-    "sellPrice": 1500000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00258",
-    "brand": "GT",
+    "id": "stock-0147",
+    "brand": "GT Radial",
     "productName": "GT Savero MT",
     "sizeRaw": "31/10.5",
     "rim": 15,
@@ -2897,19 +1617,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00259",
-    "brand": "GT",
-    "productName": "GT Savero MT Pro",
-    "sizeRaw": "31/10.5",
-    "rim": 15,
-    "sizeNormalized": "31/10.5 R15",
-    "sellPrice": 1450000,
-    "qty": 0,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00260",
-    "brand": "GT",
+    "id": "stock-0148",
+    "brand": "GT Radial",
     "productName": "GT Savero AT Pro",
     "sizeRaw": "31/10.5",
     "rim": 15,
@@ -2919,20 +1628,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00261",
-    "brand": "GT",
-    "productName": "GT Savero Komex",
-    "sizeRaw": "33/10.5",
-    "rim": 15,
-    "sizeNormalized": "33/10.5 R15",
-    "sellPrice": 2050000,
-    "qty": 0,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00262",
-    "brand": "GT",
+    "id": "stock-0149",
+    "brand": "GT Radial",
     "productName": "GT Savero MT",
     "sizeRaw": "33/12.5",
     "rim": 15,
@@ -2942,19 +1639,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00263",
-    "brand": "GT",
-    "productName": "GT Savero MT",
-    "sizeRaw": "33/12.5",
-    "rim": 15,
-    "sizeNormalized": "33/12.5 R15",
-    "sellPrice": 1800000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00264",
-    "brand": "GT",
+    "id": "stock-0150",
+    "brand": "GT Radial",
     "productName": "GT GTX Pro",
     "sizeRaw": "185/55",
     "rim": 16,
@@ -2964,19 +1650,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00265",
-    "brand": "GT",
-    "productName": "GT GTX Pro",
-    "sizeRaw": "185/55",
-    "rim": 16,
-    "sizeNormalized": "185/55 R16",
-    "sellPrice": 725000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00266",
-    "brand": "GT",
+    "id": "stock-0151",
+    "brand": "GT Radial",
     "productName": "GT GTX Pro",
     "sizeRaw": "195/50",
     "rim": 16,
@@ -2986,8 +1661,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00267",
-    "brand": "GT",
+    "id": "stock-0152",
+    "brand": "GT Radial",
     "productName": "GT GTX Pro",
     "sizeRaw": "195/55",
     "rim": 16,
@@ -2997,19 +1672,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00268",
-    "brand": "GT",
-    "productName": "GT GTX Pro2",
-    "sizeRaw": "195/55",
-    "rim": 16,
-    "sizeNormalized": "195/55 R16",
-    "sellPrice": 740000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00269",
-    "brand": "GT",
+    "id": "stock-0153",
+    "brand": "GT Radial",
     "productName": "GT Champiro Ecotec",
     "sizeRaw": "195/60",
     "rim": 16,
@@ -3019,19 +1683,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00270",
-    "brand": "GT",
-    "productName": "GT Champiro Ecotec",
-    "sizeRaw": "195/60",
-    "rim": 16,
-    "sizeNormalized": "195/60 R16",
-    "sellPrice": 795000,
-    "qty": 4,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00271",
-    "brand": "GT",
+    "id": "stock-0154",
+    "brand": "GT Radial",
     "productName": "GT GTX Pro2",
     "sizeRaw": "205/55",
     "rim": 16,
@@ -3041,8 +1694,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00272",
-    "brand": "GT",
+    "id": "stock-0155",
+    "brand": "GT Radial",
     "productName": "GT Champiro Luxe",
     "sizeRaw": "205/65",
     "rim": 16,
@@ -3052,8 +1705,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00273",
-    "brand": "GT",
+    "id": "stock-0156",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "215/65",
     "rim": 16,
@@ -3063,8 +1716,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00274",
-    "brand": "GT",
+    "id": "stock-0157",
+    "brand": "GT Radial",
     "productName": "GT Maxmiler",
     "sizeRaw": "225/75",
     "rim": 16,
@@ -3074,8 +1727,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00275",
-    "brand": "GT",
+    "id": "stock-0158",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "235/60",
     "rim": 16,
@@ -3085,8 +1738,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00276",
-    "brand": "GT",
+    "id": "stock-0159",
+    "brand": "GT Radial",
     "productName": "GT Max Pro",
     "sizeRaw": "235/65",
     "rim": 16,
@@ -3096,21 +1749,20 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00277",
-    "brand": "GT",
-    "productName": "GT Savero MT",
+    "id": "stock-0160",
+    "brand": "GT Radial",
+    "productName": "GT Savero MT (20)",
     "sizeRaw": "245/75",
     "rim": 16,
     "sizeNormalized": "245/75 R16",
     "sellPrice": 1500000,
     "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2020"
+    "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00278",
-    "brand": "GT",
-    "productName": "GT Savero AT",
+    "id": "stock-0161",
+    "brand": "GT Radial",
+    "productName": "GT Savero AT (19)",
     "sizeRaw": "245/70",
     "rim": 16,
     "sizeNormalized": "245/70 R16",
@@ -3119,9 +1771,9 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00279",
-    "brand": "GT",
-    "productName": "GT Savero MT",
+    "id": "stock-0162",
+    "brand": "GT Radial",
+    "productName": "GT Savero MT (19)",
     "sizeRaw": "265/75",
     "rim": 16,
     "sizeNormalized": "265/75 R16",
@@ -3130,8 +1782,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00280",
-    "brand": "GT",
+    "id": "stock-0163",
+    "brand": "GT Radial",
     "productName": "GT GTX Pro",
     "sizeRaw": "205/45",
     "rim": 17,
@@ -3141,8 +1793,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00281",
-    "brand": "GT",
+    "id": "stock-0164",
+    "brand": "GT Radial",
     "productName": "GT GTX Pro",
     "sizeRaw": "215/50",
     "rim": 17,
@@ -3152,8 +1804,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00282",
-    "brand": "GT",
+    "id": "stock-0165",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "215/55",
     "rim": 17,
@@ -3163,8 +1815,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00283",
-    "brand": "GT",
+    "id": "stock-0166",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "215/60",
     "rim": 17,
@@ -3174,19 +1826,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00284",
-    "brand": "GT",
-    "productName": "GT Savero SUV",
-    "sizeRaw": "215/60",
-    "rim": 17,
-    "sizeNormalized": "215/60 R17",
-    "sellPrice": 890000,
-    "qty": 2,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00285",
-    "brand": "GT",
+    "id": "stock-0167",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "225/65",
     "rim": 17,
@@ -3196,8 +1837,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00286",
-    "brand": "GT",
+    "id": "stock-0168",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "265/65",
     "rim": 17,
@@ -3207,20 +1848,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00287",
-    "brand": "GT",
-    "productName": "GT Savero SUV",
-    "sizeRaw": "265/65",
-    "rim": 17,
-    "sizeNormalized": "265/65 R17",
-    "sellPrice": 1250000,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00288",
-    "brand": "GT",
+    "id": "stock-0169",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "225/60",
     "rim": 18,
@@ -3230,8 +1859,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00289",
-    "brand": "GT",
+    "id": "stock-0170",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "235/60",
     "rim": 18,
@@ -3241,8 +1870,8 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00290",
-    "brand": "GT",
+    "id": "stock-0171",
+    "brand": "GT Radial",
     "productName": "GT Savero SUV",
     "sizeRaw": "265/60",
     "rim": 18,
@@ -3252,40 +1881,18 @@
     "sheet": "GT ( Gajah Tunggal )"
   },
   {
-    "id": "ob-00291",
-    "brand": "GT",
-    "productName": "GT",
-    "sizeRaw": "265/60",
-    "rim": 18,
-    "sizeNormalized": "265/60 R18",
-    "sellPrice": 0,
-    "qty": 1,
-    "sheet": "GT ( Gajah Tunggal )"
-  },
-  {
-    "id": "ob-00292",
-    "brand": "Accelera",
-    "productName": "Acc Gamma",
-    "sizeRaw": "165/65",
-    "rim": 13,
-    "sizeNormalized": "165/65 R13",
-    "sellPrice": 415000,
-    "qty": 6,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00293",
+    "id": "stock-0172",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "165/80",
     "rim": 13,
     "sizeNormalized": "165/80 R13",
     "sellPrice": 450000,
-    "qty": 5,
+    "qty": 4,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00294",
+    "id": "stock-0173",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "175/70",
@@ -3296,30 +1903,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00295",
+    "id": "stock-0174",
     "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "175/70",
-    "rim": 13,
-    "sizeNormalized": "175/70 R13",
-    "sellPrice": 445000,
-    "qty": 0,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00296",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
+    "productName": "Acc Ecoplush (24) @510",
     "sizeRaw": "165/65",
     "rim": 14,
     "sizeNormalized": "165/65 R14",
     "sellPrice": 485000,
     "qty": 2,
-    "sheet": "Acellera",
-    "yearHint": "2024"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00297",
+    "id": "stock-0175",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "175/65",
@@ -3330,52 +1925,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00298",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 490000,
-    "qty": 4,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00299",
+    "id": "stock-0176",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "185/70",
     "rim": 14,
     "sizeNormalized": "185/70 R14",
     "sellPrice": 530000,
-    "qty": 0,
+    "qty": 6,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00300",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 530000,
-    "qty": 8,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00301",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "185/70",
-    "rim": 14,
-    "sizeNormalized": "185/70 R14",
-    "sellPrice": 500000,
-    "qty": 24,
-    "sheet": "Acellera",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00302",
+    "id": "stock-0177",
     "brand": "Accelera",
     "productName": "Acc PHI-R",
     "sizeRaw": "175/55",
@@ -3386,7 +1947,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00303",
+    "id": "stock-0178",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "175/55",
@@ -3397,7 +1958,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00304",
+    "id": "stock-0179",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "185/55",
@@ -3408,7 +1969,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00305",
+    "id": "stock-0180",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "185/60",
@@ -3419,40 +1980,29 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00306",
+    "id": "stock-0181",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "185/65",
     "rim": 15,
     "sizeNormalized": "185/65 R15",
     "sellPrice": 585000,
-    "qty": 10,
+    "qty": 8,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00307",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "185/65",
-    "rim": 15,
-    "sizeNormalized": "185/65 R15",
-    "sellPrice": 585000,
-    "qty": 5,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00308",
+    "id": "stock-0182",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "195/50",
     "rim": 15,
     "sizeNormalized": "195/50 R15",
     "sellPrice": 610000,
-    "qty": 0,
+    "qty": 4,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00309",
+    "id": "stock-0183",
     "brand": "Accelera",
     "productName": "Acc 651 Sport",
     "sizeRaw": "195/50",
@@ -3463,19 +2013,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00310",
+    "id": "stock-0184",
     "brand": "Accelera",
-    "productName": "Forceum EXP Sport. Semislick",
+    "productName": "Forceum EXP Sport. Semislick (24)",
     "sizeRaw": "195/50",
     "rim": 15,
     "sizeNormalized": "195/50 R15",
     "sellPrice": 725000,
     "qty": 3,
-    "sheet": "Acellera",
-    "yearHint": "2024"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00311",
+    "id": "stock-0185",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "195/55",
@@ -3486,19 +2035,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00312",
+    "id": "stock-0186",
     "brand": "Accelera",
-    "productName": "Acc 651 Sport. Semilsick",
+    "productName": "Acc 651 Sport. Semilsick (24) @780",
     "sizeRaw": "195/55",
     "rim": 15,
     "sizeNormalized": "195/55 R15",
     "sellPrice": 700000,
     "qty": 4,
-    "sheet": "Acellera",
-    "yearHint": "2024"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00313",
+    "id": "stock-0187",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "195/65",
@@ -3509,7 +2057,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00314",
+    "id": "stock-0188",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "205/65",
@@ -3520,7 +2068,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00315",
+    "id": "stock-0189",
     "brand": "Accelera",
     "productName": "Acc Omicron AT",
     "sizeRaw": "235/70",
@@ -3531,7 +2079,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00316",
+    "id": "stock-0190",
     "brand": "Accelera",
     "productName": "Acc Omicron AT",
     "sizeRaw": "235/75",
@@ -3542,7 +2090,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00317",
+    "id": "stock-0191",
     "brand": "Accelera",
     "productName": "Acc MT 01",
     "sizeRaw": "235/75",
@@ -3553,30 +2101,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00318",
+    "id": "stock-0192",
     "brand": "Accelera",
-    "productName": "Acc MT 01 (NOM / tdk ada tahun)",
-    "sizeRaw": "235/75",
-    "rim": 15,
-    "sizeNormalized": "235/75 R15",
-    "sellPrice": 950000,
-    "qty": 1,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00319",
-    "brand": "Accelera",
-    "productName": "Forceum AT",
+    "productName": "Forceum AT (23)",
     "sizeRaw": "235/75",
     "rim": 15,
     "sizeNormalized": "235/75 R15",
     "sellPrice": 980000,
     "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2023"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00320",
+    "id": "stock-0193",
     "brand": "Accelera",
     "productName": "Acc MT 01",
     "sizeRaw": "30/9,5",
@@ -3587,7 +2123,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00321",
+    "id": "stock-0194",
     "brand": "Accelera",
     "productName": "Acc MT 01",
     "sizeRaw": "31/10,5",
@@ -3598,19 +2134,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00322",
-    "brand": "Accelera",
-    "productName": "Acc MT 01",
-    "sizeRaw": "31/10,5",
-    "rim": 15,
-    "sizeNormalized": "31/10,5 R15",
-    "sellPrice": 1275000,
-    "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00323",
+    "id": "stock-0195",
     "brand": "Accelera",
     "productName": "Acc MT",
     "sizeRaw": "33/12,5",
@@ -3621,42 +2145,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00324",
-    "brand": "Accelera",
-    "productName": "Acc MT",
-    "sizeRaw": "33/12,5",
-    "rim": 15,
-    "sizeNormalized": "33/12,5 R15",
-    "sellPrice": 1650000,
-    "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00325",
-    "brand": "Accelera",
-    "productName": "Acc PHI-R",
-    "sizeRaw": "185/55",
-    "rim": 16,
-    "sizeNormalized": "185/55 R16",
-    "sellPrice": 655000,
-    "qty": 0,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00326",
-    "brand": "Accelera",
-    "productName": "Acc PHI-R",
-    "sizeRaw": "185/55",
-    "rim": 16,
-    "sizeNormalized": "185/55 R16",
-    "sellPrice": 585000,
-    "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00327",
+    "id": "stock-0196",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "185/55",
@@ -3667,18 +2156,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00328",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "185/55",
-    "rim": 16,
-    "sizeNormalized": "185/55 R16",
-    "sellPrice": 655000,
-    "qty": 0,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00329",
+    "id": "stock-0197",
     "brand": "Accelera",
     "productName": "Acc PHI-R",
     "sizeRaw": "195/45",
@@ -3689,19 +2167,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00330",
+    "id": "stock-0198",
     "brand": "Accelera",
-    "productName": "Acc 651 Sport. Semislick",
+    "productName": "Acc 651 Sport. Semislick (24) @800",
     "sizeRaw": "195/50",
     "rim": 16,
     "sizeNormalized": "195/50 R16",
     "sellPrice": 750000,
     "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2024"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00331",
+    "id": "stock-0199",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "195/50",
@@ -3712,7 +2189,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00332",
+    "id": "stock-0200",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "195/55",
@@ -3723,42 +2200,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00333",
+    "id": "stock-0201",
     "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "195/55",
-    "rim": 16,
-    "sizeNormalized": "195/55 R16",
-    "sellPrice": 660000,
-    "qty": 8,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00334",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
+    "productName": "Acc Ecoplush (23) @750",
     "sizeRaw": "195/60",
     "rim": 16,
     "sizeNormalized": "195/60 R16",
     "sellPrice": 725000,
-    "qty": 0,
-    "sheet": "Acellera",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00335",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "195/60",
-    "rim": 16,
-    "sizeNormalized": "195/60 R16",
-    "sellPrice": 0,
     "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2023"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00336",
+    "id": "stock-0202",
     "brand": "Accelera",
     "productName": "Acc 651 Sport",
     "sizeRaw": "205/50",
@@ -3769,18 +2222,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00337",
+    "id": "stock-0203",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "205/55",
     "rim": 16,
     "sizeNormalized": "205/55 R16",
     "sellPrice": 715000,
-    "qty": 6,
+    "qty": 5,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00338",
+    "id": "stock-0204",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "205/60",
@@ -3791,18 +2244,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00339",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "205/60",
-    "rim": 16,
-    "sizeNormalized": "205/60 R16",
-    "sellPrice": 705000,
-    "qty": 5,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00340",
+    "id": "stock-0205",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "205/65",
@@ -3813,7 +2255,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00341",
+    "id": "stock-0206",
     "brand": "Accelera",
     "productName": "Acc Ecoplush",
     "sizeRaw": "215/65",
@@ -3824,41 +2266,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00342",
-    "brand": "Accelera",
-    "productName": "Acc Ecoplush",
-    "sizeRaw": "215/65",
-    "rim": 16,
-    "sizeNormalized": "215/65 R16",
-    "sellPrice": 735000,
-    "qty": 2,
-    "sheet": "Acellera",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00343",
+    "id": "stock-0207",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "235/60",
     "rim": 16,
     "sizeNormalized": "235/60 R16",
     "sellPrice": 885000,
-    "qty": 1,
+    "qty": 6,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00344",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "235/60",
-    "rim": 16,
-    "sizeNormalized": "235/60 R16",
-    "sellPrice": 885000,
-    "qty": 5,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00345",
+    "id": "stock-0208",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "205/45",
@@ -3869,7 +2288,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00346",
+    "id": "stock-0209",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "205/50",
@@ -3880,7 +2299,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00347",
+    "id": "stock-0210",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "205/55",
@@ -3891,33 +2310,9 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00348",
+    "id": "stock-0211",
     "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "205/55",
-    "rim": 17,
-    "sizeNormalized": "205/55 R17",
-    "sellPrice": 840000,
-    "qty": 2,
-    "sheet": "Acellera",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00349",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "215/45",
-    "rim": 17,
-    "sizeNormalized": "215/45 R17",
-    "sellPrice": 770000,
-    "qty": 2,
-    "sheet": "Acellera",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00350",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
+    "productName": "Acc IOTA EVT (25)",
     "sizeRaw": "215/45",
     "rim": 17,
     "sizeNormalized": "215/45 R17",
@@ -3926,7 +2321,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00351",
+    "id": "stock-0212",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "215/50",
@@ -3937,63 +2332,29 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00352",
+    "id": "stock-0213",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "215/55",
     "rim": 17,
     "sizeNormalized": "215/55 R17",
     "sellPrice": 865000,
-    "qty": 2,
+    "qty": 4,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00353",
+    "id": "stock-0214",
     "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "215/55",
-    "rim": 17,
-    "sizeNormalized": "215/55 R17",
-    "sellPrice": 865000,
-    "qty": 6,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00354",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "215/40",
-    "rim": 18,
-    "sizeNormalized": "215/40 R18",
-    "sellPrice": 975000,
-    "qty": 0,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00355",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "225/40",
-    "rim": 18,
-    "sizeNormalized": "225/40 R18",
-    "sellPrice": 950000,
-    "qty": 0,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00356",
-    "brand": "Accelera",
-    "productName": "Acc 651",
+    "productName": "Acc 651 (24) @1.100",
     "sizeRaw": "225/40",
     "rim": 18,
     "sizeNormalized": "225/40 R18",
     "sellPrice": 1025000,
     "qty": 2,
-    "sheet": "Acellera",
-    "yearHint": "2024"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00357",
+    "id": "stock-0215",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "225/45",
@@ -4004,7 +2365,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00358",
+    "id": "stock-0216",
     "brand": "Accelera",
     "productName": "Acc IOTA EVT",
     "sizeRaw": "225/50",
@@ -4015,64 +2376,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00359",
+    "id": "stock-0217",
     "brand": "Accelera",
-    "productName": "Acc PHI-R",
-    "sizeRaw": "225/50",
+    "productName": "Acc IOTA EVT",
+    "sizeRaw": "235/50",
     "rim": 18,
-    "sizeNormalized": "225/50 R18",
-    "sellPrice": 1000000,
-    "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00360",
-    "brand": "Accelera",
-    "productName": "Acc PHI X-Boost",
-    "sizeRaw": "225/50",
-    "rim": 18,
-    "sizeNormalized": "225/50 R18",
-    "sellPrice": 900000,
+    "sizeNormalized": "235/50 R18",
+    "sellPrice": 1075000,
     "qty": 6,
-    "sheet": "Acellera",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00361",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "235/50",
-    "rim": 18,
-    "sizeNormalized": "235/50 R18",
-    "sellPrice": 1075000,
-    "qty": 0,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00362",
-    "brand": "Accelera",
-    "productName": "Acc IOTA EVT",
-    "sizeRaw": "235/50",
-    "rim": 18,
-    "sizeNormalized": "235/50 R18",
-    "sellPrice": 1075000,
-    "qty": 2,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00363",
-    "brand": "Accelera",
-    "productName": "Acc IOTA ST68",
-    "sizeRaw": "235/60",
-    "rim": 18,
-    "sizeNormalized": "235/60 R18",
-    "sellPrice": 1050000,
-    "qty": 0,
-    "sheet": "Acellera"
-  },
-  {
-    "id": "ob-00364",
+    "id": "stock-0218",
     "brand": "Accelera",
     "productName": "Acc 651 Sport",
     "sizeRaw": "255/50",
@@ -4083,19 +2398,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00365",
+    "id": "stock-0219",
     "brand": "Accelera",
-    "productName": "Acc 651 Sport",
+    "productName": "Acc 651 Sport (th 24)",
     "sizeRaw": "265/60",
     "rim": 18,
     "sizeNormalized": "265/60 R18",
     "sellPrice": 2170000,
     "qty": 4,
-    "sheet": "Acellera",
-    "yearHint": "2024"
+    "sheet": "Acellera"
   },
   {
-    "id": "ob-00366",
+    "id": "stock-0220",
     "brand": "Accelera",
     "productName": "Acc IOTA",
     "sizeRaw": "235/55",
@@ -4106,7 +2420,7 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00367",
+    "id": "stock-0221",
     "brand": "Accelera",
     "productName": "Acc PHI",
     "sizeRaw": "235/35",
@@ -4117,42 +2431,18 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00368",
+    "id": "stock-0222",
     "brand": "Accelera",
-    "productName": "Acc PHI",
-    "sizeRaw": "235/35",
-    "rim": 20,
-    "sizeNormalized": "235/35 R20",
-    "sellPrice": 0,
-    "qty": 1,
-    "sheet": "Acellera",
-    "yearHint": "2023"
-  },
-  {
-    "id": "ob-00369",
-    "brand": "Accelera",
-    "productName": "Acc Omikron AT",
+    "productName": "Acc Omikron AT (20) @1.955",
     "sizeRaw": "265/50",
     "rim": 20,
     "sizeNormalized": "265/50 R20",
     "sellPrice": 1700000,
     "qty": 4,
-    "sheet": "Acellera",
-    "yearHint": "2020"
-  },
-  {
-    "id": "ob-00370",
-    "brand": "Accelera",
-    "productName": "Acc Omikron AT",
-    "sizeRaw": "265/50",
-    "rim": 20,
-    "sizeNormalized": "265/50 R20",
-    "sellPrice": 1550000,
-    "qty": 2,
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00371",
+    "id": "stock-0223",
     "brand": "Accelera",
     "productName": "Acc MT 01",
     "sizeRaw": "275/55",
@@ -4163,9 +2453,9 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00372",
+    "id": "stock-0224",
     "brand": "Accelera",
-    "productName": "Acc IOTA",
+    "productName": "Acc IOTA (15)",
     "sizeRaw": "285/50",
     "rim": 20,
     "sizeNormalized": "285/50 R20",
@@ -4174,20 +2464,8 @@
     "sheet": "Acellera"
   },
   {
-    "id": "ob-00373",
-    "brand": "Delium",
-    "productName": "HANKOOK",
-    "sizeRaw": "165/65",
-    "rim": 14,
-    "sizeNormalized": "165/65 R14",
-    "sellPrice": 520000,
-    "qty": 4,
-    "sheet": "Delium",
-    "yearHint": "2021"
-  },
-  {
-    "id": "ob-00374",
-    "brand": "Delium",
+    "id": "stock-0225",
+    "brand": "Hankook",
     "productName": "HANKOOK",
     "sizeRaw": "175/65",
     "rim": 14,
@@ -4197,43 +2475,29 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00375",
-    "brand": "Delium",
-    "productName": "HANKOOK Kinergy Eco",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 545000,
-    "qty": 1,
-    "sheet": "Delium",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00376",
-    "brand": "Delium",
-    "productName": "HANKOOK",
+    "id": "stock-0226",
+    "brand": "Hankook",
+    "productName": "HANKOOK (23)",
     "sizeRaw": "205/65",
     "rim": 15,
     "sizeNormalized": "205/65 R15",
     "sellPrice": 600000,
     "qty": 3,
-    "sheet": "Delium",
-    "yearHint": "2023"
+    "sheet": "Delium"
   },
   {
-    "id": "ob-00377",
-    "brand": "Delium",
-    "productName": "HANKOOK",
+    "id": "stock-0227",
+    "brand": "Hankook",
+    "productName": "HANKOOK (22)",
     "sizeRaw": "195/50",
     "rim": 16,
     "sizeNormalized": "195/50 R16",
     "sellPrice": 685000,
     "qty": 1,
-    "sheet": "Delium",
-    "yearHint": "2022"
+    "sheet": "Delium"
   },
   {
-    "id": "ob-00378",
+    "id": "stock-0228",
     "brand": "Delium",
     "productName": "Delium Power Saver",
     "sizeRaw": "165",
@@ -4244,41 +2508,41 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00379",
-    "brand": "Delium",
+    "id": "stock-0229",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "165/65",
     "rim": 13,
     "sizeNormalized": "165/65 R13",
     "sellPrice": 405000,
-    "qty": 5,
+    "qty": 7,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00380",
-    "brand": "Delium",
+    "id": "stock-0230",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "165/80",
     "rim": 13,
     "sizeNormalized": "165/80 R13",
     "sellPrice": 435000,
-    "qty": 6,
+    "qty": 12,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00381",
+    "id": "stock-0231",
     "brand": "Delium",
     "productName": "Delium Power Saver",
     "sizeRaw": "175",
     "rim": 13,
     "sizeNormalized": "175 R13",
     "sellPrice": 620000,
-    "qty": 3,
+    "qty": 6,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00382",
-    "brand": "Delium",
+    "id": "stock-0232",
+    "brand": "Bridgestone",
     "productName": "Delium Evotechno",
     "sizeRaw": "175/70",
     "rim": 13,
@@ -4288,8 +2552,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00383",
-    "brand": "Delium",
+    "id": "stock-0233",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "175/65",
     "rim": 14,
@@ -4299,7 +2563,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00384",
+    "id": "stock-0234",
     "brand": "Delium",
     "productName": "Delium Power Saver",
     "sizeRaw": "185",
@@ -4310,8 +2574,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00385",
-    "brand": "Delium",
+    "id": "stock-0235",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "185/70",
     "rim": 14,
@@ -4321,19 +2585,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00386",
-    "brand": "Delium",
-    "productName": "Delium Power Ranger",
-    "sizeRaw": "195",
-    "rim": 14,
-    "sizeNormalized": "195 R14",
-    "sellPrice": 800000,
-    "qty": 0,
-    "sheet": "Delium"
-  },
-  {
-    "id": "ob-00387",
-    "brand": "Delium",
+    "id": "stock-0236",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "195/70",
     "rim": 14,
@@ -4343,62 +2596,51 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00388",
-    "brand": "Delium",
-    "productName": "Delium T.Cruiser",
-    "sizeRaw": "195/70",
-    "rim": 14,
-    "sizeNormalized": "195/70 R14",
-    "sellPrice": 655000,
-    "qty": 0,
-    "sheet": "Delium"
-  },
-  {
-    "id": "ob-00389",
-    "brand": "Delium",
+    "id": "stock-0237",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "185/55",
     "rim": 15,
     "sizeNormalized": "185/55 R15",
     "sellPrice": 565000,
-    "qty": 4,
+    "qty": 10,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00390",
-    "brand": "Delium",
+    "id": "stock-0238",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "185/60",
     "rim": 15,
     "sizeNormalized": "185/60 R15",
     "sellPrice": 570000,
-    "qty": 7,
+    "qty": 8,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00391",
-    "brand": "Delium",
+    "id": "stock-0239",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "185/65",
     "rim": 15,
     "sizeNormalized": "185/65 R15",
     "sellPrice": 570000,
-    "qty": 10,
+    "qty": 16,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00392",
+    "id": "stock-0240",
     "brand": "Delium",
     "productName": "Delium Evoraze (semislick)",
     "sizeRaw": "195/50",
     "rim": 15,
     "sizeNormalized": "195/50 R15",
     "sellPrice": 600000,
-    "qty": 4,
+    "qty": 6,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00393",
+    "id": "stock-0241",
     "brand": "Delium",
     "productName": "Delium Evoraze (semislick)",
     "sizeRaw": "195/55",
@@ -4409,8 +2651,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00394",
-    "brand": "Delium",
+    "id": "stock-0242",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "195/60",
     "rim": 15,
@@ -4420,8 +2662,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00395",
-    "brand": "Delium",
+    "id": "stock-0243",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "195/65",
     "rim": 15,
@@ -4431,7 +2673,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00396",
+    "id": "stock-0244",
     "brand": "Delium",
     "productName": "Delium T Cruiser AT",
     "sizeRaw": "195/65",
@@ -4442,8 +2684,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00397",
-    "brand": "Delium",
+    "id": "stock-0245",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "205/65",
     "rim": 15,
@@ -4453,20 +2695,8 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00398",
-    "brand": "Delium",
-    "productName": "Delium Evo Techno",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 0,
-    "qty": 1,
-    "sheet": "Delium",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00399",
-    "brand": "Delium",
+    "id": "stock-0246",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "205/70",
     "rim": 15,
@@ -4476,7 +2706,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00400",
+    "id": "stock-0247",
     "brand": "Delium",
     "productName": "Delium T Cruiser AT",
     "sizeRaw": "205/70",
@@ -4487,7 +2717,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00401",
+    "id": "stock-0248",
     "brand": "Delium",
     "productName": "Delium T Cruiser AT",
     "sizeRaw": "235/75",
@@ -4498,7 +2728,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00402",
+    "id": "stock-0249",
     "brand": "Delium",
     "productName": "Delium T Mania Extreme",
     "sizeRaw": "31x10,5",
@@ -4509,30 +2739,19 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00403",
+    "id": "stock-0250",
     "brand": "Delium",
     "productName": "Delium Evoraze",
     "sizeRaw": "195/50",
     "rim": 16,
     "sizeNormalized": "195/50 R16",
     "sellPrice": 680000,
-    "qty": 1,
+    "qty": 4,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00404",
-    "brand": "Delium",
-    "productName": "Delium Evoraze",
-    "sizeRaw": "195/50",
-    "rim": 16,
-    "sizeNormalized": "195/50 R16",
-    "sellPrice": 680000,
-    "qty": 3,
-    "sheet": "Delium"
-  },
-  {
-    "id": "ob-00405",
-    "brand": "Delium",
+    "id": "stock-0251",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "195/55",
     "rim": 16,
@@ -4542,19 +2761,19 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00406",
-    "brand": "Delium",
+    "id": "stock-0252",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "195/60",
     "rim": 16,
     "sizeNormalized": "195/60 R16",
     "sellPrice": 650000,
-    "qty": 4,
+    "qty": 5,
     "sheet": "Delium"
   },
   {
-    "id": "ob-00407",
-    "brand": "Delium",
+    "id": "stock-0253",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "205/55",
     "rim": 16,
@@ -4564,8 +2783,19 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00408",
+    "id": "stock-0254",
     "brand": "Delium",
+    "productName": "Delium Terra Raider AT",
+    "sizeRaw": "265/75",
+    "rim": 16,
+    "sizeNormalized": "265/75 R16",
+    "sellPrice": 1825000,
+    "qty": 4,
+    "sheet": "Delium"
+  },
+  {
+    "id": "stock-0255",
+    "brand": "Bridgestone",
     "productName": "Delium Evo Techno",
     "sizeRaw": "205/65",
     "rim": 16,
@@ -4575,7 +2805,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00409",
+    "id": "stock-0256",
     "brand": "Delium",
     "productName": "Delium Evoraze",
     "sizeRaw": "205/45",
@@ -4586,7 +2816,7 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00410",
+    "id": "stock-0257",
     "brand": "Delium",
     "productName": "Delium Evoraze",
     "sizeRaw": "215/45",
@@ -4597,90 +2827,62 @@
     "sheet": "Delium"
   },
   {
-    "id": "ob-00411",
-    "brand": "Delium",
-    "productName": "Delium Evoraze",
-    "sizeRaw": "215/45",
-    "rim": 17,
-    "sizeNormalized": "215/45 R17",
-    "sellPrice": 770000,
-    "qty": 2,
-    "sheet": "Delium"
-  },
-  {
-    "id": "ob-00412",
-    "brand": "Sailun",
-    "productName": "Sailun",
-    "sizeRaw": "175",
-    "rim": 13,
-    "sizeNormalized": "175 R13",
-    "sellPrice": 620000,
-    "qty": 4,
-    "sheet": "Campur",
-    "yearHint": "2024"
-  },
-  {
-    "id": "ob-00413",
+    "id": "stock-0258",
     "brand": "Achilles",
-    "productName": "Achilles Duragrib",
+    "productName": "Achilles Duragrib (20)",
     "sizeRaw": "175",
     "rim": 13,
     "sizeNormalized": "175 R13",
     "sellPrice": 750000,
     "qty": 3,
-    "sheet": "Campur",
-    "yearHint": "2020"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00414",
+    "id": "stock-0259",
     "brand": "Sailun",
-    "productName": "Sailun",
+    "productName": "Sailun (24)",
     "sizeRaw": "185",
     "rim": 14,
     "sizeNormalized": "185 R14",
     "sellPrice": 735000,
     "qty": 4,
-    "sheet": "Campur",
-    "yearHint": "2024"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00415",
+    "id": "stock-0260",
     "brand": "Achilles",
-    "productName": "Achilles ultravan",
+    "productName": "Achilles ultravan (22)",
     "sizeRaw": "185",
     "rim": 14,
     "sizeNormalized": "185 R14",
     "sellPrice": 700009,
     "qty": 1,
-    "sheet": "Campur",
-    "yearHint": "2022"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00416",
+    "id": "stock-0261",
     "brand": "Sailun",
-    "productName": "Sailun",
+    "productName": "Sailun (24)",
     "sizeRaw": "195",
     "rim": 14,
     "sizeNormalized": "195 R14",
     "sellPrice": 825000,
     "qty": 4,
-    "sheet": "Campur",
-    "yearHint": "2024"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00417",
+    "id": "stock-0262",
     "brand": "Hankook",
-    "productName": "Hankook",
+    "productName": "Hankook (21)",
     "sizeRaw": "165/65",
     "rim": 14,
     "sizeNormalized": "165/65 R14",
     "sellPrice": 520000,
     "qty": 4,
-    "sheet": "Campur",
-    "yearHint": "2021"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00418",
+    "id": "stock-0263",
     "brand": "Goodyear",
     "productName": "Goodyear",
     "sizeRaw": "175/65",
@@ -4691,19 +2893,7 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00419",
-    "brand": "Goodyear",
-    "productName": "Goodyear",
-    "sizeRaw": "175/65",
-    "rim": 14,
-    "sizeNormalized": "175/65 R14",
-    "sellPrice": 545000,
-    "qty": 5,
-    "sheet": "Campur",
-    "yearHint": "2025"
-  },
-  {
-    "id": "ob-00420",
+    "id": "stock-0264",
     "brand": "Hankook",
     "productName": "Hankook",
     "sizeRaw": "175/65",
@@ -4714,21 +2904,20 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00421",
+    "id": "stock-0265",
     "brand": "Hankook",
-    "productName": "Hankook Kinergy Eco",
+    "productName": "Hankook Kinergy Eco (22)",
     "sizeRaw": "175/65",
     "rim": 14,
     "sizeNormalized": "175/65 R14",
     "sellPrice": 545000,
     "qty": 1,
-    "sheet": "Campur",
-    "yearHint": "2022"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00422",
+    "id": "stock-0266",
     "brand": "Achilles",
-    "productName": "Achilles 868",
+    "productName": "Achilles 868 (18)",
     "sizeRaw": "185/65",
     "rim": 14,
     "sizeNormalized": "185/65 R14",
@@ -4737,20 +2926,19 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00423",
+    "id": "stock-0267",
     "brand": "Goodyear",
-    "productName": "Goodyear",
+    "productName": "Goodyear (24)",
     "sizeRaw": "195/70",
     "rim": 14,
     "sizeNormalized": "195/70 R14",
     "sellPrice": 635000,
     "qty": 4,
-    "sheet": "Campur",
-    "yearHint": "2024"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00424",
-    "brand": "Swallow",
+    "id": "stock-0268",
+    "brand": "Campur",
     "productName": "SWALLOW",
     "sizeRaw": "750",
     "rim": 15,
@@ -4760,9 +2948,9 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00425",
+    "id": "stock-0269",
     "brand": "Achilles",
-    "productName": "Achilles ATRK",
+    "productName": "Achilles ATRK (19)",
     "sizeRaw": "165/50",
     "rim": 15,
     "sizeNormalized": "165/50 R15",
@@ -4771,9 +2959,9 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00426",
+    "id": "stock-0270",
     "brand": "Achilles",
-    "productName": "Achilles Economis",
+    "productName": "Achilles Economis (19)",
     "sizeRaw": "185/50",
     "rim": 15,
     "sizeNormalized": "185/50 R15",
@@ -4782,21 +2970,20 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00427",
+    "id": "stock-0271",
     "brand": "Achilles",
-    "productName": "Achilles ATR",
+    "productName": "Achilles ATR (21)",
     "sizeRaw": "185/55",
     "rim": 15,
     "sizeNormalized": "185/55 R15",
     "sellPrice": 775000,
     "qty": 1,
-    "sheet": "Campur",
-    "yearHint": "2021"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00428",
+    "id": "stock-0272",
     "brand": "Achilles",
-    "productName": "Achilles 122",
+    "productName": "Achilles 122 (19)",
     "sizeRaw": "185/60",
     "rim": 15,
     "sizeNormalized": "185/60 R15",
@@ -4805,9 +2992,9 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00429",
+    "id": "stock-0273",
     "brand": "Achilles",
-    "productName": "Achilles ATR",
+    "productName": "Achilles ATR (18)",
     "sizeRaw": "195/50",
     "rim": 15,
     "sizeNormalized": "195/50 R15",
@@ -4816,9 +3003,9 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00430",
+    "id": "stock-0274",
     "brand": "Goodyear",
-    "productName": "Goodyear",
+    "productName": "Goodyear (18)",
     "sizeRaw": "195/50",
     "rim": 15,
     "sizeNormalized": "195/50 R15",
@@ -4827,19 +3014,18 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00431",
+    "id": "stock-0275",
     "brand": "Achilles",
-    "productName": "Achilles ATR",
+    "productName": "Achilles ATR (20+21)",
     "sizeRaw": "195/55",
     "rim": 15,
     "sizeNormalized": "195/55 R15",
     "sellPrice": 800000,
     "qty": 3,
-    "sheet": "Campur",
-    "yearHint": "2021"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00432",
+    "id": "stock-0276",
     "brand": "Goodyear",
     "productName": "Goodyear",
     "sizeRaw": "205/65",
@@ -4850,33 +3036,20 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00433",
-    "brand": "Goodyear",
-    "productName": "Goodyear",
-    "sizeRaw": "205/65",
-    "rim": 15,
-    "sizeNormalized": "205/65 R15",
-    "sellPrice": 675000,
-    "qty": 2,
-    "sheet": "Campur",
-    "yearHint": "2026"
-  },
-  {
-    "id": "ob-00434",
+    "id": "stock-0277",
     "brand": "Hankook",
-    "productName": "Hankook",
+    "productName": "Hankook (23)",
     "sizeRaw": "205/65",
     "rim": 15,
     "sizeNormalized": "205/65 R15",
     "sellPrice": 600000,
     "qty": 3,
-    "sheet": "Campur",
-    "yearHint": "2023"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00435",
+    "id": "stock-0278",
     "brand": "Achilles",
-    "productName": "Achilles MULTIVAN",
+    "productName": "Achilles MULTIVAN (18+19)",
     "sizeRaw": "205/70",
     "rim": 15,
     "sizeNormalized": "205/70 R15",
@@ -4885,20 +3058,19 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00436",
+    "id": "stock-0279",
     "brand": "Achilles",
-    "productName": "Achilles 2233",
+    "productName": "Achilles 2233 (19+20)",
     "sizeRaw": "185/55",
     "rim": 16,
     "sizeNormalized": "185/55 R16",
     "sellPrice": 750000,
     "qty": 2,
-    "sheet": "Campur",
-    "yearHint": "2020"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00437",
-    "brand": "Pirelli",
+    "id": "stock-0280",
+    "brand": "Campur",
     "productName": "PIRELLI",
     "sizeRaw": "195/40",
     "rim": 16,
@@ -4908,21 +3080,20 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00438",
+    "id": "stock-0281",
     "brand": "Hankook",
-    "productName": "Hankook",
+    "productName": "Hankook (22)",
     "sizeRaw": "195/50",
     "rim": 16,
     "sizeNormalized": "195/50 R16",
     "sellPrice": 685000,
     "qty": 1,
-    "sheet": "Campur",
-    "yearHint": "2022"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00439",
+    "id": "stock-0282",
     "brand": "Achilles",
-    "productName": "Achilles ATR",
+    "productName": "Achilles ATR (19)",
     "sizeRaw": "205/55",
     "rim": 16,
     "sizeNormalized": "205/55 R16",
@@ -4931,20 +3102,19 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00440",
+    "id": "stock-0283",
     "brand": "Goodyear",
-    "productName": "Goodyear",
+    "productName": "Goodyear (25)",
     "sizeRaw": "205/65",
     "rim": 16,
     "sizeNormalized": "205/65 R16",
     "sellPrice": 0,
     "qty": 5,
-    "sheet": "Campur",
-    "yearHint": "2025"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00441",
-    "brand": "Yokohama",
+    "id": "stock-0284",
+    "brand": "Campur",
     "productName": "YOKOHAMA GEOLANDAR",
     "sizeRaw": "275/70",
     "rim": 16,
@@ -4954,21 +3124,20 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00442",
+    "id": "stock-0285",
     "brand": "Continental",
-    "productName": "CONTINENTAL",
+    "productName": "CONTINENTAL (20)",
     "sizeRaw": "265/65",
     "rim": 17,
     "sizeNormalized": "265/65 R17",
     "sellPrice": 0,
     "qty": 12,
-    "sheet": "Campur",
-    "yearHint": "2020"
+    "sheet": "Campur"
   },
   {
-    "id": "ob-00443",
+    "id": "stock-0286",
     "brand": "Achilles",
-    "productName": "Achilles ATR",
+    "productName": "Achilles ATR (18)",
     "sizeRaw": "225/40",
     "rim": 18,
     "sizeNormalized": "225/40 R18",
@@ -4977,9 +3146,9 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00444",
+    "id": "stock-0287",
     "brand": "Continental",
-    "productName": "CONTINENTAL",
+    "productName": "CONTINENTAL (19)",
     "sizeRaw": "235/55",
     "rim": 18,
     "sizeNormalized": "235/55 R18",
@@ -4988,9 +3157,9 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00445",
+    "id": "stock-0288",
     "brand": "Achilles",
-    "productName": "Achilles UHP",
+    "productName": "Achilles UHP (18)",
     "sizeRaw": "245/40",
     "rim": 20,
     "sizeNormalized": "245/40 R20",
@@ -4999,108 +3168,30 @@
     "sheet": "Campur"
   },
   {
-    "id": "ob-00446",
-    "brand": "GT",
-    "productName": "Gajah Tunggal",
-    "sizeRaw": "750",
-    "rim": 15,
-    "sizeNormalized": "750 R15",
-    "sellPrice": 1250000,
-    "qty": 4,
-    "sheet": "Truck Diesel"
-  },
-  {
-    "id": "ob-00447",
-    "brand": "Bridgestone",
-    "productName": "Bridgestone SMR",
-    "sizeRaw": "750",
-    "rim": 15,
-    "sizeNormalized": "750 R15",
-    "sellPrice": 1350000,
-    "qty": 0,
-    "sheet": "Truck Diesel"
-  },
-  {
-    "id": "ob-00448",
-    "brand": "Swallow",
-    "productName": "Swallow",
-    "sizeRaw": "750",
-    "rim": 15,
-    "sizeNormalized": "750 R15",
-    "sellPrice": 1340000,
-    "qty": 0,
-    "sheet": "Truck Diesel"
-  },
-  {
-    "id": "ob-00449",
-    "brand": "Swallow",
+    "id": "stock-0289",
+    "brand": "Truck Diesel",
     "productName": "Swallow HD",
     "sizeRaw": "750",
     "rim": 16,
     "sizeNormalized": "750 R16",
     "sellPrice": 1510000,
-    "qty": 5,
+    "qty": 1,
     "sheet": "Truck Diesel"
   },
   {
-    "id": "ob-00450",
-    "brand": "Swallow",
-    "productName": "Swallow HD",
+    "id": "stock-0290",
+    "brand": "Truck Diesel",
+    "productName": "Swallow HD (22)",
     "sizeRaw": "825",
     "rim": 16,
     "sizeNormalized": "825 R16",
     "sellPrice": 1820000,
     "qty": 2,
-    "sheet": "Truck Diesel",
-    "yearHint": "2022"
-  },
-  {
-    "id": "ob-00451",
-    "brand": "GT",
-    "productName": "Gajah Tunggal (GT)",
-    "sizeRaw": "750",
-    "rim": 16,
-    "sizeNormalized": "750 R16",
-    "sellPrice": 1515000,
-    "qty": 0,
     "sheet": "Truck Diesel"
   },
   {
-    "id": "ob-00452",
-    "brand": "GT",
-    "productName": "Gajah Tunggal (GT) HD",
-    "sizeRaw": "750",
-    "rim": 16,
-    "sizeNormalized": "750 R16",
-    "sellPrice": 1545000,
-    "qty": 0,
-    "sheet": "Truck Diesel"
-  },
-  {
-    "id": "ob-00453",
-    "brand": "Aeolus",
-    "productName": "Aeolus HN267",
-    "sizeRaw": "750",
-    "rim": 16,
-    "sizeNormalized": "750 R16",
-    "sellPrice": 2175000,
-    "qty": 0,
-    "sheet": "Truck Diesel"
-  },
-  {
-    "id": "ob-00454",
-    "brand": "Ban",
-    "productName": "Ban Dalam Delli",
-    "sizeRaw": "550",
-    "rim": 13,
-    "sizeNormalized": "550 R13",
-    "sellPrice": 125000,
-    "qty": 16,
-    "sheet": "Ban Dalam"
-  },
-  {
-    "id": "ob-00455",
-    "brand": "Ban",
+    "id": "stock-0291",
+    "brand": "GT Radial",
     "productName": "Ban Dalam GT",
     "sizeRaw": "600/700",
     "rim": 14,
@@ -5110,19 +3201,19 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00456",
-    "brand": "Ban",
+    "id": "stock-0292",
+    "brand": "Ban Dalam",
     "productName": "Ban Dalam Delli",
     "sizeRaw": "600/700",
     "rim": 14,
     "sizeNormalized": "600/700 R14",
     "sellPrice": 125000,
-    "qty": 7,
+    "qty": 21,
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00457",
-    "brand": "Ban",
+    "id": "stock-0293",
+    "brand": "GT Radial",
     "productName": "Ban Dalam GT",
     "sizeRaw": "650/700",
     "rim": 15,
@@ -5132,8 +3223,8 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00458",
-    "brand": "Ban",
+    "id": "stock-0294",
+    "brand": "Ban Dalam",
     "productName": "Ban Dalam Swallow (Jeep)",
     "sizeRaw": "650/700",
     "rim": 15,
@@ -5143,8 +3234,8 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00459",
-    "brand": "Ban",
+    "id": "stock-0295",
+    "brand": "GT Radial",
     "productName": "Ban Dalam GT (Jeep)",
     "sizeRaw": "710/760",
     "rim": 15,
@@ -5154,8 +3245,8 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00460",
-    "brand": "Ban",
+    "id": "stock-0296",
+    "brand": "Ban Dalam",
     "productName": "Ban Dalam Swallow",
     "sizeRaw": "650/700",
     "rim": 16,
@@ -5165,8 +3256,8 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00461",
-    "brand": "Ban",
+    "id": "stock-0297",
+    "brand": "GT Radial",
     "productName": "Ban Dalam GT",
     "sizeRaw": "650/700",
     "rim": 16,
@@ -5176,8 +3267,8 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00462",
-    "brand": "Ban",
+    "id": "stock-0298",
+    "brand": "Ban Dalam",
     "productName": "Ban Dalam Swallow",
     "sizeRaw": "700/750",
     "rim": 16,
@@ -5187,8 +3278,8 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00463",
-    "brand": "Ban",
+    "id": "stock-0299",
+    "brand": "GT Radial",
     "productName": "Ban Dalam GT",
     "sizeRaw": "750/825",
     "rim": 16,
@@ -5198,14 +3289,14 @@
     "sheet": "Ban Dalam"
   },
   {
-    "id": "ob-00464",
-    "brand": "Ban",
-    "productName": "Ban Dalam Swallow",
-    "sizeRaw": "750/825",
+    "id": "stock-0300",
+    "brand": "Ban Dalam",
+    "productName": "Sliwer R 16",
+    "sizeRaw": "",
     "rim": 16,
-    "sizeNormalized": "750/825 R16",
-    "sellPrice": 205000,
-    "qty": 0,
+    "sizeNormalized": " R16",
+    "sellPrice": 60000,
+    "qty": 7,
     "sheet": "Ban Dalam"
   }
 ]

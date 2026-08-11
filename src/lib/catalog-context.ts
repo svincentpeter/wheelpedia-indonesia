@@ -4,6 +4,7 @@ import { TIRE_BRANDS, WHEEL_BRANDS } from "@/data/brands";
 import { getShopStock, type ShopStockItem } from "@/lib/shop-stock";
 import { BRAND_RANKS } from "@/lib/brand-ranking";
 import { resolveShopStock } from "@/lib/omahban-live";
+import { buildStockReport } from "@/lib/stock-analytics";
 
 const STOCK_CONTEXT_CAP = 80;
 
